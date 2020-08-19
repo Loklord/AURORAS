@@ -7,14 +7,13 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 
 # Content files
 
-  - [grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey.index) for the following content from [
-The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) 
+  - [grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey.index) for the following content from [The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) 
     - Class archetypes
     - ATUM pilot prestige class
     - Spells
     - Feats
     - Backgrounds
-	- Weapons (Firearms)
+	- Weapons
 	- Hardpoints
 	- _(Experimental: ATUM Character Sheet)_
   - [dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index) for Michael Richters content from the [DMs Guild](https://www.dmsguild.com/browse.php?author=Michael%20Richter)
