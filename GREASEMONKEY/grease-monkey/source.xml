@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	<!-- test -->
 		<update version="0.0.4">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/source.xml" />
 		</update>

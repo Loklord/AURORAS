@@ -3,7 +3,7 @@
     <info>
         <name>Feats</name>
         <description>The Feats from The Greasemonkey's Handbook</description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="feats.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/feats.xml" />
         </update>
     </info>

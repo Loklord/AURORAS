@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Circle of Steel</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="druid-steel.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/druid-steel.xml" />
         </update>
 	</info>

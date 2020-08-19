@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Tech Hunter</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="ranger-tech.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/ranger-tech.xml" />
         </update>
 	</info>

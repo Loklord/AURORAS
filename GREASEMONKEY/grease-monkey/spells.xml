@@ -3,7 +3,7 @@
 	<info>
 		<name>Greasemonkey's Handbook: Spells</name>
 		<description>Spells from The Greasemonkey's Handbook</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/spells.xml" />
 		</update>
 	</info>

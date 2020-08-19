@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Steel-Born</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="sorcerer-steelborn.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/sorcerer-steelborn.xml" />
         </update>
 	</info>

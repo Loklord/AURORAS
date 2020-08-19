@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="sorcerer-elemental-vessel.xml" url="https://raw.githubusercontent.com/XXXXXXXXXXXXXXXXXXXX/sorcerer-elemental-vessel.xml" />
+		<update version="0.0.2">
+			<file name="sorcerer-elemental-vessel.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/sorcerer-elemental-vessel.xml" />
 		</update>
 	</info>
 

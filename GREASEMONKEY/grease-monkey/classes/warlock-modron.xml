@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Modron</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="warlock-modron.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/warlock-modron.xml" />
 		</update>
 	</info>

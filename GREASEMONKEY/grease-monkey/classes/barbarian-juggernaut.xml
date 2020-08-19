@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Path of the Juggernaut</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/barbarian-juggernaut.xml" />
         </update>
 	</info>

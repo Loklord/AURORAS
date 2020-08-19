@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/items/items-firearms.xml" />
 		</update>
 	</info>

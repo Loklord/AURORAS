@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Hijacker</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="rogue-hijacker.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/rogue-hijacker.xml" />
         </update>
 	</info>
