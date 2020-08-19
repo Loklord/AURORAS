@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="items-atum.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/items-atum.xml" />
 		</update>
 	</info>
@@ -95,8 +95,8 @@
 			<p class="indent"><b><i>Damage. </i></b>1d8 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Strength Score. </i></b>20 (+5).</p>
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
-			<p><i>(Equip only one Manipulator of the same kind in AURORA!)</i></p>
 		</description>
 		<setters>
 			<set name="keywords">atum, light, civilian, hardpoint, manipulator</set>
@@ -703,8 +703,8 @@
 			<p class="indent"><b><i>Damage. </i></b>1d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Strength Score. </i></b>22 (+6).</p>
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
-			<p><i>(Equip only one Manipulator of the same kind in AURORA!)</i></p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, manipulator</set>
@@ -1217,8 +1217,8 @@
 			<p class="indent"><b><i>Damage. </i></b>1d12 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Strength Score. </i></b>26 (+8).</p>
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
-			<p><i>(Equip only one Manipulator of the same kind in AURORA!)</i></p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, industrial, hardpoint, manipulator</set>
@@ -2166,11 +2166,11 @@
 			<stat name="atum-character:manipulator-civilian-str-mod" value="5" bonus="base" />
 			
 			<stat name="atum-character:manipulator-civilian-attack" value="atum-character:manipulator-civilian-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-civilian-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-civilian-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-civilian-str-save" value="atum-character:manipulator-civilian-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-civilian-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-civilian-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-civilian-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Manipulator (Medium Civilian)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_MANIPULATOR_CIVILIAN_MEDIUM_ATTACK">
@@ -2193,11 +2193,11 @@
 			<stat name="atum-character:manipulator-civilian-str-mod" value="5" bonus="base" />
 			
 			<stat name="atum-character:manipulator-civilian-attack" value="atum-character:manipulator-civilian-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-civilian-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-civilian-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-civilian-str-save" value="atum-character:manipulator-civilian-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-civilian-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-civilian-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-civilian-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Manipulator (Heavy Civilian)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_MANIPULATOR_CIVILIAN_HEAVY_ATTACK">
@@ -2220,11 +2220,11 @@
 			<stat name="atum-character:manipulator-civilian-str-mod" value="5" bonus="base" />
 			
 			<stat name="atum-character:manipulator-civilian-attack" value="atum-character:manipulator-civilian-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-civilian-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-civilian-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-civilian-str-save" value="atum-character:manipulator-civilian-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-civilian-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-civilian-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-civilian-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	
@@ -2248,11 +2248,11 @@
 			<stat name="atum-character:manipulator-military-str-mod" value="6" bonus="base" />
 			
 			<stat name="atum-character:manipulator-military-attack" value="atum-character:manipulator-military-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-military-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-military-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-military-str-save" value="atum-character:manipulator-military-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-military-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-military-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-military-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Manipulator (Medium Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_MANIPULATOR_MILITARY_MEDIUM_ATTACK">
@@ -2275,11 +2275,11 @@
 			<stat name="atum-character:manipulator-military-str-mod" value="6" bonus="base" />
 			
 			<stat name="atum-character:manipulator-military-attack" value="atum-character:manipulator-military-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-military-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-military-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-military-str-save" value="atum-character:manipulator-military-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-military-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-military-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-military-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Manipulator (Heavy Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_MANIPULATOR_MILITARY_HEAVY_ATTACK">
@@ -2302,11 +2302,11 @@
 			<stat name="atum-character:manipulator-military-str-mod" value="6" bonus="base" />
 			
 			<stat name="atum-character:manipulator-military-attack" value="atum-character:manipulator-military-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-military-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-military-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-military-str-save" value="atum-character:manipulator-military-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-military-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-military-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-military-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	
@@ -2330,11 +2330,11 @@
 			<stat name="atum-character:manipulator-industrial-str-mod" value="8" bonus="base" />
 			
 			<stat name="atum-character:manipulator-industrial-attack" value="atum-character:manipulator-industrial-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-industrial-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-industrial-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-industrial-str-save" value="atum-character:manipulator-industrial-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-industrial-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-industrial-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-industrial-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Manipulator (Medium Industrial)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_MANIPULATOR_INDUSTRIAL_MEDIUM_ATTACK">
@@ -2357,11 +2357,11 @@
 			<stat name="atum-character:manipulator-industrial-str-mod" value="8" bonus="base" />
 			
 			<stat name="atum-character:manipulator-industrial-attack" value="atum-character:manipulator-industrial-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-industrial-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-industrial-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-industrial-str-save" value="atum-character:manipulator-industrial-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-industrial-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-industrial-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-industrial-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Manipulator (Heavy Industrial)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_MANIPULATOR_INDUSTRIAL_HEAVY_ATTACK">
@@ -2384,11 +2384,11 @@
 			<stat name="atum-character:manipulator-industrial-str-mod" value="8" bonus="base" />
 			
 			<stat name="atum-character:manipulator-industrial-attack" value="atum-character:manipulator-industrial-str-mod" bonus="base" />
-			<stat name="atum-character:manipulator-industrial-attack" value="proficiency" />
+			<stat name="atum-character:manipulator-industrial-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:manipulator-industrial-str-save" value="atum-character:manipulator-industrial-str-mod" bonus="base" />
 			<stat name="atum-character:manipulator-industrial-str-save" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:manipulator-industrial-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="atum-character:manipulator-industrial-str-save" value="proficiency" bonus="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	
@@ -2441,7 +2441,7 @@
 		</sheet>
 		<rules>
 			<stat name="atum-character:winch-hook-attack" value="strength:modifier" bonus="base" />
-			<stat name="atum-character:winch-hook-attack" value="proficiency" />
+			<stat name="atum-character:winch-hook-attack" value="proficiency" bonus="proficiency" />
 			
 			<stat name="atum-character:winch-hook-weight" value="2" bonus="base" />
 			<stat name="atum-character:winch-hook-weight" value="2" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
