@@ -14,7 +14,7 @@ The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/)
 	- Weapons (Firearms)
 	- Hardpoints
 	- _(Experimental: ATUM Character Sheet)_
-  - [dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index) for [Michael Richters content](https://www.dmsguild.com/browse.php?author=Michael%20Richter) from the DMs Guild
+  - [dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index) for Michael Richters content from the [DMs Guild](https://www.dmsguild.com/browse.php?author=Michael%20Richter)
     - [Race: Catfolk](https://www.dmsguild.com/product/182902/Race-Catfolk-5e)
     - [Race: Drider](https://www.dmsguild.com/product/199828/Race-Drider-5e)
     - [Race: Serpentfolk](https://www.dmsguild.com/product/183775/Race-Serpentfolk-Naga-Lamia)
