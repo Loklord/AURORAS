@@ -3,7 +3,7 @@
     <info>
 		<name>Way of the Gear</name>
         <update version="0.0.2">
-            <file name="monk-gear.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/classes/monk-gear.xml" />
+            <file name="monk-gear.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/monk-gear.xml" />
         </update>
 	</info>
 
