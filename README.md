@@ -1,6 +1,9 @@
-# Additional Content for Aurora Builder
+# Extending Content
 
-See [Extending Content](https://aurorabuilder.com/content) on how to add index files to Aurora.
+Go to the _Additional Content_ tab in Aurora, enter the URL of the index file, and have Aurora download the content to the custom folder for you. When these files get updated, Aurora will be able to keep content files up to date automatically. 
+
+See [Extending Content](https://aurorabuilder.com/content) or the [Aurora repository on GitHub](https://github.com/aurorabuilder/elements) for more details on how to add index files to Aurora Builder.
+
 
 # Content files
 
