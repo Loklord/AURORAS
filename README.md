@@ -17,7 +17,7 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
     - Backgrounds
 	- Weapons
 	- Hardpoints
-	- _Experimental: ATUM Character Sheet (seperate source: disable if not building an ATUM vehicle)_
+	- _Experimental: ATUM Character Sheet (separate source: disable if not building an ATUM vehicle)_
   - **[dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index)** contains _Michael Richters_ content from the [DMs Guild](https://www.dmsguild.com/browse.php?author=Michael%20Richter)
     - [Race: Catfolk](https://www.dmsguild.com/product/182902/Race-Catfolk-5e)
     - [Race: Drider](https://www.dmsguild.com/product/199828/Race-Drider-5e)
