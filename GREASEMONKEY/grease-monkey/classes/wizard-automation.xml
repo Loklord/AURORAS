@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>School of Automation</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="wizard-automation.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/wizard-automation.xml" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_WIZARD_AUTOMATION_EMPOWERED_AUTOMATION" />
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_WIZARD_AUTOMATION_SPELLWEAVING_MASTERY" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>War mages act fast in battle, using their spells to seize tactical control of a situation.</description>
 		</sheet>
 		<rules>
@@ -82,7 +82,7 @@
 			<p>Beginning at 6th level, once per long rest when you perform a spellweave, you can also attempt to siphon off a small portion of that spell’s raw essence.</p>
 			<p class="indent">Make an Intelligence (Arcana) check against the spell’s save DC. On a success, you regain a number of spell slots with a combined level equal to half the spell’s level, rounded down. For example, if you attempt to spellweave a 3rd-level Burning Hands spell, you could also regain one expended 1st-level spell slot, regardless of whether the spellweave is successful or not.</p>
 		</description>
-		<sheet usage="1/long rest">
+		<sheet usage="1/Long Rest">
 			<description>When you perform a spellweave, make an Intelligence (Arcana) check against the spell’s save DC. On a success, you regain a number of spell slots with a combined level equal to half the spell’s level, rounded down.</description>
 		</sheet>
 	</element>
