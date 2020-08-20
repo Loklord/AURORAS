@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Path of the Juggernaut</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/barbarian-juggernaut.xml" />
         </update>
 	</info>
@@ -14,6 +14,10 @@
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_BONUS_PROFICIENCY" />
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_ARMORED_RAGE" />
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESS_MOMENTUM" />
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_CRUSHINGSTRIKE" />
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_TRAMPLE" />
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_SLAM" />
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_DEMOLISH" />
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_HULKING_POWERHOUSE" />
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_ARMORED_BEHEMOTH" />
 		</description>
@@ -44,21 +48,45 @@
 			<description level="5">When not wielding a shield, you gain all the benefits of your rage while wearing heavy armor. You can use your Fast Movement feature while wearing heavy armor.</description>
 		</sheet>
 	</element>
+	
 	<element name="Relentless Momentum" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESS_MOMENTUM">
 		<description>
-			<p>By 6th level, your mastery of heavy armor allows you to use its weight to your advantage when you rage, turning you into an unstoppable battering ram. While raging, for every 20 feet you move on your turn, you generate 1 momentum point, to a maximum of 3 points per round. You can spend momentum points to fuel special manuevers, as shown below. You can have a maximum number of momentum points stored at any time equal to your proficiency bonus. These points are lost if your rage ends, you spend them, or if you haven’t moved at least 20 feet since your last turn.</p>
-			<p class="indent"><b><i>Crushing Strike (1 pt).</i></b> When you hit a large or smaller creature with a melee weapon attack, you can force that creature to make a Dexterity saving throw or be knocked prone, and take extra bludgeoning damage equal to 1d6 + half your barbarian level.</p>
-			<p class="indent"><b><i>Trample (1 pt).</i></b> You can spend a bonus action to trample one creature you can see that is within 5 feet of you and knocked prone. That creature must succeed on a Dexterity saving throw, taking 2d6 bludgeoning damage on a failed save, or half as much on a successful one. This damage increases to 3d6 at 11th level, and 4d6 at 17th level.</p>
-			<p class="indent"><b><i>Slam (1 pt).</i></b> When you hit a creature with a melee weapon attack, you can force that target to make a Strength saving throw. On a failed save, the target takes bludgeoning damage equal to 1d6 + half your barbarian level and is pushed up to 15 feet away from you. If this would force the target to come into contact with another creature, both creatures must succeed on a Dexterity saving throw or be pushed back a further 5 feet and be knocked prone if the creature is huge or smaller. If the target instead comes into contact with an object or piece or terrain it cannot move through, such as a brick wall, it instead takes an additional 1d6 bludgeoning damage for every 5 feet it moved before colliding with the terrain or object.</p>
-			<p class="indent"><b><i>Demolish (3 pts).</i></b> You charge forward up to 40 feet in a straight line as a bonus action on your turn. You demolish a hole equal to your size in any nonmagical objects that aren’t being worn or carried, including furniture, walls or other terrain or structures less than 1-foot thick within that line. If you come into contact with an object, piece or terrain or structure that is thicker than 1 foot, you must succeed on a Strength (Atheletics) check or stop moving. The DC for this check equals 15 + the target’s thickness in feet. If you would come into contact with a large or smaller creature, that creature must succeed on a Dexterity saving throw or be knocked prone and trampled (see <i>Trample</i>). If the creature is huge or greater, they instead take 1d6 bludgeoning damage per 5 feet you moved, and you stop moving.</p>
+			<p>By 6th level, your mastery of heavy armor allows you to use its weight to your advantage when you rage, turning you into an unstoppable battering ram.</p>
+			<p>While raging, for every 20 feet you move on your turn, you generate 1 momentum point, to a maximum of 3 points per round. You can spend momentum points to fuel special manuevers, as shown below. You can have a maximum number of momentum points stored at any time equal to your proficiency bonus.</p>
+			<p>These points are lost if your rage ends, you spend them, or if you haven’t moved at least 20 feet since your last turn.</p>
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_CRUSHINGSTRIKE" />
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_TRAMPLE" />
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_SLAM" />
+			<div element="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_DEMOLISH" />
 		</description>
 		<sheet>
-			<description>While raging, you generate 1 momentum point every 20 feet you move (max. 3 points per round). You can store up to {{proficiency}} momentum points, which are lost if your rage ends, or if you haven’t moved at least 20 feet since your last turn. You can spend momentum points to fuel special maneuvers: &#13;
-			• Crushing Strike (1 pt): 1d6+{{level:barbarian:half}} bludgeoning damage, &#13;
-			• Trample (1 pt): {{tgmhb-relentless-momentum:die}}d6 bludgeoning damage on a failed save, or half as much on a successful one, &#13;
-			• Slam (1 pt): 1d6+{{level:barbarian:half}} bludgeoning damage on a failed save, &#13;
-			• Demolish (3 pts). 
-			</description>
+			<description>While raging, you generate 1 momentum point every 20 feet you move (max. 3 points per round). You can store up to 6 momentum points, which are lost if your rage ends, or if you haven’t moved at least 20 feet since your last turn. You can spend them for special maneuvers:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Crushing Strike" supports="TGMHB Relentless Momentum Crushing Strike" default="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_CRUSHINGSTRIKE" default-behaviour="force" />
+			<select type="Archetype Feature" name="Trample" supports="TGMHB Relentless Momentum Trample" default="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_TRAMPLE" default-behaviour="force" />
+			<select type="Archetype Feature" name="Slam" supports="TGMHB Relentless Momentum Slam" default="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_SLAM" default-behaviour="force" />
+			<select type="Archetype Feature" name="Demolish" supports="TGMHB Relentless Momentum Demolish" default="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_DEMOLISH" default-behaviour="force" />
+		</rules>
+	</element>
+	<element name="Crushing Strike (1 pt)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_CRUSHINGSTRIKE">
+		<supports>TGMHB Relentless Momentum Crushing Strike</supports>
+		<description>
+			<p>When you hit a large or smaller creature with a melee weapon attack, you can force that creature to make a Dexterity saving throw or be knocked prone, and take extra bludgeoning damage equal to 1d6 + half your barbarian level.</p>
+		</description>
+		<sheet>
+			<description>When you hit a large or smaller creature, you can force it to succeed a Dexterity saving throw or be knocked prone, and take 1d6+{{level:barbarian:half}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+	<element name="Trample (1 pt)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_TRAMPLE">
+		<supports>TGMHB Relentless Momentum Trample</supports>
+		<description>
+			<p>You can spend a bonus action to trample one creature you can see that is within 5 feet of you and knocked prone.</p>
+			<p>That creature must succeed on a Dexterity saving throw, taking 2d6 bludgeoning damage on a failed save, or half as much on a successful one.</p>
+			<p>This damage increases to 3d6 at 11th level, and 4d6 at 17th level.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Force one creature that is knocked prone within 5 feet to make a Dexterity saving throw, taking {{tgmhb-relentless-momentum:die}}d6 bludgeoning damage on a failed save, or half as much on a success.</description>
 		</sheet>
 		<rules>
 			<stat name="tgmhb-relentless-momentum:die" value="2" />
@@ -66,12 +94,39 @@
 			<stat name="tgmhb-relentless-momentum:die" value="1" level="17" />
 		</rules>
 	</element>
+	<element name="Slam (1 pt)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_SLAM">
+		<supports>TGMHB Relentless Momentum Slam</supports>
+		<description>
+			<p>When you hit a creature with a melee weapon attack, you can force that target to make a Strength saving throw.</p>
+			<p>On a failed save, the target takes bludgeoning damage equal to 1d6 + half your barbarian level and is pushed up to 15 feet away from you.</p>
+			<p>If this would force the target to come into contact with another creature, both creatures must succeed on a Dexterity saving throw or be pushed back a further 5 feet and be knocked prone if the creature is huge or smaller.</p>
+			<p>If the target instead comes into contact with an object or piece or terrain it cannot move through, such as a brick wall, it instead takes an additional 1d6 bludgeoning damage for every 5 feet it moved before colliding with the terrain or object.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a melee weapon attack, you can force it to succeed a Strength saving throw or take 1d6+{{level:barbarian:half}} bludgeoning damage and be pushed up to 15 feet away from you.</description>
+		</sheet>
+	</element>
+	<element name="Demolish (3 pts)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_RELENTLESSMOMENTUM_DEMOLISH">
+		<supports>TGMHB Relentless Momentum Demolish</supports>
+		<description>
+			<p>You charge forward up to 40 feet in a straight line as a bonus action on your turn.</p>
+			<p>You demolish a hole equal to your size in any nonmagical objects that aren’t being worn or carried, including furniture, walls or other terrain or structures less than 1-foot thick within that line.</p>
+			<p>If you come into contact with an object, piece or terrain or structure that is thicker than 1 foot, you must succeed on a Strength (Atheletics) check or stop moving. The DC for this check equals 15 + the target’s thickness in feet.</p>
+			<p>If you would come into contact with a large or smaller creature, that creature must succeed on a Dexterity saving throw or be knocked prone and trampled (see <i>Trample</i>).</p>
+			<p>If the creature is huge or greater, they instead take 1d6 bludgeoning damage per 5 feet you moved, and you stop moving.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You charge forward up to 40 feet in a straight line, demolishing a hole of your size in any nonmagical structures less than 1-foot thick within that line. When hitting thicker objects, you must succeed on a Strength (Atheletics) check or stop moving (DC 15 + thickness in feet). When hitting a large or smaller creature, it must succeed on a Dexterity saving throw or be knocked prone and "Trampled". Larger creatures take 1d6 bludgeoning damage per 5 feet you moved instead, and you stop moving.</description>
+		</sheet>
+	</element>
+	
+	
 	<element name="Hulking Powerhouse" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_HULKING_POWERHOUSE">
 		<description>
 			<p>At 10th level, you have advantage on saving throws against being stunned and against magical effects that would slow your movement. In addition, your movement cannot be slowed by nonmagical means, such as difficult terrain.</p>
 		</description>
 		<sheet>
-			<description>Advantage on saving throws against being stunned and against magical effects that would slow your movement. Your movement cannot be slowed by nonmagical means, such as difficult terrain.</description>
+			<description>You have advantage on saving throws against being stunned and against magical effects that would slow your movement. Your movement cannot be slowed by nonmagical means, such as difficult terrain.</description>
 		</sheet>
 	</element>
 	<element name="Armored Behemoth" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARBARIAN_JUGGERNAUT_ARMORED_BEHEMOTH">

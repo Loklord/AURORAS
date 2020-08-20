@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>College of Metal</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="bard-metal.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/bard-metal.xml" />
         </update>
 	</info>
@@ -42,12 +42,12 @@
 			<p class="indent"><b><i>Kill 'Em All.</i></b> When you cast a spell that heals a creature, you can expend one use of your Bardic Inspiration to fill it with murderous rage. The next attack roll made by that creature has advantage and deals additional damage equal to the number rolled on the Bardic Inspiration Die.</p>
 			<p class="indent"><b><i>Ten Thousand Fists.</i></b> You can expend one use of your Bardic Inspiration to fill one creature you can see within 30 feet of you with boundless energy for a brief instant. That creature can use its reaction to immediately make two unarmed strikes against a target it can see within range, rolling the Bardic Inspiration Die and adding the number rolled to the damage of each attack.</p>
 		</description>
-		<sheet usage="1/turn">
-			<description>Whenever casting a spell of 1st-level or higher (casting time of 1 action or less), you can use one of the Battle Hymn options of your choice. 
-			(Ride the Lightning) When you cast a damage-dealing spell, you can expend one use of your Bardic Inspiration and deal result as additional lightning damage to one target initially damaged by the spell. You can then use your reaction to teleport a number of feet up to half the range of the spell you cast in a direction you choose. 
-			(Thunderstruck) When you cast a damage-dealing spell, you can expend one use of your Bardic Inspiration to force one creature damaged by the spell to make a Constitution saving throw. On a successful save, the creature takes additional thunder damage equal to the number you roll on the Bardic Inspiration Die. On a failed save, the target is instead stunned until the end of your next turn. 
-			(Kill 'Em All) When you cast a spell that heals a creature, you can expend one use of your Bardic Inspiration to fill it with murderous rage. The next attack roll made by that creature has advantage and deals additional damage equal to the number rolled on the Bardic Inspiration Die. 
-			(Ten Thousand Fists) You can expend one use of your Bardic Inspiration to fill one creature you can see within 30 feet of you with boundless energy for a brief instant. That creature can use its reaction to immediately make two unarmed strikes against a target it can see within range, rolling the Bardic Inspiration Die and adding the number rolled to the damage of each attack.</description>
+		<sheet usage="1/Turn">
+			<description>Whenever casting a spell of 1st-level or higher (casting time of 1 action or less), you can use one of the Battle Hymn options of your choice: &#13;
+			• Ride the Lightning: When you cast a damage-dealing spell, you can expend one use of your Bardic Inspiration and deal result as additional lightning damage to one target initially damaged by the spell. You can then use your reaction to teleport a number of feet up to half the range of the spell you cast in a direction you choose. &#13;
+			• Thunderstruck: When you cast a damage-dealing spell, you can expend one use of your Bardic Inspiration to force one creature damaged by the spell to make a Constitution saving throw. On a successful save, the creature takes additional thunder damage equal to the number you roll on the Bardic Inspiration Die. On a failed save, the target is instead stunned until the end of your next turn. &#13;
+			• Kill 'Em All: When you cast a spell that heals a creature, you can expend one use of your Bardic Inspiration to fill it with murderous rage. The next attack roll made by that creature has advantage and deals additional damage equal to the number rolled on the Bardic Inspiration Die. &#13;
+			• Ten Thousand Fists: You can expend one use of your Bardic Inspiration to fill one creature you can see within 30 feet of you with boundless energy for a brief instant. That creature can use its reaction to immediately make two unarmed strikes against a target it can see within range, rolling the Bardic Inspiration Die and adding the number rolled to the damage of each attack.</description>
 		</sheet>
 	</element>
 	<element name="Notes of Power" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARD_METAL_NOTES_OF_POWER">
@@ -60,8 +60,10 @@
 			</ul>
 			<p>Once you use this feature, you must finish a long rest before you can use it again.</p>
 		</description>
-		<sheet action="Reaction" usage="1/long rest">
-			<description>Whenever you use a Battle Hymn, you can use your reaction to begin a musical performance that lasts for 1 minute and is audible out to 300 feet. You gain the following benefits: (a) Replace one attack roll you make each round with a Charisma (Performance) check. If you match or exceed the target’s AC, the attack successfully hits, dealing additional {{charisma:modifier}} force damage. (b) Friendly creatures that are within 60 feet and can see and hear you cannot be charmed or frightened, and gain {{charisma:modifier}} temporary hit points at the start of your turn.</description>
+		<sheet action="Reaction" usage="1/Long Rest">
+			<description>Whenever you use a Battle Hymn, you can use your reaction to begin a musical performance that lasts for 1 minute and is audible out to 300 feet. You gain the following benefits: &#13;
+			• Replace one attack roll you make each round with a Charisma (Performance) check. If you match or exceed the target’s AC, the attack successfully hits, dealing additional {{charisma:modifier}} force damage. &#13;
+			• Friendly creatures that are within 60 feet and can see and hear you cannot be charmed or frightened, and gain {{charisma:modifier}} temporary hit points at the start of your turn.</description>
 		</sheet>
 	</element>
 	<element name="Number of the Fiend" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_BARD_METAL_NUMBER_OF_THE_FIEND">
