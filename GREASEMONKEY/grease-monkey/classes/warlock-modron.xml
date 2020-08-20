@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Modron</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="warlock-modron.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/warlock-modron.xml" />
 		</update>
 	</info>
@@ -64,7 +64,7 @@
 			<p class="indent">In addition, you can choose to have the spell target yourself instead of an object. If casting the spell in this way, instead of hurling an object, the explosion of light centers on you, forcing each creature of your choice within range to make the saving throw.</p>
 		</description>
 		<sheet>
-			<description>You can cast the light of the primus cantrip at will, without verbal or somatic components. You can choose to have the spell target yourself, causing the explosion of light to center on you, forcing each creature of your choice within range to make the saving throw</description>
+			<description>You can cast the light of the primus cantrip at will, without verbal or somatic components. You can choose to have the spell target yourself, causing the explosion of light to center on you, forcing each creature of your choice within range to make the saving throw.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_TGMHB_SPELL_LIGHT_OF_THE_PRIMUS" level="1" spellcasting="Warlock" />
@@ -77,7 +77,7 @@
 			<p class="indent">These events you experience project around the object or construct for the next ten minutes, appearing as a ghostly, spectral recording only you can see. You see and hear the events as if you were there, but cannot use your other senses. You can pause the recording, but cannot passively speed it up or slow it down. You can, however, specify a particular time of day, such as “early morning” or “9:24pm”, or say a phrase such as “go backwards two minutes” or “forward ten minutes”, and the recording will fast-forward or rewind to that point before playing as normal.</p>
 			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
-		<sheet action="Action" usage="1/long rest">
+		<sheet action="Action" usage="1/Long Rest">
 			<description>You can touch an inanimate object or construct made of metal and experience any events that have occurred within 20 feet of it within the last 24 hours.</description>
 		</sheet>
 	</element>
@@ -96,7 +96,7 @@
 			<p class="indent">The target can make a Constitution saving throw at the end of each of its turns, ending the effects on itself on a success.</p>
 			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest. </p>
 		</description>
-		<sheet usage="1/long rest">
+		<sheet usage="1/Long Rest">
 			<description>When you hit a creature (that is not a construct) with an attack while under the effects of your Energized Soul feature, you can have the target take 10d6 radiant damage and becoming blinded and incapacitated for 1 minute, while eminating bright light out to 10 feet, and dim light for an additional 20 feet for the duration of the blindness. The target can make a Constitution saving throw at the end of each of its turns, ending the effects on itself on a success.</description>
 		</sheet>
 	</element>
