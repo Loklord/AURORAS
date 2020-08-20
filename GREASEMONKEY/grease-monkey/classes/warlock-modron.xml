@@ -17,7 +17,7 @@
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_WARLOCK_MODRON_PROTECTION_FROM_CHAOS" />
 			<div element="ID_TGMHB_ARCHETYPE_FEATURE_WARLOCK_MODRON_BLINDING_SOULFIRE" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Your patron is a powerful being of the Upper Planes.</description>
 		</sheet>
 		<rules>
