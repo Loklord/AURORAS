@@ -64,7 +64,7 @@
 			<p class="indent">In addition, you can choose to have the spell target yourself instead of an object. If casting the spell in this way, instead of hurling an object, the explosion of light centers on you, forcing each creature of your choice within range to make the saving throw.</p>
 		</description>
 		<sheet>
-			<description>You can cast the light of the primus cantrip at will, without verbal or somatic components. You can choose to have the spell target yourself, causing the explosion of light to center on you, forcing each creature of your choice within range to make the saving throw.</description>
+			<description>You can cast the Light of the Primus cantrip at will, without verbal or somatic components. You can choose to have the spell target yourself, causing the explosion of light to center on you, forcing each creature of your choice within range to make the saving throw.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_TGMHB_SPELL_LIGHT_OF_THE_PRIMUS" level="1" spellcasting="Warlock" />
@@ -86,7 +86,7 @@
 			<p>Starting at 10th level, whenever you cast the <i>light of the primus</i> cantrip on yourself, you become immune to the charmed and frightened conditions, and have advantage on saving throws against mind-altering effects, such as <i>tasha’s hideous laughter</i> or an Umber Hulk’s confusing gaze. </p>
 		</description>
 		<sheet>
-			<description>When you cast the light of the primus cantrip on yourself, you become immune to the charmed and frightened conditions, and have advantage on saving throws against mind-altering effects.</description>
+			<description>When you cast the Light of the Primus cantrip on yourself, you become immune to the charmed and frightened conditions, and have advantage on saving throws against mind-altering effects.</description>
 		</sheet>
 	</element>
 	<element name="Blinding Soulfire" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_WARLOCK_MODRON_BLINDING_SOULFIRE">
