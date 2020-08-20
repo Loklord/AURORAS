@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Tech Hunter</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="ranger-tech.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/ranger-tech.xml" />
         </update>
 	</info>
@@ -68,10 +68,10 @@
 			<p class="indent"><b><i>ATUM-Killer.</i></b> When you hit an ATUM using this weapon, you can spend your reaction to deal an additional 1d8 lightning damage to one random creature inside the ATUM, or have the attack bypass the ATUM’s armour plating. You can use this feature a number of times equal to your Wisdom modifier. You regain all uses of this feature when you finish a long rest.</p>
 		</description>
 		<sheet>
-			<description>You can change your weapon’s adaptation feature when you finish a long rest. 
-			(Construct-Scrambler) Up to {{wisdom:modifier}} times per long rest, when you hit a construct or ATUM using your adapted weapon, you can use your reaction to give the target disadvantage on its next attack roll. 
-			(Spell-Breaker) Once per short rest, when a construct within 30 feet of you targets you with a spell, you can use your reaction to make a weapon attack against it using your adapted weapon. On a hit, the target takes 1d6 force damage and you gain advantage on the saving throw. 
-			(ATUM-Killer) Up to {{wisdom:modifier}} times per long rest, when you hit an ATUM using your adapted weapon, you can deal an additional 1d8 lightning damage to one random creature inside the ATUM, or have the attack bypass the ATUM’s armour plating. </description>
+			<description>You can change your weapon’s adaptation feature when you finish a long rest. &#13;
+			• Construct-Scrambler: Up to {{wisdom:modifier}} times per long rest, when you hit a construct or ATUM using your adapted weapon, you can use your reaction to give the target disadvantage on its next attack roll. &#13;
+			• Spell-Breaker: Once per short rest, when a construct within 30 feet of you targets you with a spell, you can use your reaction to make a weapon attack against it using your adapted weapon. On a hit, the target takes 1d6 force damage and you gain advantage on the saving throw. &#13;
+			• ATUM-Killer: Up to {{wisdom:modifier}} times per long rest, when you hit an ATUM using your adapted weapon, you can deal an additional 1d8 lightning damage to one random creature inside the ATUM, or have the attack bypass the ATUM’s armour plating. </description>
 		</sheet>
 	</element>
 	<element name="Hunter’s Blow" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_RANGER_TECHHUNTER_HUNTERS_BLOW">
