@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Oath of the Primus</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="paladin-primus.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/paladin-primus.xml" />
         </update>
 	</info>
@@ -100,10 +100,10 @@
 			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
-			<description>You eminate an aura within a {{tgmhb-paladin-aura-machine-god:range}} feet radius while you’re not incapacitated. When you finish a long rest, you can change the form of your aura: 
-			(Order) You and friendly creatures within range have advantage on saving throws to resist mind-altering effects. 
-			(Obedience) Enemy creatures in your aura have disadvantage on saving throws to avoid being charmed by you. 
-			(Retribution) When you damage a creature in your aura with your divine smite feature, that creature takes additional {{tgmhb-paladin-aura-machine-god:smite}} radiant damage.</description>
+			<description>You eminate an aura within a {{tgmhb-paladin-aura-machine-god:range}} feet radius while you’re not incapacitated. When you finish a long rest, you can change the form of your aura: &#13;
+			• Order: You and friendly creatures within range have advantage on saving throws to resist mind-altering effects. &#13;
+			• Obedience: Enemy creatures in your aura have disadvantage on saving throws to avoid being charmed by you. &#13;
+			• Retribution: When you damage a creature in your aura with your divine smite feature, that creature takes additional {{tgmhb-paladin-aura-machine-god:smite}} radiant damage.</description>
 		</sheet>
 		<rules>
 			<stat name="tgmhb-paladin-aura-machine-god:range" value="10" />
