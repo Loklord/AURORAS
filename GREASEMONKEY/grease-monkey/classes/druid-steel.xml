@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Circle of Steel</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="druid-steel.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/druid-steel.xml" />
         </update>
 	</info>
@@ -68,12 +68,16 @@
 	<element name="Steel Companion" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEEL_COMPANION">
 		<description>
 			<p>By 6th level, the natural mechanical magic you eminate draws to your side a mechanical companion, fabricated from the discarded scrap around you.</p>
-			<p class="indent">You form a powerful bond with the creature, which assumes the form of a beast of your choice that has a challenge rating of 1/4 or lower. The creature has the statistics of the chosen form, but its type becomes construct, it becomes immune to disease, poison, and the poisoned condition, and does not need to eat, sleep or breathe.</p>
+			<p class="indent">You form a powerful bond with the creature, which assumes the form of a beast of your choice that has a challenge rating of 1/4 or lower. The creature has the statistics of the chosen form, but its type becomes construct. It becomes immune to disease, poison, and the poisoned condition, and does not need to eat, sleep or breathe.</p>
 		</description>
 		<sheet>
 			<description>You gain a mechanical companion, which assumes the form of a beast of challenge rating of 1/4 or lower, but its type becomes construct.</description>
 		</sheet>
+		<rules>
+			<select type="Companion" name="Steel Companion" supports="Beast,(1/4||1/8||0)" />
+		</rules>
 	</element>
+	
 	<element name="Steel Bond" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEEL_BOND">
 		<description>
 			<p>Your magical bond grants you and your companion a variety of features:</p>
@@ -89,20 +93,90 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Your companion takes its turn on your inititative and can make a single weapon attack as an action on its turn. You can expend one spell slot as a bonus action to heal your companion by 1d8 hit points per level of the spell slot. It adds +{{proficiency}} to its AC, attack rolls and saving throws.</description>
-			<description level="7">Your companion takes its turn on your inititative and can make a single weapon attack as an action on its turn. You can expend one spell slot as a bonus action to heal your companion by 1d8 hit points per level of the spell slot. It adds +{{proficiency}} to its AC, attack rolls and saving throws. It has {{tgmhb-druid-steel-bond:hd}} additional hit die and corresponding hit points.</description>
-			<description level="8">Your companion takes its turn on your inititative and can make a single weapon attack as an action on its turn. You can expend one spell slot as a bonus action to heal your companion by 1d8 hit points per level of the spell slot. It adds +{{proficiency}} to its AC, attack rolls and saving throws. It has {{tgmhb-druid-steel-bond:hd}} additional hit dice and corresponding hit points, and {{tgmhb-druid-steel-bond:asi}} ability score improvement.</description>
-			<description level="9">Your companion takes its turn on your inititative and can make a single weapon attack as an action on its turn. You can expend one spell slot as a bonus action to heal your companion by 1d8 hit points per level of the spell slot. It adds +{{proficiency}} to its AC, attack rolls and saving throws. It has {{tgmhb-druid-steel-bond:hd}} additional hit dice and corresponding hit points, and {{tgmhb-druid-steel-bond:asi}} ability score improvements.</description>
+			<description>Your companion takes its turn on your inititative and can make a single weapon attack as an action on its turn. You can expend one spell slot as a bonus action to heal your companion by 1d8 hit points per level of the spell slot.</description>
 		</sheet>
 		<rules>
-			<stat name="tgmhb-druid-steel-bond:hd" value="-6" /> <!-- calc additional hit dies of compantion -->
-			<stat name="tgmhb-druid-steel-bond:hd" value="level:druid" />
-			<stat name="tgmhb-druid-steel-bond:asi" value="1" /> <!-- calc ASI of compantion -->
-			<stat name="tgmhb-druid-steel-bond:asi" value="1" level="12" />
-			<stat name="tgmhb-druid-steel-bond:asi" value="1" level="16" />
-			<stat name="tgmhb-druid-steel-bond:asi" value="1" level="19" /> 
+			<select type="Archetype Feature" name="(Optional) Steel Bond Recalculation" supports="TGMHB Steel Companion Recalculation" />
 		</rules>
 	</element>
+	<element name="Steel Companion Recalculation" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_RECALC">
+		<supports>TGMHB Steel Companion Recalculation</supports>
+		<description>
+		<p><i>(Optional) Aurora does not recalculate all of your Steel Companion’s stats automatically.</i></p>
+			<p>Whenever you gain a level in this class, your Steel Companion gains an additional hit die, increasing its hit points accordingly.</p>
+			<p>Your Steel Companion’s damage roll modifiers are the corresponding ability score modifiers of the attack.</p>
+			<p>Your Steel Companion’s attack roll modifiers: </p>
+			<ul>
+				<li>Strength based: Your proficiency bonus + your companion’s proficiency bonus (2) + your companion’s strength modifier.</li>
+				<li>Dexterity based: Your proficiency bonus + your companion’s proficiency bonus (2) + your companion’s dexterity modifier.</li>
+			</ul>
+			<p><i>Ask your GM, if they approve the recalculations!</i></p>
+		</description>
+		<sheet alt="Recalculation">
+			<description>AC: {{companion:ac}}, Hit Points: + {{tgmhb-druid-steel-bond:hd}}d?? + {{tgmhb-druid-steel-bond:hp-con}}. &#13;
+			Attack (STR): +{{tgmhb-druid-steel-companion-attack-str}} to hit, +{{companion:strength:modifier}} to damage dice. &#13;
+			Attack (DEX): +{{tgmhb-druid-steel-companion-attack-dex}} to hit, +{{companion:dexterity:modifier}} to damage dice.</description>
+		</sheet>
+		<rules>
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:strength:save:proficiency" value="proficiency" />
+			<stat name="companion:dexterity:save:proficiency" value="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="proficiency" />
+			<stat name="companion:charisma:save:proficiency" value="proficiency" />
+			
+			<stat name="tgmhb-druid-steel-companion-attack-str" value="proficiency" bonus="base" />
+			<stat name="tgmhb-druid-steel-companion-attack-str" value="companion:proficiency" />
+			<stat name="tgmhb-druid-steel-companion-attack-str" value="companion:strength:modifier" />
+			<stat name="tgmhb-druid-steel-companion-attack-dex" value="proficiency" bonus="base" />
+			<stat name="tgmhb-druid-steel-companion-attack-dex" value="companion:proficiency" />
+			<stat name="tgmhb-druid-steel-companion-attack-dex" value="companion:dexterity:modifier" />
+			
+			<stat name="tgmhb-druid-steel-bond:hd" value="0" /> 
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="7"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="8"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="8"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="10"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="11"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="12"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="13"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="14"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="15"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="16"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="17"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="18"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="19"/>
+			<stat name="tgmhb-druid-steel-bond:hd" value="1" level="20"/>
+			
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="0" /> 
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="7"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="8"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="8"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="10"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="11"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="12"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="13"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="14"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="15"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="16"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="17"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="18"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="19"/>
+			<stat name="tgmhb-druid-steel-bond:hp-con" value="companion:constitution:modifier" level="20"/>
+			
+			<!-- ASI -->
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 8)" supports="TGMHB Steel Companion ASI 3" level="8" />
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 8)" supports="TGMHB Steel Companion ASI 4" level="8" />
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 12)" supports="TGMHB Steel Companion ASI 5" level="12" />
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 12)" supports="TGMHB Steel Companion ASI 6" level="12" />
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 16)" supports="TGMHB Steel Companion ASI 7" level="16" />
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 16)" supports="TGMHB Steel Companion ASI 8" level="16" />
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 19)" supports="TGMHB Steel Companion ASI 9" level="19" />
+			<select type="Archetype Feature" name="Ability Score Increase (Steel Bond, 19)" supports="TGMHB Steel Companion ASI 10" level="19" />
+		</rules>
+	</element>
+	
 	<element name="Iron Protector" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_IRON_PROTECTOR">
 		<description>
 			<p>When you reach 10th level, your companion becomes resistant to nonmagical bludgeoning, piercing and slashing damage from ranged weapon attacks. It extends this feature to you while you remain within 10 feet of it.</p>
@@ -115,12 +189,503 @@
 		<description>
 			<p>At 14th level, your companion gains the Shield Guardian’s <i>Shield</i> and <i>Spell Storing</i> features. You can use both features only once per long rest (see page 271 of the Monster Manual for more details).</p>
 			<p class="indent">Your companion always treats you as its master, though you require no amulet in order for you or it to perform either ability. If your companion is knocked unconcious, it immediately loses its stored spell.</p>
-			<p class="indent"><b><i>Shield (1 reaction).</i></b> When a creature makes an attack against you, the Steel Companion grants a +2 bonus to your AC if the companion is within 5 feet of you.</p>
+			<p class="indent"><b><i>Shield (1 Reaction).</i></b> When a creature makes an attack against you, the Steel Companion grants a +2 bonus to your AC if the companion is within 5 feet of you.</p>
 			<p class="indent"><b><i>Spell Storing (Trait).</i></b> You can cause your Steel Companion to store one spell of 4th level or lower. To do so, you must cast the spell on the companion. The spell has no effect but is stored within the companion. When commanded to do so by you or when a situation arises that was predefined by you, the companion casts the stored spell with any parameters set by you, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost.</p>
 		</description>
 		<sheet>
 			<description>Your companion gains the Shield Guardian’s <i>Shield</i> and <i>Spell Storing</i> features (treating you as the wearer of the amulet).</description>
 		</sheet>
+	</element>
+	
+	
+	
+	<!-- TGMHB Steel Companion ASI Nr 3 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_3">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 3</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_3">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 3</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_3">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 3</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_3">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 3</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_3">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 3</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_3">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 3</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- TGMHB Steel Companion ASI Nr 4 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_4">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 4</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_4">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 4</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_4">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 4</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_4">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 4</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_4">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 4</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_4">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 4</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- TGMHB Steel Companion ASI Nr 5 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_5">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 5</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_5">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 5</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_5">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 5</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_5">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 5</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_5">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 5</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_5">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 5</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- TGMHB Steel Companion ASI Nr 6 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_6">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 6</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_6">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 6</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_6">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 6</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_6">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 6</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_6">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 6</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_6">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 6</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- TGMHB Steel Companion ASI Nr 7 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_7">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 7</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_7">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 7</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_7">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 7</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_7">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 7</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_7">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 7</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_7">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 7</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- TGMHB Steel Companion ASI Nr 8 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_8">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 8</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_8">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 8</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_8">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 8</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_8">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 8</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_8">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 8</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_8">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 8</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- TGMHB Steel Companion ASI Nr 9 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_9">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 9</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_9">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 9</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_9">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 9</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_9">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 9</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_9">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 9</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_9">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 9</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- TGMHB Steel Companion ASI Nr 10 -->
+	<element name="Ability Score Increase (Strength)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_STRENGTH_10">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 10</supports>
+		<description>
+			<p>Your Steel Companion’s Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_DEXTERITY_10">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 10</supports>
+		<description>
+			<p>Your Steel Companion’s Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CONSTITUTION_10">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 10</supports>
+		<description>
+			<p>Your Steel Companion’s Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_INTELLIGENCE_10">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 10</supports>
+		<description>
+			<p>Your Steel Companion’s Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_CHARISMA_10">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 10</supports>
+		<description>
+			<p>Your Steel Companion’s Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_DRUID_STEEL_STEELCOMPANION_ASI_WISDOM_10">
+		<compendium display="false" />
+		<supports>TGMHB Steel Companion ASI 10</supports>
+		<description>
+			<p>Your Steel Companion’s Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="companion:wisdom" value="1"/>
+		</rules>
 	</element>
 	
 </elements>
