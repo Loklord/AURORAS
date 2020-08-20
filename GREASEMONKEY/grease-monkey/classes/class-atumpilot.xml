@@ -3,7 +3,7 @@
 	<info>
 		<name>Prestige Class: ATUM Pilot</name>
         <description>ATUM Pilot Prestige Class.</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-atumpilot.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/class-atumpilot.xml" />
 		</update>
 	</info>
@@ -112,10 +112,10 @@
             <p class="indent"><b><i>Improvised Autoloader Tweak.</i></b> One ballistic hardpoint the ATUM has an additional 2 to its reload (x) value. This bonus lasts until the end of the next encounter that hardpoint is used in. For example, a hardpoint with Reload (2) would become Reload (4) until the end of the next encounter that hardpoint is used in.</p>
         </description>
         <sheet>
-            <description>Whenever you roll hit dice for your ATUM, it regains additional {{level:atum pilot}}d8 hit points. Once per long rest, when you spend a short rest to repair/upgrade/modify an ATUM, you can grant it one temporary bonus: 
-			(Quick Fix) The ATUM gains 2d4 x {{proficiency}} temporary hit points, which last for 2d4 hours. 
-			(Oiled Joints) The ATUM gains an additional 10ft of movement speed for 2d4 hours. 
-			(Improvised Autoloader Tweak) One ballistic hardpoint the ATUM has an additional 2 to its reload (x) value, which lasts until the end of the next encounter that hardpoint is used in.			
+            <description>Whenever you roll hit dice for your ATUM, it regains additional {{level:atum pilot}}d8 hit points. Once per long rest, when you spend a short rest to repair/upgrade/modify an ATUM, you can grant it one temporary bonus: &#13;
+			• Quick Fix: The ATUM gains 2d4 x {{proficiency}} temporary hit points, which last for 2d4 hours. &#13;
+			• Oiled Joints: The ATUM gains an additional 10ft of movement speed for 2d4 hours. &#13;
+			• Improvised Autoloader Tweak: One ballistic hardpoint the ATUM has an additional 2 to its reload (x) value, which lasts until the end of the next encounter that hardpoint is used in.			
 			</description>
         </sheet>
     </element>
@@ -196,8 +196,8 @@
 				<p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
 			</center>
         </description>
-		<sheet usage="{{tgmhb-atumpilot-superiority-dice:amount}}/short rest" alt="">
-			<description>You have {{tgmhb-atumpilot-superiority-dice:amount}} superiority dice which are d{{tgmhb-atumpilot-superiority-dice:size}}s. DC {{tgmhb-atumpilot-superiority-dice:dc}}</description>
+		<sheet usage="{{tgmhb-atumpilot-superiority-dice:amount}}/Short Rest" alt="">
+			<description>{{tgmhb-atumpilot-superiority-dice:amount}}d{{tgmhb-atumpilot-superiority-dice:size}}s superiority dice. DC {{tgmhb-atumpilot-superiority-dice:dc}}.</description>
 		</sheet>
 		<rules>
 			<stat name="tgmhb-atumpilot-superiority-dice:amount" value="3" />
@@ -385,7 +385,7 @@
 		<description>
 			<p>Once per long rest, you can increase the ammo box value of a ballistic hardpoint you have equipped by 1. The hardpoint retains this bonus for 8 hours, or until it’s operated by any creature other than you.</p>
 		</description>
-		<sheet usage="1/long rest">
+		<sheet usage="1/Long Rest">
 			<description>You can increase the ammo box value of a ballistic hardpoint you have equipped by 1. The hardpoint retains this bonus for 8 hours, or until it’s operated by any creature other than you.</description>
 		</sheet>
 	</element>
@@ -394,7 +394,7 @@
 		<description>
 			<p>When you make an attack roll with an energy hardpoint, you can choose to roll an additional d20 and use either result. You can choose to roll the additional die before or after you make the attack roll, but before the outcome of the roll is determined. You regain the use this feature after completing a short rest.</p>
 		</description>
-		<sheet usage="1/short rest">
+		<sheet usage="1/Short Rest">
 			<description>When you make an attack roll with an energy hardpoint, you can choose to roll an additional d20 and use either result. You can choose to roll the additional die before or after you make the attack roll, but before the outcome of the roll is determined.</description>
 		</sheet>
 	</element>
@@ -575,7 +575,7 @@
             <p class="indent">When you successfully hit a target with an ATUM hardpoint, you can force it to make a Strength saving throw.</p>
             <p class="indent">On a success, the target staggers under the force of the blow and is knocked prone. On a failed save, it is also stunned until the end of your next turn. If you target an ATUM with this feature and it fails the save, the 1d3 random creatures inside the ATUM are stunned for the duration instead. You can use this feature 3 times per long rest.</p>
         </description>
-		<sheet usage="3/long rest">
+		<sheet usage="3/Long Rest">
             <description>When you hit a target with an ATUM hardpoint, you can force it to make a Strength saving throw. On a success, the target is knocked prone. On a failed save, it is also stunned until the end of your next turn. If you target an ATUM with this feature and it fails the save, 1d3 random creatures inside it are stunned instead.</description>
         </sheet>
     </element>
@@ -588,10 +588,10 @@
             <p class="indent"><b><i>Protector.</i></b> You eminate a defensive aura that radiates out from your ATUM in a 15-foot sphere. Friendly creatures and ATUMs in this radius gain a +2 bonus to their AC. This AC bonus is lost as soon as the ally leaves your aura.</p>
         </description>
         <sheet>
-            <description>During a long rest, you can outfit your ATUM with one fearsome or inspirational display grating the following benefits: 
-			(Marauder) An enemy target that starts its turn within 20-feet of you must succeed on a wisdom saving throw versus your ATUM save DC, unless it is immune to being charmed. On a failed save, until the end of your next turn, attacks that target make against you have disadvantage, and any damage it deals to your ATUM is reduced by 3. In addition, you score a critical hit against that target on the roll of a 19 or 20. 
-			(Commander) A friendly creature within 30 feet of your ATUM cannot be frightened. In addition, if you attack a target, and a friendly creature or ATUM attacks the same target as you before the start of your next turn, it can roll a d4 and add the number rolled to the attack and damage roll, provided it is within 30 feet of you. 
-			(Protector) Friendly creatures and ATUMs in a 15-foot radius gain a +2 bonus to their AC. 
+            <description>During a long rest, you can outfit your ATUM with one fearsome or inspirational display grating the following benefits: &#13;
+			• Marauder: An enemy target that starts its turn within 20-feet of you must succeed on a wisdom saving throw versus your ATUM save DC, unless it is immune to being charmed. On a failed save, until the end of your next turn, attacks that target make against you have disadvantage, and any damage it deals to your ATUM is reduced by 3. In addition, you score a critical hit against that target on the roll of a 19 or 20. &#13;
+			• Commander: A friendly creature within 30 feet of your ATUM cannot be frightened. In addition, if you attack a target, and a friendly creature or ATUM attacks the same target as you before the start of your next turn, it can roll a d4 and add the number rolled to the attack and damage roll, provided it is within 30 feet of you. &#13;
+			• Protector: Friendly creatures and ATUMs in a 15-foot radius gain a +2 bonus to their AC. 
 			</description>
         </sheet>
     </element>
