@@ -7,6 +7,8 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 
 # Content files
 
+### Third Party
+
   - **[grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey.index)** contains the following content from [The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) 
     - Class archetypes
     - ATUM Pilot prestige class
@@ -23,4 +25,7 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
     - [Race: The Other](https://www.dmsguild.com/product/252083/Race-The-Other-5e)
     - [Sorcerous Origin: Elemental Vessel](https://www.dmsguild.com/product/182673/Sorcerous-Origin-Elemental-Vessel-5e)
     - [Warlock Patron: The Symbiont](https://www.dmsguild.com/product/182342/Warlock-Patron-The-Symbiont-5e)
+	
+### Homebrew
+	
   - **[feats-ritual-caster-reworked.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/RITUALCASTER/feats-ritual-caster-reworked.index)** contains a rework of the _Ritual Caster_ feat to allow for better ritual spell browsing in Aurora.
