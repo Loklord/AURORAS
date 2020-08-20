@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Path of the Juggernaut</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/barbarian-juggernaut.xml" />
         </update>
 	</info>
@@ -53,11 +53,11 @@
 			<p class="indent"><b><i>Demolish (3 pts).</i></b> You charge forward up to 40 feet in a straight line as a bonus action on your turn. You demolish a hole equal to your size in any nonmagical objects that aren’t being worn or carried, including furniture, walls or other terrain or structures less than 1-foot thick within that line. If you come into contact with an object, piece or terrain or structure that is thicker than 1 foot, you must succeed on a Strength (Atheletics) check or stop moving. The DC for this check equals 15 + the target’s thickness in feet. If you would come into contact with a large or smaller creature, that creature must succeed on a Dexterity saving throw or be knocked prone and trampled (see <i>Trample</i>). If the creature is huge or greater, they instead take 1d6 bludgeoning damage per 5 feet you moved, and you stop moving.</p>
 		</description>
 		<sheet>
-			<description>While raging, you generate 1 momentum point every 20 feet you move (max. 3 points per round). You can store up to {{proficiency}} momentum points, which are lost if your rage ends, or if you haven’t moved at least 20 feet since your last turn. You can spend momentum points to fuel special maneuvers: 
-			Crushing Strike (1 pt) 1d6+{{level:barbarian:half}} bludgeoning damage, 
-			Trample (1 pt) {{tgmhb-relentless-momentum:die}}d6 bludgeoning damage on a failed save, or half as much on a successful one, 
-			Slam (1 pt) 1d6+{{level:barbarian:half}} bludgeoning damage on a failed save, 
-			Demolish (3 pts). 
+			<description>While raging, you generate 1 momentum point every 20 feet you move (max. 3 points per round). You can store up to {{proficiency}} momentum points, which are lost if your rage ends, or if you haven’t moved at least 20 feet since your last turn. You can spend momentum points to fuel special maneuvers: &#13;
+			• Crushing Strike (1 pt): 1d6+{{level:barbarian:half}} bludgeoning damage, &#13;
+			• Trample (1 pt): {{tgmhb-relentless-momentum:die}}d6 bludgeoning damage on a failed save, or half as much on a successful one, &#13;
+			• Slam (1 pt): 1d6+{{level:barbarian:half}} bludgeoning damage on a failed save, &#13;
+			• Demolish (3 pts). 
 			</description>
 		</sheet>
 		<rules>
