@@ -2,7 +2,7 @@
 <elements>
     <info>
 		<name>Mechanus Domain</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="cleric-mechanus.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/cleric-mechanus.xml" />
         </update>
 	</info>
@@ -68,7 +68,7 @@
 			</div>
 		</description>
 		<sheet>
-			<description>You can cast the <i>armour of mechanus</i> spell on yourself at will, without expending a spell slot or material components.</description>
+			<description>You can cast the Armour of Mechanus spell on yourself at will, without expending a spell slot or material components.</description>
 		</sheet>
 	</element>
 	<element name="Channel Divinity: Blessings of the Machine" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_CLERIC_MECHANUS_CD_BLESSINGS_OF_THE_MACHINE">
@@ -91,11 +91,11 @@
 			<p>By 6th level, your soul has been imbued with the mechanical venerability of Mechanus itself.</p>
 			<p class="indent">You can use this venerability whenever you cast the <i>armour of mechanus</i> spell to enhance it further, granting the target a base AC of 14 + your Wisdom modifier instead of the spells normal AC effect. You can use this feature a number of times equal to half your proficiency bonus, rounded down. You must then finish a long rest before you can do so again.</p>
 		</description>
-		<sheet usage="{{proficiency:half}}/long rest">
-			<description>When you cast the armour of mechanus spell it grants the target a base AC of 14+{{wisdom:modifier}} instead of the spells normal AC effect.</description>
+		<sheet usage="{{proficiency:half}}/Long Rest">
+			<description>When you cast the Armour of Mechanus spell it grants the target a base AC of 14+{{wisdom:modifier}} instead of the spells normal AC effect.</description>
 		</sheet>
 	</element>
-		<element name="Divine Strike" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_CLERIC_MECHANUS_DIVINE_STRIKE">
+	<element name="Divine Strike" type="Archetype Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_ARCHETYPE_FEATURE_CLERIC_MECHANUS_DIVINE_STRIKE">
 		<description>
 			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine mechanical wrath. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 lightning damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
 		</description>
@@ -113,7 +113,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>When cast on yourself, armour of mechanus grants you resistance to bludgeoning, piercing and slashing damage from non-magical attacks. You are always considered under the effect of the sanctuary spell whenever a construct targets you with a weapon attack.</description>
+			<description>When cast on yourself, armour of mechanus grants you resistance to bludgeoning, piercing and slashing damage from non-magical attacks. You are always considered under the effect of the Sanctuary spell whenever a construct targets you with a weapon attack.</description>
 		</sheet>
 	</element>
 	
