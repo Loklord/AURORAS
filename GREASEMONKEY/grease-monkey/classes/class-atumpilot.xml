@@ -197,7 +197,7 @@
 			</center>
         </description>
 		<sheet usage="{{tgmhb-atumpilot-superiority-dice:amount}}/Short Rest" alt="">
-			<description>{{tgmhb-atumpilot-superiority-dice:amount}}d{{tgmhb-atumpilot-superiority-dice:size}}s superiority dice. DC {{tgmhb-atumpilot-superiority-dice:dc}}.</description>
+			<description>{{tgmhb-atumpilot-superiority-dice:amount}}d{{tgmhb-atumpilot-superiority-dice:size}} superiority dice. DC {{tgmhb-atumpilot-superiority-dice:dc}}.</description>
 		</sheet>
 		<rules>
 			<stat name="tgmhb-atumpilot-superiority-dice:amount" value="3" />
