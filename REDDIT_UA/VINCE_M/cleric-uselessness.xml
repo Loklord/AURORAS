@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Uselessness Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-uselessness.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/XXXXXXXX.xml" />
+        </update>
+	</info>
+	
+	<element name="r/UA: Uselessness Domain" type="Source" source="Core" id="ID_REDDITUA_USELESSNESS_SOURCE_CLERIC_USELESSNESS">
+		<description>
+			<p>For Clerics who party hard and get into debt.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">REDDITUA_USELESSNESS</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/idzfmh/the_uselessness_domain_for_clerics_who_party_hard/</set>
+			<set name="image">https://i.redd.it/6juw3d92pdi51.png</set>
+			<set name="author" url="https://www.reddit.com/user/Vince-M/">u/Vince-M</set>
+            <set name="homebrew">true</set>
+			<set name="information">This source uses spells found in Xanathar’s Guide to Everything.</set>
+		</setters>
+	</element>
+	
+	<element name="Uselessness Domain" type="Archetype" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_CLERIC_USELESSNESS">
+		<supports>Divine Domain</supports>
+		<description>
+			<p><i>I'm a goddess! I'm a goddess, and he did that!</i></p>
+			<h5 class="caption">USELESSNESS DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Create or Destroy Water, Healing Word</em></td></tr>
+				<tr><td>3rd</td><td><em>Darkvision, Enhance Ability</em></td></tr>
+				<tr><td>5th</td><td><em>Revivify, Tidal Wave</em></td></tr>
+				<tr><td>7th</td><td><em>Control Water, Fabricate</em></td></tr>
+				<tr><td>9th</td><td><em>Dispel Evil and Good, Maelstrom</em></td></tr>
+			</table>
+			<div element="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_PARTY_TRICKS" />
+			<div element="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_PURIFICATION" />
+			<div element="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_CD_GOD_BLOW" />
+			<div element="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_WARDING_CIRCLE" />
+			<div element="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_POTENT_SPELLCASTING" />
+			<div element="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_SACRED_CREATE_WATER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKVISION" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_PARTY_TRICKS" level="1" />
+			<grant type="Archetype Feature" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_PURIFICATION" level="1" />
+			<grant type="Archetype Feature" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_CD_GOD_BLOW" level="2" />
+			<grant type="Archetype Feature" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_WARDING_CIRCLE" level="6" />
+			<grant type="Archetype Feature" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_SACRED_CREATE_WATER" level="17" />
+		</rules>
+	</element>
+	<element name="Party Tricks" type="Archetype Feature" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_PARTY_TRICKS">
+		<description>
+			<p>When you choose this domain at 1st level, you learn the <i>Shape Water</i> and <i>Prestidigitation</i> cantrips.</p>
+			<p class="indent">These count as Cleric cantrips for you, and don't count against the number of cantrips you know.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" spellcasting="Cleric" />
+        </rules>
+	</element>
+	<element name="Purification" type="Archetype Feature" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_PURIFICATION">
+		<description>
+			<p>Also at 1st level, you can cast <i>Purify Food and Drink</i> at will, but only to purify liquids into water.</p>
+			<div class="reference">
+				<div element="ID_REDDITUA_USELESSNESS_SPELL_PURIFY_DRINK" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast the Purify Drink spell at will.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_REDDITUA_USELESSNESS_SPELL_PURIFY_DRINK" spellcasting="Cleric" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: God Blow" type="Archetype Feature" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_CD_GOD_BLOW">
+		<description>
+			<p>Starting at 2nd level, you can channel your holy power into a powerful punch.</p>
+			<p class="indent">As an action, make a melee spell attack against a creature you can reach. On a hit, the target takes radiant damage equal to 3d10 + your Cleric level, dealing an extra 3d10 if the target is an undead or fiend.</p>
+			<p class="indent">This does not deal any damage to creatures with a swim speed.</p>
+		</description>
+		<sheet alt="God Blow" action="Action" usage="Channel Divinity">
+			<description>Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10+{{level:cleric}} radiant damage, and additional 3d10 if the target is an undead or fiend. Creatures with a swim speed take no damage.</description>
+		</sheet>
+	</element>
+	<element name="Warding Circle" type="Archetype Feature" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_WARDING_CIRCLE">
+		<description>
+			<p>Starting at 6th level, you can cast <i>Magic Circle</i> without expending a spell slot, and without expending the material components.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MAGIC_CIRCLE" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast Magic Circle, without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_CIRCLE" />
+		</rules>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_POTENT_SPELLCASTING">
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any Cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Sacred Create Water" type="Archetype Feature" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_ARCHETYPE_FEATURE_CLERIC_USELESSNESS_SACRED_CREATE_WATER">
+		<description>
+			<p>Starting at 17th level, you can cast <i>Tsunami</i> as an action and without expending a spell slot.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_TSUNAMI" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast Tsunami, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TSUNAMI" />
+		</rules>
+	</element>
+	
+	
+	<element name="Purify Drink" type="Spell" source="r/UA: Uselessness Domain" id="ID_REDDITUA_USELESSNESS_SPELL_PURIFY_DRINK">
+		<supports></supports>
+		<description>
+			<p>All nonmagical drink within a 5-foot-radius sphere centered on a point of your choice within range is purified, rendered free of poison and disease, and turns to water.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+  
+</elements>
