@@ -11,7 +11,8 @@
 	<element name="ATUMs (TGMHB)" type="Source" source="Core" id="ID_ATUM_TGMHB_SOURCE_ATUM_GREASE_MONKEY">
 		<description>
 			<p>Create character sheets for your ATUMs.</p>
-			<p>It is recommended to disable this Source if you do not intend to create an ATUM character sheet.</p>
+			<p><i>This source can only partially aid you in creating ATUMs, as far as Aurora supports it. You should be familiar with how to build an ATUM or double check your resulting character sheet with The Greasemonkey's Handbook!</i></p>
+			<p>It is recommended to disable this source if you do not intend to create an ATUM character sheet.</p>
 		</description>
 		<setters>
 			<set name="abbreviation">ATGMHB</set>
