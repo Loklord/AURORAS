@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="rUA-vince-m.index" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/VINCE_M/rUA-vince-m.index" />
+		</update>
+	</info>
+
+	<files>
+		<file name="cleric-uselessness.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/VINCE_M/cleric-uselessness.xml" />
+	</files>
+</index>
