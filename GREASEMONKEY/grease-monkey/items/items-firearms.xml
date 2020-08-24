@@ -1505,24 +1505,28 @@
 	
 	<!-- temporary custom property elements -->
 	<element name="Ammo Box (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2">
+		<compendium display="false" />
 		<description>
 			<p>This hardpoint needs to be reloaded after 2 encounters.</p>
 			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 		</description>
 	</element>
 	<element name="Ammo Box (3)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3">
+		<compendium display="false" />
 		<description>
 			<p>This hardpoint needs to be reloaded after 3 encounters.</p>
 			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 		</description>
 	</element>
 	<element name="Ammo Box (4)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_4">
+		<compendium display="false" />
 		<description>
 			<p>This hardpoint needs to be reloaded after 4 encounters.</p>
 			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 		</description>
 	</element>
 	<element name="Ammo Box (5)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_5">
+		<compendium display="false" />
 		<description>
 			<p>This hardpoint needs to be reloaded after 5 encounters.</p>
 			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
