@@ -9,7 +9,7 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 
 ## Third Party
 
-  - **[grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey.index)** contains the following content from [The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) 
+  - **[grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey.index)** contains the following content from [The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) (DMs Guild)
     - Class archetypes
     - ATUM Pilot prestige class
     - Spells
