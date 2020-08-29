@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/vehicle-atum.xml" />
 		</update>
 	</info>
@@ -398,7 +398,7 @@
 	
 	<element name="Stomp" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_STOMP_ATTACK">
 		<description>
-			<p>An ATUM with this rule can perform a special melee weapon attack, called a stomp. As a bonus action, the pilot can elect to kick or crush one target it can see within 5-feet of it that is of it’s size category or smaller with the ATUM’s foot.</p>
+			<p>An ATUM with this rule can perform a special melee weapon attack, called a stomp. As a bonus action, the pilot can elect to kick or crush one target it can see within 5-feet of it that is if it’s size category or smaller with the ATUM’s foot.</p>
 			<p>Make a melee weapon attack against the target, using the ATUM chassis Strength modifier for the attack and damage rolls. On a hit, the target takes 1d10 bludgeoning damage. This damage increases to 2d10 if the ATUM has a medium chassis, or 3d10 if the ATUM has a heavy chassis.</p>
 			<p><b><i>Trample. </i></b>If an ATUM performs a stomp attack on a prone creature and successfully hits it, that creature takes an additional 2d10 bludgeoning damage.</p>
 		</description>
