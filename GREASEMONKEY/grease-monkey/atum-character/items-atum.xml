@@ -1603,6 +1603,7 @@
 		<rules>
 			<!-- <stat name="ac:calculation" value="1" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
 			<stat name="ac:shield" value="1" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_ARM" />
 		</rules>
 	</element>
 	<element name="M.W., Chain Gun" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_CHAINGUN">
@@ -1797,6 +1798,7 @@
 		<rules>
 			<!-- <stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
 			<stat name="ac:shield" value="2" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_KITE" />
 		</rules>
 	</element>
 	<element name="M.W., Laser Rifle" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_LASERRIFLE">
@@ -2392,33 +2394,105 @@
 	</element>
 	
 	<element name="Reflector Shield" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_REFLECTORSHIELD">
+		<compendium display="false" />
 		<description>
-			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield grants an ATUM special features, shown below. In addition to these features, a shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
-			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. You cannot benefit from more than one shield at a time.</p>
 			<p class="indent"><b><i>Reflector Features. </i></b>When you would be hit by a ranged attack, you can spend your reaction to deflect that attack towards a target you can see within 10-feet of you. That target must succeed on a Dexterity saving throw or be hit by the deflected attack.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>When you would be hit by a ranged attack, you can spend your reaction to deflect that attack towards a target you can see within 10ft of you. That target must succeed on a DC {{atum-character:dc}} Dexterity saving throw or be hit by the deflected attack.</description>
 		</sheet>
+		<rules>
+			<select type="Class Feature" name="Titan Shield" supports="ATUM Titan Shield Slam Reflector" default="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_REFLECTOR" default-behaviour="force" />
+		</rules>
 	</element>
 	<element name="Tower Shield" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_TOWERSHIELD">
+		<compendium display="false" />
 		<description>
-			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield grants an ATUM special features, shown below. In addition to these features, a shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
-			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. You cannot benefit from more than one shield at a time.</p>
 			<p class="indent"><b><i>Tower Features. </i></b>As a bonus action, you can dig the shield into the ground. While dug-in, your movement becomes 0, and you count as being behind three-quarters cover. You can spend a bonus action again to raise the shield and return to normal.</p>
 		</description>
 		<sheet action="Bonus Action">
 			<description>As a bonus action, you can dig the shield into the ground. While dug-in, your movement becomes 0, and you count as being behind three-quarters cover. You can spend a bonus action again to raise the shield and return to normal.</description>
 		</sheet>
+		<rules>
+			<select type="Class Feature" name="Titan Shield" supports="ATUM Titan Shield Slam Tower" default="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_TOWER" default-behaviour="force" />
+		</rules>
 	</element>
 	<element name="Energy Shield" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_ENERGYSHIELD">
+		<compendium display="false" />
 		<description>
-			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield grants an ATUM special features, shown below. In addition to these features, a shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
-			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. You cannot benefit from more than one shield at a time.</p>
 			<p class="indent"><b><i>Energy Features. </i></b>This shield can be doffed or donned as a bonus action. When you take damage other than psychic, bludgeoning, piercing or slashing damage, you can use your reaction to have the energy shield absorb half the damage dealt to you. The shield then loses its AC bonus, damage, and features until you finish a short rest.</p>
 		</description>
 		<sheet action="Reaction" usage="1/Short Rest" >
 			<description>When you take damage other than psychic, bludgeoning, piercing or slashing damage, you can use your reaction to have the energy shield absorb half the damage dealt to you. The shield then loses its AC bonus, damage, and features until you finish a short rest. This shield can be doffed or donned as a bonus action.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Titan Shield" supports="ATUM Titan Shield Slam Energy" default="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_ENERGY" default-behaviour="force" />
+		</rules>
+	</element>
+	
+	<element name="Titan Shield (Reflector)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_REFLECTOR">
+		<compendium display="false" />
+		<supports>ATUM Titan Shield Slam Reflector</supports>
+		<description>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+		</description>
+		<sheet alt="Slam" action="Bonus Action">
+			<description>Make a melee weapon attack (+ {{atum-character:titan-shield-reflector-slam-attack}} to hit) against a creature within range. On a hit, it takes 1d10 radiant damage and must succeed on a DC {{atum-character:dc}} Strength saving throw or be shoved 10ft away from the ATUM.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:titan-shield-reflector-slam-attack" value="strength:modifier" bonus="base" />
+			<stat name="atum-character:titan-shield-reflector-slam-attack" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Titan Shield (Tower)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_TOWER">
+		<compendium display="false" />
+		<supports>ATUM Titan Shield Slam Tower</supports>
+		<description>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+		</description>
+		<sheet alt="Slam" action="Bonus Action">
+			<description>Make a melee weapon attack (+ {{atum-character:titan-shield-tower-slam-attack}} to hit) against a creature within range. On a hit, it takes 2d6 bludgeoning damage and must succeed on a DC {{atum-character:dc}} Strength saving throw or be shoved 10ft away from the ATUM.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:titan-shield-tower-slam-attack" value="strength:modifier" bonus="base" />
+			<stat name="atum-character:titan-shield-tower-slam-attack" value="proficiency" />
+		</rules>
+	</element>
+	
+	<element name="Titan Shield (Arm)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_ARM">
+		<compendium display="false" />
+		<description>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+		</description>
+		<sheet alt="Arm Shield, Slam" action="Bonus Action">
+			<description>Make a melee weapon attack (Manipulator attack modifier) against a creature within range. On a hit, it takes 2d4 bludgeoning damage and must succeed on a DC {{atum-character:dc}} Strength saving throw or be shoved 10ft away from the ATUM.</description>
+		</sheet>
+	</element>
+	<element name="Titan Shield (Energy)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_ENERGY">
+		<compendium display="false" />
+		<supports>ATUM Titan Shield Slam Energy</supports>
+		<description>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+		</description>
+		<sheet alt="Slam" action="Bonus Action">
+			<description>Make a melee weapon attack (Manipulator attack modifier) against a creature within range. On a hit, it takes 2d4 force damage and must succeed on a DC {{atum-character:dc}} Strength saving throw or be shoved 10ft away from the ATUM.</description>
+		</sheet>
+	</element>
+	<element name="Titan Shield (Kite)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_TITANSHIELD_KITE">
+		<compendium display="false" />
+		<description>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+		</description>
+		<sheet alt="Kite Shield, Slam" action="Bonus Action">
+			<description>Make a melee weapon attack (Manipulator attack modifier) against a creature within range. On a hit, it takes 1d8 bludgeoning damage and must succeed on a DC {{atum-character:dc}} Strength saving throw or be shoved 10ft away from the ATUM.</description>
 		</sheet>
 	</element>
 	
