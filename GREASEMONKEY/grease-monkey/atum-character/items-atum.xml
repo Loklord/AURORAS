@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="items-atum.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/items-atum.xml" />
 		</update>
 	</info>
@@ -3709,7 +3709,8 @@
 		</sheet>
 		<rules>
 			<stat name="atum-character:module-slots" value="2" />
-			<stat name="ac:misc" value="-2" />
+			<!-- <stat name="ac:misc" value="-2" /> -->
+			<stat name="ac:calculation" value="-2" alt="Module Splitter" />
 		</rules>
 	</element>
 	<element name="Motion Sensor" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_MOTIONSENSOR">
