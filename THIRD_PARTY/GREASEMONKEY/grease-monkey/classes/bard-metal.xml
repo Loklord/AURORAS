@@ -2,8 +2,8 @@
 <elements>
     <info>
 		<name>College of Metal</name>
-        <update version="0.0.4">
-            <file name="bard-metal.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/bard-metal.xml" />
+        <update version="0.0.5">
+            <file name="bard-metal.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/classes/bard-metal.xml" />
         </update>
 	</info>
 	

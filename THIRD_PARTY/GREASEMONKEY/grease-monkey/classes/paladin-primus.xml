@@ -2,8 +2,8 @@
 <elements>
     <info>
 		<name>Oath of the Primus</name>
-        <update version="0.0.4">
-            <file name="paladin-primus.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/paladin-primus.xml" />
+        <update version="0.0.5">
+            <file name="paladin-primus.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/classes/paladin-primus.xml" />
         </update>
 	</info>
 

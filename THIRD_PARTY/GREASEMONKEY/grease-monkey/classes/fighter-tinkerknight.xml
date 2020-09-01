@@ -2,8 +2,8 @@
 <elements>
     <info>
 		<name>Tinker Knight</name>
-        <update version="0.0.3">
-            <file name="fighter-tinkerknight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/fighter-tinkerknight.xml" />
+        <update version="0.0.4">
+            <file name="fighter-tinkerknight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/classes/fighter-tinkerknight.xml" />
         </update>
 	</info>
 	

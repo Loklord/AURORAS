@@ -3,8 +3,8 @@
 	<info>
 		<name>Greasemonkey</name>
 		<description>Greasemonkey Background</description>
-        <update version="0.0.3">
-			<file name="background-greasemonkey.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/backgrounds/background-greasemonkey.xml" />
+        <update version="0.0.4">
+			<file name="background-greasemonkey.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/backgrounds/background-greasemonkey.xml" />
 		</update>
 	</info>
 

@@ -2,8 +2,8 @@
 <elements>
     <info>
 		<name>Hijacker</name>
-        <update version="0.0.3">
-            <file name="rogue-hijacker.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/rogue-hijacker.xml" />
+        <update version="0.0.4">
+            <file name="rogue-hijacker.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/classes/rogue-hijacker.xml" />
         </update>
 	</info>
 

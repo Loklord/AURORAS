@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.9">
-			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/items/items-firearms.xml" />
+		<update version="0.1.0">
+			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/items/items-firearms.xml" />
 		</update>
 	</info>
 	

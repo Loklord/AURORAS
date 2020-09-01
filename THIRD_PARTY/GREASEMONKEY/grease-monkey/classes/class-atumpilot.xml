@@ -3,8 +3,8 @@
 	<info>
 		<name>Prestige Class: ATUM Pilot</name>
         <description>ATUM Pilot Prestige Class.</description>
-		<update version="0.0.4">
-			<file name="class-atumpilot.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/classes/class-atumpilot.xml" />
+		<update version="0.0.5">
+			<file name="class-atumpilot.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/classes/class-atumpilot.xml" />
 		</update>
 	</info>
 	

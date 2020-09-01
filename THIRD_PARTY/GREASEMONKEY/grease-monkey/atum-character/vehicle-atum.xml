@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
-			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/vehicle-atum.xml" />
+		<update version="0.1.1">
+			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey/atum-character/vehicle-atum.xml" />
 		</update>
 	</info>
 	
