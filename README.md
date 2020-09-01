@@ -33,5 +33,5 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
   - **[feats-ritual-caster-reworked.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/RITUALCASTER/feats-ritual-caster-reworked.index)** contains a rework of the _Ritual Caster_ feat to allow for better ritual spell browsing in Aurora.
 
 ##### [r/UnearthedArcana](https://www.reddit.com/r/UnearthedArcana/)
-  - **[rUA-vince-m.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/VINCE_M/rUA-vince-m.index)** contains [u/Vince-M](https://www.reddit.com/user/Vince-M/)'s content from r/UnearthedArcana
+  - **[rUA-vince-m.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/VINCE_M/rUA-vince-m.index)** contains some of [u/Vince-M](https://www.reddit.com/user/Vince-M/)'s content from r/UnearthedArcana
     - [Divine Domain: Uselessness](https://www.reddit.com/r/UnearthedArcana/comments/idzfmh/the_uselessness_domain_for_clerics_who_party_hard/): For Clerics who party hard and get into debt
