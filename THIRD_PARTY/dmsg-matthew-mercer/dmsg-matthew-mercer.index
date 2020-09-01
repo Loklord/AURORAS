@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="dmsg-matthew-mercer.index" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/dmsg-matthew-mercer/dmsg-matthew-mercer.index" />
+		</update>
+	</info>
+
+	<files>
+		<file name="class-lingering-soul.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/dmsg-matthew-mercer/lingering-soul/class-lingering-soul.xml" />
+	</files>
+</index>
