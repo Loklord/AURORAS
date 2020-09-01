@@ -18,14 +18,14 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 	- Weapons
 	- Hardpoints
 	- _Experimental: ATUM Character Sheet (separate source: disable if not building an ATUM vehicle)_
-  - **[dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index)** contains [Michael Richter](https://www.dmsguild.com/browse.php?author=Michael%20Richter)'s content from the DMs Guild
+  - **[dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index)** contains some of [Michael Richter](https://www.dmsguild.com/browse.php?author=Michael%20Richter)'s content from the DMs Guild
     - [Race: Catfolk](https://www.dmsguild.com/product/182902/Race-Catfolk-5e)
     - [Race: Drider](https://www.dmsguild.com/product/199828/Race-Drider-5e)
     - [Race: Serpentfolk](https://www.dmsguild.com/product/183775/Race-Serpentfolk-Naga-Lamia)
     - [Race: The Other](https://www.dmsguild.com/product/252083/Race-The-Other-5e)
     - [Sorcerous Origin: Elemental Vessel](https://www.dmsguild.com/product/182673/Sorcerous-Origin-Elemental-Vessel-5e)
     - [Warlock Patron: The Symbiont](https://www.dmsguild.com/product/182342/Warlock-Patron-The-Symbiont-5e)
-  - **[dmsg-matthew-mercer.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/dmsg-matthew-mercer/dmsg-matthew-mercer.index)** contains [Matthew Mercer](https://www.dmsguild.com/browse.php?author=Matthew%20Mercer)'s content from the DMs Guild
+  - **[dmsg-matthew-mercer.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/dmsg-matthew-mercer/dmsg-matthew-mercer.index)** contains some of [Matthew Mercer](https://www.dmsguild.com/browse.php?author=Matthew%20Mercer)'s content from the DMs Guild
     - [Class: The Lingering Soul](https://www.dmsguild.com/product/226513/The-Lingering-Soul--Class-PostDeath-Option) (Class/Post-Death Option)
 	
 ## Homebrew
