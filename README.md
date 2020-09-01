@@ -9,7 +9,7 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 
 ## Third Party
 
-  - **[grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/GREASEMONKEY/grease-monkey.index)** contains the following content from [The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) (DMs Guild)
+  - **[grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey.index)** contains the following content from [The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) (DMs Guild)
     - Class archetypes
     - ATUM Pilot prestige class
     - Spells
@@ -18,7 +18,7 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 	- Weapons
 	- Hardpoints
 	- _Experimental: ATUM Character Sheet (separate source: disable if not building an ATUM vehicle)_
-  - **[dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index)** contains some of [Michael Richter](https://www.dmsguild.com/browse.php?author=Michael%20Richter)'s content from the DMs Guild
+  - **[dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/dmsg-michael-richter/dmsg-michael-richter.index)** contains some of [Michael Richter](https://www.dmsguild.com/browse.php?author=Michael%20Richter)'s content from the DMs Guild
     - [Race: Catfolk](https://www.dmsguild.com/product/182902/Race-Catfolk-5e)
     - [Race: Drider](https://www.dmsguild.com/product/199828/Race-Drider-5e)
     - [Race: Serpentfolk](https://www.dmsguild.com/product/183775/Race-Serpentfolk-Naga-Lamia)
