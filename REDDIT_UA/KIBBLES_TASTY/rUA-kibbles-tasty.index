@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="rUA-kibbles-tasty.index" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/rUA-kibbles-tasty.index" />
 		</update>
 	</info>
 
 	<files>
-		<file name="class-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/class-occultist.xml" />
+		<file name="Occultist/class-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/class-occultist.xml" />
+		<file name="Occultist/spells-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/spells-occultist.xml" />
 	</files>
 </index>
