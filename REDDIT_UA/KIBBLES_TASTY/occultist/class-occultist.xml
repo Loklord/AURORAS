@@ -1,0 +1,1820 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Occultist</name>
+		<update version="0.0.1">
+			<file name="class-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/class-occultist.xml" />
+		</update>
+	</info>
+	
+	<!-- Occultist 1.0 by KibblesTasty -->
+	
+	<element name="r/UA: The Occultist Class" type="Source" source="Core" id="ID_REDDITUA_KTTOC_SOURCE_CLASS_OCCULTIST">
+		<description>
+			<p>Oracles, Shamans, Witches and Rites!</p>
+			<p>Delve mysterious powers, call upon the primal spirits, and uncover the old ways of magic!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">REDDITUA_KTTOC</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/ikh0d5/occultist_10_by_kibblestasty_oracles_shamans/</set>
+			<set name="image">https://i.redd.it/iz4r201q7ik51.png</set>
+			<set name="author" url="https://www.reddit.com/user/KibblesTasty/">u/KibblesTasty</set>
+			<set name="homebrew">true</set>
+			<set name="information">This source uses spells found in <i>Sword Coast Adventurer’s Guide</i> and <i>Xanathar’s Guide to Everything</i>.</set>
+		</setters>
+	</element>
+	
+	<element name="Occultist" type="Class" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_OCCULTIST">
+		<description>
+			<p>Wisps of purple smoke and dancing shadows rise from the ritual as the young human woman with strange magical markings tattooed across her hands whispers words in a language long forgotten, calling forth ancient powers.</p>
+			<p class="indent">The woods creak and bend, black wings beating as raven alights on the outstretch hand of an ancient elf, her eyes as black as the raven's. Soft words are spoken, and the elf nods in agreement.</p>
+			<p class="indent">A young orc lets out a bellowing roar and flames burst into a form taller than an ogre causing her enemies to flee. She holds up her spear and the flames pour from the roaring fire spirit to it, swirling about it, causing it to roar alight with searing magical flames.</p>
+			<p class="indent">The mysterious halfling woman gives a knowing smile, her unseeing eyes focused on you. She knows what you've come for, and tosses a handful of incense into the fire; what it is she sees in there? Your fate? Your destiny? As she speaks, it is only in riddle.</p>
+			<p class="indent">Occultists those that follow the old ways, a path of ritual and wisdom long known yet oft forgotten. Rather than force magic to obey, they bind, twist, manipulate, and compromise with it. They follow ancient agreements and techniques to produce results that few fully understand, even those that use them, but they know it will work, for it always has.</p>
+			
+			<h4>ANCIENT TRADITIONS</h4>
+			<p>Occultists are spell casters following legacies that go far back. While they may or may not be directly tutored or influence by another member of their tradition, their path to magic involves unearthing ancient secrets, old ways, and knowledge gleaned from spirits, ghosts, and elementals.</p>
+			<p class="indent">The often personify aspects of their magic in ways that other casters find odd, coaxing and manipulating magic forces by ancient laws and bargains. Occultists tread between the arcane and the divine, not necessarily worshiping any god, but treating gods and spirits alike with cautious respect for their domains, asking for the what they take, and carefully giving thought to their actions.</p>
+			<p class="indent">Each tradition that appears in the Occultist is an ancient legacy of magic, found deep within folklore and story. Every villager could tell you stories of Occultists and their traditions, and they are often seen in this context. Though villagers and the superstitious might fear them and their magic, they may be more likely to turn to them than a Wizard, for at least an Occultist makes sense to them, even if they are scared by their powers.</p>
+			
+			<h4>SPIRITUAL MAGIC</h4>
+			<p>A common thread of the magic wilded by the Occultist is the spiritual connection of it; the demi-divine nature of magic that taps into the weave of magic oft through the intermediaries of the power of gods, spirits, elementals, and more. An Occultist is fundamentally tied into the greater magical world, being neither a source of magic nor an academic researcher of it, but wielding it through intuition, cunning, and tradition.</p>
+			<p class="indent">Frequently an Occultist may call upon their magic through the mediums of spirits quite directly, even having names for the spirits it calls about to bring about certain magical effects; the verbal component of an Occultist spell might be the spirit they call upon to work the effect they wish, an invocation of their ancient bargain, or words in a language that binds or persuades.</p>
+			
+			<h4>CREATING AN OCCULTIST</h4>
+			<p>When creating an Occultist, the most important decision will be what Tradition you follow. Each Tradition of an Occultist is distinct with divergent flavor and calling upon a different aspect of folklore. Do you embody the associations or defy them? What led you to this path? Did you uncover your tradition on your own or were you taught by another?</p>
+			
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>You can make an Occultist quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the hermit background. Third, choose the <i>poison spray</i> and <i>produce flame</i> cantrips, along with the 1st-level spells <i>burning hands, cause fear, cure wounds</i>, and <i>tasha's hideous laughter</i>.</p>
+			
+			<h3>CLASS FEATURES</h3>
+			<p>As an Occultist, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per Occultist level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per occultist level after 1st </li>
+			</ul>
+			
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Daggers, quarterstaffs, light crossbows</li>
+				<li><strong>Tools:</strong> Herbalism Kit</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+				<li><strong>Skills:</strong> Choose two from Animal Handling, Arcana, Deception, History, Investigation, Medicine, Nature, Religion, Sleight of Hand, Stealth, Survival</li>
+			</ul>
+			
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> a quarterstaff or <i>(b)</i> a dagger </li>
+				<li><i>(a)</i> a component pouch or <i>(b)</i> an arcane focus </li>
+				<li><i>(a)</i> a scholar’s pack or <i>(b)</i> an explorer’s pack </li>
+				<li>A herbalism kit.</li>
+			</ul>
+			
+			<h5 class="caption">THE OCCULTIST</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-5">Occult Rites</td><td class="col-5">Cantrips Known</td><td class="col-5">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Spell Casting, Occult Tradition</td><td>—</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Occult Rites</td><td>2</td><td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Occult Tradition Feature</td><td>2</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>3</td><td>4</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Occult Tradition Feature</td><td>3</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>4</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>5</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Traditional Expertise</td><td>5</td><td>5</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>5</td><td>5</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6</td><td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>6</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Occult Tradition Feature</td><td>6</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">—</td><td>7</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>7</td><td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>7</td><td>5</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>8</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>8</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">The Old Ways</td><td>8</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+			<div element="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_SPELLCASTING_OCCULTIST" />
+			<div element="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_OCCULTTRADITION" />
+			<div element="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_OCCULT_RITES" />
+			<!-- <div element="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_ABILITYSCOREIMPROVEMENT_OCCULTIST" /> -->
+			<div element="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE" />
+			<div element="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A priestly champion who wields divine magic in service of a higher power.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_REDDITUA_KTTOC_MULTICLASS_OCCULTIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_REDDITUA_KTTOC_MULTICLASS_OCCULTIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_REDDITUA_KTTOC_MULTICLASS_OCCULTIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_REDDITUA_KTTOC_MULTICLASS_OCCULTIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_REDDITUA_KTTOC_MULTICLASS_OCCULTIST"/>
+			<select type="Proficiency" name="Skill Proficiency (Occultist)" supports="(ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL)" number="2" requirements="!ID_REDDITUA_KTTOC_MULTICLASS_OCCULTIST"/>
+
+			<grant type="Class Feature" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_SPELLCASTING_OCCULTIST" level="1" />
+			<grant type="Class Feature" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_OCCULTTRADITION" level="1" />
+			<grant type="Class Feature" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_OCCULT_RITES" level="2" />
+			<grant type="Class Feature" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_ABILITYSCOREIMPROVEMENT_OCCULTIST" level="4" />
+			<grant type="Class Feature" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE" level="10" />
+			<grant type="Class Feature" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS" level="20" />
+		</rules>
+		<multiclass id="ID_REDDITUA_KTTOC_MULTICLASS_OCCULTIST">
+			<prerequisite>Wisdom 13</prerequisite>
+			<requirements>[wis:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Medicine, Herbalism Kit</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_SPELLCASTING_OCCULTIST">
+		<description>
+			<p>As a practioner of occult magic, you have inherited and developed techniques to manipulate reality through mediums of rituals, spirits, elements, and more. See Spells Rules for the general rules of spellcasting and the Spells Listing for the Occultist spell list.</p>
+			
+			<h5 class="caption">CANTRIPS</h5>
+			<p>At 1st level, you know three cantrips of your choice from the Occultist spell list. You learn additional Occultist cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Occultist table.</p>
+			
+			<h5 class="caption">SPELL SLOTS</h5>
+			<p>The Occultist table shows how many spell slots you have to cast your Occultist spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell <i>witchbolt</i> and have a 1st-level and a 2nd-level spell slot available, you can cast <i>witchbolt</i> using either slot.</p>
+			
+			<h5 class="caption">SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know four 1st-level spells of your choice from the Occultist spell list.</p>
+			<p class="indent">The Spells Known column of the Occultist table shows when you learn more Occultist spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the Occultist spells you know and replace it with another spell from the Occultist spell list, which also must be of a level for which you have spell slots.</p>
+			
+			<h5 class="caption">SPELLCASTING ABILITY</h5>
+			<p>Wisdom is your spellcasting ability for your Occultist spells. Your magic comes from a practitioners knowledge of traditional, ritual, and the way things work learned through experience, care and cunning. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Occultist spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			
+			<h5 class="caption">RITUAL CASTING</h5>
+			<p>You can cast any Occultist spell you know as a ritual if that spell has the ritual tag.</p>
+			
+			<h5 class="caption">SPELLCASTING FOCUS</h5>
+			<p>You can use an occult fetish as a spellcasting focus for your Occultist spells.</p>
+			<div class="reference">
+				<div element="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_OCCULT_FETISH" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Occultist" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>Occultist</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+
+			<stat name="occultist:spellcasting:slots:1" value="2" level="1" />
+			<stat name="occultist:spellcasting:slots:1" value="1" level="2" />
+			<stat name="occultist:spellcasting:slots:1" value="1" level="3" />
+			<stat name="occultist:spellcasting:slots:2" value="2" level="3" />
+			<stat name="occultist:spellcasting:slots:2" value="1" level="4" />
+			<stat name="occultist:spellcasting:slots:3" value="2" level="5" />
+			<stat name="occultist:spellcasting:slots:3" value="1" level="6" />
+			<stat name="occultist:spellcasting:slots:4" value="1" level="7" />
+			<stat name="occultist:spellcasting:slots:4" value="1" level="8" />
+			<stat name="occultist:spellcasting:slots:4" value="1" level="9" />
+			<stat name="occultist:spellcasting:slots:5" value="1" level="9" />
+			<stat name="occultist:spellcasting:slots:5" value="1" level="10" />
+			<stat name="occultist:spellcasting:slots:5" value="1" level="18" />
+			<stat name="occultist:spellcasting:slots:6" value="1" level="11" />
+			<stat name="occultist:spellcasting:slots:6" value="1" level="19" />
+			<stat name="occultist:spellcasting:slots:7" value="1" level="13" />
+			<stat name="occultist:spellcasting:slots:7" value="1" level="20" />
+			<stat name="occultist:spellcasting:slots:8" value="1" level="15" />
+			<stat name="occultist:spellcasting:slots:9" value="1" level="17" />
+
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Occultist" />
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" level="5" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="4" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="1" spellcasting="Occultist" />
+			<select type="Spell" name="Spellcasting (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Occult Tradition" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_OCCULTTRADITION">
+		<description>
+			<p>Choose an occult tradition, shaping your the techniques, features, and rites available to you from the following: Oracle, Shaman, or Witch.</p>
+			<p class="indent">Your choice grants you features when you choose it at 1st level, 3rd level, 6th level, and 14th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Occult Tradition" supports="KTTOC Occult Tradition Pool" />
+		</rules>
+	</element>
+	<element name="Occult Rites" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_OCCULT_RITES">
+		<description>
+			<p>In as you delve your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+			<p class="indent">At 2nd Level, you gain two Occult Rites of your choice. Your Occult Rites options are detailed at the end of the subclass description for subclass specific Rites, and at the end of the class description for general Rites, you can select from either your subclass or class list. When you gain certain Occultist levels, you gain additional Occult Rites of your choice.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the Occult Rites you know and replace it with another Occult Rites that you could learn at that level. A level prerequisite in a Occult Rite refers to Occultist level, not character level.</p>
+			<div class="reference">
+				<div element="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_CLASSSUBCLASSRITES" />
+			</div>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Occult Rite (Level 2)" supports="KTTOC Occult Rite" level="2" number="2" />
+			<select type="Class Feature" name="Occult Rite (Level 5)" supports="KTTOC Occult Rite" level="5" />
+			<select type="Class Feature" name="Occult Rite (Level 7)" supports="KTTOC Occult Rite" level="7" />
+			<select type="Class Feature" name="Occult Rite (Level 9)" supports="KTTOC Occult Rite" level="9" />
+			<select type="Class Feature" name="Occult Rite (Level 12)" supports="KTTOC Occult Rite" level="12" />
+			<select type="Class Feature" name="Occult Rite (Level 15)" supports="KTTOC Occult Rite" level="15" />
+			<select type="Class Feature" name="Occult Rite (Level 18)" supports="KTTOC Occult Rite" level="18" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_ABILITYSCOREIMPROVEMENT_OCCULTIST">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Occultist 4)" supports="Improvement Option,Occultist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Occultist 8)" supports="Improvement Option,Occultist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Occultist 12)" supports="Improvement Option,Occultist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Occultist 16)" supports="Improvement Option,Occultist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Occultist 19)" supports="Improvement Option,Occultist,19" level="19" />
+		</rules>
+	</element>
+	<element name="Traditional Expertise" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE">
+		<description>
+			<p>Starting at 10th level, your passed down knowledge of tradition gives you expertise in a skill of your tradition; pick one from Animal Handling, Arcana, Medicine, Nature, Survival. Your Proficiency Bonus is doubled for any ability check you make that use of the chosen Proficiency.</p>
+			<p class="indent">Additionally, when you make a Wisdom ability check, you can draw upon your Tradition and expend a 1st level spell slot to gain advantage on the check.</p>
+		</description>
+		<sheet>
+			<description>When you make a Wisdom ability check, you can expend a 1st level spell slot to gain advantage on the check.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Traditional Expertise (Occultist)" supports="KTTOC Occultist Expertise Pool"/>
+		</rules>
+	</element>
+	<element name="The Old Ways" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS">
+		<description>
+			<p>At 20th level, your master of ritual and tradition is extensive an unparalleled, you've unlocked ancient secrets and perfected techniques to master rituals completely. Any occultist spell you know of 3rd level or lower becomes a ritual spell for you. When you cast a spell that is not normally a ritual as a ritual, requires additional consumed material components worth 10 gold per level of the spell.</p>
+			<p class="indent">Additionally, your mastery of rituals allows you to work them more quickly, and a spell only takes additional turns equal to the spells level to cast (for example, casting a 3rd level spell as a ritual would take fours turns to cast, casting as your action or bonus action on the fourth turn).</p>
+			<p class="indent">Spells with a casting time of a reaction cannot be cast as a ritual.</p>
+		</description>
+		<sheet>
+			<description>You can cast any (non-reaction) Occultist spell of 3rd level or lower as a ritual spell, requiring 10 gold per spell level if it was not already a ritual spell. Additionally, a ritual spell only takes additional turns equal to its spell level.</description>
+		</sheet>
+	</element>
+
+	<!-- Expertise -->
+	<element name="Skill Expertise (Animal Handling)" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_EXPERTISE_SKILL_ANIMALHANDLING">
+		<supports>KTTOC Occultist Expertise Pool</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ANIMALHANDLING</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Animal Handling check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Arcana)" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_EXPERTISE_SKILL_ARCANA">
+		<supports>KTTOC Occultist Expertise Pool</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Arcana check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ARCANA" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Medicine)" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_EXPERTISE_SKILL_MEDICINE">
+		<supports>KTTOC Occultist Expertise Pool</supports>
+		<requirements>ID_PROFICIENCY_SKILL_MEDICINE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Medicine check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_MEDICINE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="medicine:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Nature)" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_EXPERTISE_SKILL_NATURE">
+		<supports>KTTOC Occultist Expertise Pool</supports>
+		<requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Nature check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_NATURE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="nature:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Survival)" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_EXPERTISE_SKILL_SURVIVAL">
+		<supports>KTTOC Occultist Expertise Pool</supports>
+		<requirements>ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Survival check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="survival:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	
+
+	<!-- Tradition Oracle -->
+	<element name="Tradition of the Oracle" type="Archetype" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE">
+		<supports>KTTOC Occult Tradition Pool</supports>
+		<description>
+			<p>An oracle is an occultists whose power comes to them from their connection to fate; bound and empowered oracles carry some piece of divine mystery within them, tied to an aspect of destiny and fate. As their power grows they begin to understand this mystery with revelations, unlocking its secrets and the power they contain.</p>
+			<p class="indent">An oracle typically does not directly serve a god, rather they often are people who's fate has entangled them in the affairs of the gods. Oracles have great power, but their powers are not ones that mortals were meant to have, and consequently they are frequently burdened by their powers.</p>
+			
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_DIVINE_TOUCH" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_FATE_READING" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_ENLIGHTENED_UNDERSTANDING" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_PROPHECY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_DIVINE_TOUCH" level="1"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_FATE_READING" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_ENLIGHTENED_UNDERSTANDING" level="6"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_PROPHECY" level="14"/>
+		</rules>
+	</element>
+	<element name="Divine Touch" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_DIVINE_TOUCH">
+		<description>
+			<p>At 1st level when you select this Tradition, you have been touched by a divine revelation that has given you a gift of insight and a dramatic flair to deliver it - you learn the cantrips <i>guidance</i> and <i>thaumaturgy</i>.</p>
+			<p class="indent">Additionally, the touch of the divine revelation has opened new pathways of magic the lie beyond the mortal grasp. When your Spellcasting feature lets you learn a occultist cantrip or a occultist spell of 1st level or higher, you can choose the new spell from the cleric spell list or the occultist spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a occultist spell for you.</p>
+			<p class="indent">For some, this burden marks them more heavily. At the discretion of your DM, you can optionally select to a curse and corresponding boon from the Cursed Burden section.</p>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Oracle" extend="true">
+			<extend>Cleric</extend>
+		</spellcasting>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Occultist" />
+			<!-- TODO: CURSED BURDENS -->
+		</rules>
+	</element>
+	<element name="Fate Reading" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_FATE_READING">
+		<description>
+			<p>Starting at 3rd level, your connection to the flow of fate gives you the ability to read from it, tracing outcomes and glimpsing the unknowable future. You learn the spell <i>augury</i> and can cast it at will without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_WINDINGPATHSOFFATE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Augury at will without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Enlightened Understanding" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_ENLIGHTENED_UNDERSTANDING">
+		<description>
+			<p>Starting at 6th level, you've come to unravel the mysteries of magic and fate, understanding their secrets and potential. Whenever you use a Mystery, you gain temporary hit points equal to your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use a Mystery, you gain {{wisdom:modifier}} temporary hit points.</description>
+		</sheet>
+	</element>
+	<element name="Prophecy" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_ORACLE_PROPHECY">
+		<description>
+			<p>Starting at 14th level, you can cast augury a number of times equal to your Wisdom modifier per day before it starts having a chance to return random answers.</p>
+			<p class="indent">Additionally, when you divine the future with <i>augury</i>, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll (for example, an attack, a Strength (Athletics) check, or an initiative roll, etc), a d4 is reserved (example "someone will be particularly quick when rolling initiative").</p>
+			<p class="indent">If you specify a specific action and a specific person, a d6 is reserved (for example, "when the wizard Caius rolls for initiative, he will be unusually quick"). If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the DM.</p>
+			<p class="indent">A specific action or person can only have one prophesized event. If that prophesized event takes place (at the discretion of the DM it has occurred), the oracle can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, the oracle can select which of them is effected by the reserved die.</p>
+		</description>
+		<sheet>
+			<description>You can cast Augury {{wisdom:modifier}} times per day before gaining a chance for random answers. Additionally, when you cast Augury, you can prophecy three specific events for rolls that may occur within the next 30 minutes, reserving dice to be spent when the event occurs. The dice depend on how specific the prophecy is (d4: only type of roll, d6: specific person and action, d8: specific unlikely condition). A specific action or person can only have one prophesized event.</description>
+		</sheet>
+	</element>
+	<!-- Oracle Specific Rites -->
+	<element name="Divine Fate" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_DIVINEFATE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Oracle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Oracle Specific Rite</em></p>
+			<p>You expand your expertise of reading fate to a be able to more specifically divine information from your readings, learning additional more specific spells. You learn the following spells at the following levels. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>identify</em></td></tr>
+				<tr><td>3rd</td><td><em>locate object</em></td></tr>
+				<tr><td>5th</td><td><em>clairvoyance</em></td></tr>
+				<tr><td>7th</td><td><em>locate creature</em></td></tr>
+				<tr><td>9th</td><td><em>legend lore</em></td></tr>
+			</table>
+		</description>
+		<!-- <sheet display="false" /> -->
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Oracle's Sight" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_ORACLESSIGHT">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Oracle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Oracle Specific Rite</em></p>
+			<p>You gain a blindsight with a range of 15 feet. If you are effected by the Blinded condition for more than a minute, the range of this sight is doubled while you are effected by the Blinded condition.</p>
+		</description>
+		<sheet>
+			<description>You gain a blindsight with a range of 15 feet. This range is doubled while you are effected by the Blinded condition for more than a minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+		</rules>
+	</element>
+	<element name="Divine Sight" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_DIVINESIGHT">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>15th level Oracle</prerequisite>
+		<requirements>[level:15],ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level (Oracle Specific Rite)</em></p>
+			<p>If you have blindsight, you gain truesight with a range equal to your blindsight.</p>
+		</description>
+		<sheet>
+			<description>If you have blindsight, you gain truesight with a range equal to your blindsight.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" requirements="ID_VISION_BLINDSIGHT" />
+		</rules>
+	</element>
+	<element name="Twin Mystery" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_TWINMYSTERY">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>12th level Oracle</prerequisite>
+		<requirements>[level:12],ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Prerequisite: 12th level (Oracle Specific Rite)</em></p>
+			<p>When you cast a spell that invokes a Mystery, you can invoke two different Mysteries at the same time, as long as a spell fulfills both Mystery's requirements.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that invokes a Mystery, you can invoke two different Mysteries at the same time, as long as a spell fulfills both Mystery's requirements.</description>
+		</sheet>
+	</element>
+	<element name="Mystery of Life" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFLIFE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Oracle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Oracle Specific Rite</em></p>
+			<p>Your powers are tied to the nature of life and its ever shifting balance. When you cast a spell of 1st level or higher, you can heal a creature other than yourself within 30 feet for a number of hit points up to your occultist level. Your current hit points are reduced by an amount equal to the amount you heal the target of the Mystery for.</p>
+			<p class="indent">You can only use this ability on creatures that have vibrant life pulsing within them, it does not work on undead, constructs, or creatures at zero hit points.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell of 1st level or higher, you can heal a creature (that isn't Undead, Construct, or at 0 hit points) within 30 feet for up to {{level:occultist}} hit points, reducing your current hit points by the same amount.</description>
+		</sheet>
+	</element>
+	<element name="Revelation of Life" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_REVELATIONOFLIFE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Mystery of Life</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFLIFE</requirements>
+		<description>
+			<p><em>Prerequisite: Mystery of Life (Oracle Specific Rite)</em></p>
+			<p>Your understanding of the nature of life unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>healing word</em></td></tr>
+				<tr><td>3rd</td><td><em>warding bond</em></td></tr>
+				<tr><td>5th</td><td><em>beacon of hope</em></td></tr>
+				<tr><td>7th</td><td><em>aura of life</em></td></tr>
+				<tr><td>9th</td><td><em>mass cure wounds</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="All Living Things" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_ALLLIVINGTHINGS">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Revelation of Life</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_REVELATIONOFLIFE</requirements>
+		<description>
+			<p><em>Prerequisite: Revelation of Life (Oracle Specific Rite)</em></p>
+			<p>When you expend a spell slot to cast a spell that restores hit points a creature, you regain hit points equal to your Wisdom modifier. If you kill a creature or are within 10 feet of a creature as it dies, you take necrotic damage equal to its CR or character level if it has no CR (minimum 1). This is not triggered if the creature an undead or construct.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that heals a creature, you regain {{wisdom:modifier}} hit points. If you kill a creature or are within 10 feet of a creature as it dies, you take necrotic damage equal to its CR or character level (minimum 1). This is not triggered if the creature an undead or construct.</description>
+		</sheet>
+	</element>
+	<element name="Mystery of Death" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFDEATH">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Oracle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Oracle Specific Rite</em></p>
+			<p>You delve the depths of the mystery that lies at the end of life. When you cast a spell of 1st level or higher that deals damage, you can reroll a number of the spell's damage dice equal to your Wisdom modifier. You must use the new value of the die. Dice you reroll this way are converted to necrotic damage, and your current hit points are reduced by one for each die you reroll in this manner.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell of 1st level or higher that deals damage, you can reroll up to {{wisdom:modifier}} damage dice, and they then deal necrotic damage. Your current hit points are reduced by one for each die you reroll in this manner.</description>
+		</sheet>
+	</element>
+	<element name="Revelation of Death" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_REVELATIONOFDEATH">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Mystery of Death</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFDEATH</requirements>
+		<description>
+			<p><em>Prerequisite: Mystery of Death (Oracle Specific Rite)</em></p>
+			<p>Your understanding of the nature of death unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>false life</em></td></tr>
+				<tr><td>3rd</td><td><em>gentle repose</em></td></tr>
+				<tr><td>5th</td><td><em>wither</em></td></tr>
+				<tr><td>7th</td><td><em>blight</em></td></tr>
+				<tr><td>9th</td><td><em>killing curse</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_WITHER" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_KILLING_CURSE" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Inevitable End" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_INEVITABLEEND">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Mystery of Death</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFDEATH</requirements>
+		<description>
+			<p><em>Prerequisite: Mystery of Death (Oracle Specific Rite)</em></p>
+			<p>When you deal necrotic damage, you can ignore a creature's resistance to necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>When you deal necrotic damage, you can ignore resistance against it.</description>
+		</sheet>
+	</element>
+	<element name="Mystery of Fire" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFFIRE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Oracle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Oracle Specific Rite</em></p>
+			<p>Within flames you have seen yourself, and you know them as they know you. When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover.</p>
+			<p class="indent">While these flames wreath you, you can add fire damage equal to your Wisdom modifier (minimum 1) to damage rolls for melee weapon attacks or to one damage roll of spells that deal fire damage (including the spell that invoked this mystery if applicable).</p>
+			<p class="indent">Your current hit points are reduced by 1d4 at the end of your turn by the flames.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover, and reducing your current hit points by 1d4 at the end of your turn. Until then you can add +{{occultist-mystery-of-fire:damage}} fire damage to the damage of melee weapon attacks or spells that deal fire damage (including the invoking spell, if applicable).</description>
+		</sheet>
+		<rules>
+			<stat name="occultist-mystery-of-fire:damage" value="1" bonus="base"/>
+			<stat name="occultist-mystery-of-fire:damage" value="wisdom:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Revelation of Fire" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_REVELATIONOFFIRE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Mystery of Fire</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFFIRE</requirements>
+		<description>
+			<p><em>Prerequisite: Mystery of Fire (Oracle Specific Rite)</em></p>
+			<p>Your understanding of the nature of fire unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>burning hands</em></td></tr>
+				<tr><td>3rd</td><td><em>continual flame</em></td></tr>
+				<tr><td>5th</td><td><em>fireball</em></td></tr>
+				<tr><td>7th</td><td><em>fire shield</em></td></tr>
+				<tr><td>9th</td><td><em>immolation</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTINUAL_FLAME" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Voracious Flames" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_VORACIOUSFLAMES">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Mystery of Fire</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFFIRE</requirements>
+		<description>
+			<p><em>Prerequisite: Mystery of Fire (Oracle Specific Rite)</em></p>
+			<p>The flames that wreath when you invoke the Mystery of Fire you burn more voraciously. Once per turn, if a creature ends their turn within 5 feet of you or strikes you with a melee weapon attack while within 5 feet of you, you can choose to deal 1d6 fire damage to that creature.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>While Mystery of Fire is active, if a creature ends their turn within 5 feet of you or strikes you with a melee weapon attack while within 5 feet of you, you can choose to deal 1d6 fire damage to it.</description>
+		</sheet>
+	</element>
+	<element name="Mystery of Battle" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFBATTLE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Oracle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_ORACLE</requirements>
+		<description>
+			<p><em>Oracle Specific Rite</em></p>
+			<p>Within war and conflict you see the true essence of perfect conflict. Once per turn on your turn, when you cast a spell of 1st level or higher, you become attuned to the flow of battle and can make a single melee weapon attack as part of the same action.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you cast a spell of 1st level or higher, you can make a single melee weapon attack as part of the same action.</description>
+		</sheet>
+	</element>
+	<element name="Revelation of Battle" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_REVELATIONOFFIRE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Mystery of Battle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFBATTLE</requirements>
+		<description>
+			<p><em>Prerequisite: Mystery of Battle (Oracle Specific Rite)</em></p>
+			<p>Your understanding of the nature of battle unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>thunderous smite</em></td></tr>
+				<tr><td>3rd</td><td><em>branding smite</em></td></tr>
+				<tr><td>5th</td><td><em>blinding smite</em></td></tr>
+				<tr><td>7th</td><td><em>staggering smite</em></td></tr>
+				<tr><td>9th</td><td><em>banishing smite</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDEROUS_SMITE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDING_SMITE" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Truth of Strife" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_TruthofStrife">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Mystery of Battle</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_ORACLE_MYSTERYOFBATTLE</requirements>
+		<description>
+			<p><em>Prerequisite: Mystery of Battle (Oracle Specific Rite)</em></p>
+			<p>Your understanding of battle reveals that it comes easily. You can trigger the Mystery of Battle when casting a cantrip as an action.</p>
+		</description>
+		<sheet>
+			<description>You can trigger the Mystery of Battle when casting a cantrip as an action.</description>
+		</sheet>
+	</element>
+	
+	<!-- Tradition Shaman -->
+	<element name="Tradition of the Shaman" type="Archetype" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN">
+		<supports>KTTOC Occult Tradition Pool</supports>
+		<description>
+			<p>A shaman is an occultist that walks the paths of the spirits, binding them to their cause to empower themselves or bring havoc to their foes. Tough and powerful, they are most often found in the thick of the fight, wreathed in their primal power.</p>
+			<p class="indent">A shaman may view themselves as in service to their spirits or as served by the spirits; the what and the how of their contract can vary wildly, as can the source of their spirits, be it pulling from an ancestral or primal powers.</p>
+			
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_SPIRITUAL_WARRIOR" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_CALL_SPIRIT" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_EMPOWERED_SPIRITS" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_EXTRA_ATTACK" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_SPIRITUAL_EMPOWERMENT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_SPIRITUAL_WARRIOR" level="1"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_CALL_SPIRIT" level="1"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_EMPOWERED_SPIRITS" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_EXTRA_ATTACK" level="6"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_SPIRITUAL_EMPOWERMENT" level="14"/>
+		</rules>
+	</element>
+	<element name="Spiritual Warrior" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_SPIRITUAL_WARRIOR">
+		<description>
+			<p>When you select this subclass, you gain proficiency in simple weapons, light armor, medium armor and shields. Additionally, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<stat name="hp" value="level:occultist" />
+		</rules>
+	</element>
+	<element name="Call Spirit" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_CALL_SPIRIT">
+		<description>
+			<p>Starting at 1st level, as a bonus action you can call a spirit to your side. This can be a primal spirit of fire, cold, or lightning, or an ancestral spirit with radiant or necrotic power. This bond lasts for 10 minutes once formed, you dismiss the spirit as an action, or you call another spirit.</p>
+			<p class="indent">While a spirit is bonded to you it strengthens your melee weapon attacks, causing them to deal an additional 1d4 damage of the spirit's type.</p>
+			<p class="indent">As a bonus action while it is bonded, you can manifest the spirit within 30 feet of you. The spirit is medium sized but spectral in nature while manifested. While the spirit is manifested, whenever you take the attack action you may replace any number of attacks you could normally take with melee spell attacks from your bonded spirit. Melee spell attacks done by the spirit deal 1d4 + your Wisdom modifier damage of the same spirit's type on a hit. As a bonus action you can move it up to 30 feet in any direction or recall it to yourself, ending its manifestation.</p>
+			<p class="indent">A manifested spirit cannot move more than 60 feet from you, and is recalled to you if you move more than 60 feet from it.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action you can summon and bond to a spirit (Fire, Cold, Lightning, Radiant or Necrotic) for up to 10 minutes, which adds 1d4 damage of the spirit's type to your melee attacks. &#13;
+			While bonded, as a bonus action you can manifest the spirit within 30 feet. While manifested, whenever you take the attack action you may replace any number of your attacks with melee spell attacks from thr spirit, which deal 1d4+{{wisdom:modifier}} damage of the spirit's type on a hit. &#13;
+			As a bonus action you can move it up to 30 feet in any direction or end its manifestation. It is recalled if it is more than 60 feet from you.</description>
+		</sheet>
+	</element>
+	<element name="Empowered Spirits" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_EMPOWERED_SPIRITS">
+		<description>
+			<p>Starting at 3rd level, you expand a spell slot of 1st level or higher to empower your spirits. When you use a spell slot to call a spirit, it does not count against the number of spirits you can call. While an empowered spirit is not manifested, you gain temporary hit points equal to the level of the spell slot spent on to empower the spirit at the start of your turn that last until the start of your next turn.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Spell Slot</td><td>Weapon Damage</td><td>Manifested Damage</td><td>Temporary Hit Points</td></tr>
+				</thead>
+				<tr><td>1st</td><td>1d6</td><td>2d4</td><td>1</td></tr>
+				<tr><td>2nd</td><td>1d8</td><td>2d6</td><td>2</td></tr>
+				<tr><td>3rd</td><td>1d10</td><td>2d6</td><td>3</td></tr>
+				<tr><td>4th</td><td>1d12</td><td>2d8</td><td>4</td></tr>
+				<tr><td>5th</td><td>1d12</td><td>2d8</td><td>5</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You expand a spell slot of 1st level or higher to empower your spirits. When you use a spell slot to call a spirit, it does not count against the number of spirits you can call. While an empowered spirit is not manifested, you gain temporary hit points equal to the level of the spell slot spent on to empower the spirit at the start of your turn that last until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p class="indent">If you have a manifested spirit, you can replace one or both attacks with the special attack with it.</p>
+		</description>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Spiritual Empowerment" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_SHAMAN_SPIRITUAL_EMPOWERMENT">
+		<description>
+			<p>Starting at 14th level, when you cast a spell of 1st level or higher, you can make a single weapon attack as a bonus action. If you have a manifested spirit, you can attack with it in place of making a weapon attack.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell of 1st level or higher, you can make a single weapon attack or have your manifested spirit attack as a bonus action.</description>
+		</sheet>
+	</element>
+	<!-- Shaman Specific Rites -->
+	<element name="Avatar of the Elements" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_AVATAROFTHEELEMENTS">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>11th level Shaman</prerequisite>
+		<requirements>[level:11],ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Prerequisite: 11th level (Shaman Specific Rite)</em></p>
+			<p>You learn the <i>investiture of fire, investiture of ice</i>, and <i>investiture of stone</i> spells. These are Occultist spells for you. When you cast one of these spells, you can choose to shorten the duration of the spell to a number of rounds equal to 1 minute. When you do so, these spells do not require concentration.</p>
+		</description>
+		<sheet>
+			<description>When you cast Investiture of Fire/Ice/Stone, you can shorten the spells duration to 1 minute and the spell then requires no concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_ICE" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_STONE" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Detonate Spirit" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_DETONATESPIRIT">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>As an action or as part of the action of manifesting a spirit, you can cause it to erupt in a massive burst of power. All creatures within 10 feet of it must make a Dexterity saving throw. On a failure, they take damage equal to twice it's manifested damage. If the spirit was empowered with a spell slot, they take half as much damage on even on a successful saving throw.</p>
+			<p class="indent">The spirit is immediately released and disappears.</p>
+		</description>
+		<sheet>
+			<description>When manifesting a spirit, you can cause it to explode. All creatures within 10 feet of it must make a Dexterity saving throw. On a failure, they take damage equal to twice it's manifested damage. On a success, they take half as much damage if the spirit was empowered with a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_ICE" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_STONE" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Dance of the Spirits" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_DANCEOFTHESPIRITS">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>5th level Shaman</prerequisite>
+		<requirements>[level:5],ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level (Shaman Specific Rite)</em></p>
+			<p>When you cast <i>spirit guardians</i>, you can choose what damage type it does from any of Fire, Cold, Lightning, Radiant or Necrotic, regardless of your alignment.</p>
+			<p class="indent">Additionally, you have advantage on Constitution saves to maintain concentration on <i>spirit guardians</i> and <i>healing spirit</i>.</p>
+		</description>
+		<sheet>
+			<description>When you cast Spirit Guardians, you can choose its damage type (Fire, Cold, Lightning, Radiant or Necrotic). You also have advantage on maintaining concentration on Spirit Guardians and Healing Spirit.</description>
+		</sheet>
+	</element>
+	<element name="Energized Weapon" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_ENERGIZEDWEAPON">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You gain the ability to infuse your weapon with the power granted to you by the spirits. While you have an empowered spirit bonded, you can pour all of it's energy into your weapon (recalling it if it is manifested). The next attack with that weapon adds twice the additional damage from the spirit, but the bond immediately expires.</p>
+		</description>
+		<sheet>
+			<description>While you are bonded with an empowered spirit, you can have your weapon add twice the additional damage from the spirit, which ends the bond immediately.</description>
+		</sheet>
+	</element>
+	<element name="Fury of the Flames" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_FURYOFTHEFLAMES">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You learn the <i>fists of fire</i> spell. When you cast this spell, the damage of your fists as natural weapons becomes 1d8 instead of 1d6.</p>
+		</description>
+		<sheet>
+			<description>The damage of your Fists of Fire cantrip increases to 1d8.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_FISTS_OF_FIRE" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Guidance of the Spirits" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_GUIDANCEOFTHESPIRITS">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>When you expend a spell slot to empower a spirit with your Call Spirit feature, you can select a number of skills equal to the spell slot expended that the spirit is proficient in. While it is not manifested, you gain proficiency with these skills. If you expend a spell slot of 3rd level or higher, you can exchange three of the skills the spirit gaining expertise in one skill.</p>
+		</description>
+		<sheet>
+			<description>When you expend a spell slot to empower a spirit, you can select a number of skills equal to the spell slot expended that the spirit is proficient in. While it is not manifested, you gain proficiency with these skills. Using this feature again while already active, you can exchange the three skill proficiencies for expertise in one skill.</description>
+		</sheet>
+	</element>
+	<element name="Piercing Cold" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_PIERCINGCOLD">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You learn the <i>ice weapon</i> spell. When you cast this spell, the size of the damage die of any weapon it creates is increased by d2 (for example, from a d6 to a d8).</p>
+		</description>
+		<sheet>
+			<description>The weapon damage die sizes of your Ice Weapon cantrip increases by 2.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_ICE_WEAPON" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Mistwalker" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_MISTWALKER">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You can see through heavy obscurement when the obscurement is caused by fog, mist, or smoke, natural or otherwise. While you are shrouded by fog, mist, or smoke, you have partial cover.</p>
+		</description>
+		<sheet>
+			<description>You can see through heavy obscurement caused by fog, mist, or smoke, natural or otherwise. While you are shrouded by fog, mist, or smoke, you have partial cover.</description>
+		</sheet>
+	</element>
+	<element name="Primal Earth" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_PRIMALEARTH">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You harness the primal elemental powers of the earth and stone to your call, you learn the following spells at the following list. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>earth tremor</em></td></tr>
+				<tr><td>3rd</td><td><em>earthbind</em></td></tr>
+				<tr><td>5th</td><td><em>erupting earth</em></td></tr>
+				<tr><td>7th</td><td><em>orbital stones</em></td></tr>
+				<tr><td>9th</td><td><em>wall of stone</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_ORBITALSTONES" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Primal Ice" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_PRIMALICE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You harness the primal elemental powers of ice to your call, you learn the following spells at the following list. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>ice knife</em></td></tr>
+				<tr><td>3rd</td><td><em>snowball storm</em></td></tr>
+				<tr><td>5th</td><td><em>sleet storm</em></td></tr>
+				<tr><td>7th</td><td><em>ice storm</em></td></tr>
+				<tr><td>9th</td><td><em>cone of cold</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Primal Fire" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_PRIMALFIRE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You harness the primal elemental powers of fire to your call, you learn the following spells at the following list. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>burning hands</em></td></tr>
+				<tr><td>3rd</td><td><em>pyrotechnics</em></td></tr>
+				<tr><td>5th</td><td><em>fireball</em></td></tr>
+				<tr><td>7th</td><td><em>wall of fire</em></td></tr>
+				<tr><td>9th</td><td><em>immolation</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Primal Storms" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_PRIMALSTORMS">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You harness the primal elemental powers of storms and lightning to your call, you learn the following spells at the following list. These are occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>thunderwave</em></td></tr>
+				<tr><td>3rd</td><td><em>gust of wind</em></td></tr>
+				<tr><td>5th</td><td><em>lightning bolt</em></td></tr>
+				<tr><td>7th</td><td><em>storm sphere</em></td></tr>
+				<tr><td>9th</td><td><em>control winds</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Radiate Power" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_RADIATEPOWER">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>15th level Shaman</prerequisite>
+		<requirements>[level:15],ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level (Shaman Specific Rite)</em></p>
+			<p>While you have a spirit bonded to you, as a bonus action you can cause it to emanate power, causing all creatures within 5 feet of you (or it if it is manifested at another location) to make a Wisdom saving throw against your spell save DC, or take damage equal to it's manifested damage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can cause all creatures within 5 feet of your bonded spirit (or you if not manifested) to make a Wisdom saving throw, or take damage equal to it's manifested damage.</description>
+		</sheet>
+	</element>
+	<element name="Shaman's Touch" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_SHAMANSTOUCH">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>7th level Shaman</prerequisite>
+		<requirements>[level:7],ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Prerequisite: 7th level (Shaman Specific Rite)</em></p>
+			<p>When you take the attack action, you can replace one attack with a cantrip with a range of touch.</p>
+		</description>
+		<sheet>
+			<description>When you take the attack action, you can replace one attack with a cantrip with a range of touch.</description>
+		</sheet>
+	</element>
+	<element name="Warding Power" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_SHAMAN_WARDINGPOWER">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Shaman</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_SHAMAN</requirements>
+		<description>
+			<p><em>Shaman Specific Rite</em></p>
+			<p>You learn the spell <i>shield</i>, and it becomes an Occultist spell for you.</p>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Occultist" />
+		</rules>
+	</element>
+	
+	<!-- Tradition Witch -->
+	<element name="Tradition of the Witch" type="Archetype" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH">
+		<supports>KTTOC Occult Tradition Pool</supports>
+		<description>
+			<p>A Witch can be many things, and most often refers to someone that villagers find scary and weird, but at the heart of every crazed story there's a sliver of truth, and that truth is that witches do indeed exist.</p>
+			<p class="indent">Some may live openly as what they are, while others may be the last person the superstitious villagers might expect. Varied in their powers, designs, and traditions based on their Coven, generalizing about a Witch is challenging, but they are most often defined by the varied utilitarian magic, hexes that make crossing them unwise, and powerful intelligent familiars.</p>
+			
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_WITCHSMAGIC" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_INTERNAL" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_INTERNAL" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_WITCHSTOUCH" />
+			<div element="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_MASTEROFCURSES" />
+			<div class="reference">
+				<div element="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_WITCHESGENDER" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_WITCHSMAGIC" level="1"/>
+			<select type="Archetype Feature" name="Coven" supports="KTTOC Witch Coven Pool" level="1" />
+			
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_BLACK" level="3" requirements="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_BLACK"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_WHITE" level="3" requirements="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_WHITE"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_GREEN" level="3" requirements="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_GREEN"/>
+			
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_WITCHSTOUCH" level="6"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_MASTEROFCURSES" level="14"/>
+		</rules>
+	</element>
+	<element name="Witch's Magic" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_WITCHSMAGIC">
+		<description>
+			<p>When you select this Tradition at first level you learn the spell <i>find familiar</i>, and when you summon a familiar with this spell, it acts on your initiative. Additionally, can select 2 additional cantrips of your choice from the Occultist spell list.</p>
+		</description>
+		<sheet>
+			<description>Your familiar acts on your initiative.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Occultist" />
+			<select type="Spell" name="Cantrip (Witch's Magic)" supports="$(spellcasting:list), 0" number="2" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Coven" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_INTERNAL">
+		<description>
+			<p>Starting at 1st level, you select the Coven you belong to, selecting from Black Coven, White Coven, or Green Coven. Based on which Coven you select, you gain access to additional spells and manifest different special powers. Spells gained from this feature added to your spells known and are Occultist spells for you, but do not count against the number of spells you can know.</p>
+			<p class="indent">While the Covens are often associated with Evil, Good, and Neutral respectively, you do not have to of a particular alignment to join a particular coven - it is merely your area of expertise and what traditions you know.</p>
+			<p class="indent">A Witch of the Black Coven specializes in inflicting pain, curses, and eventual agonizing death to those that cross her, a Witch of the White Coven focuses on binding and healing, and Witch of the Green Coven focuses is the closest to the Witches roots in Hag-like fey magic, drawing power from nature to baffle her foes and control her surroundings.</p>
+			
+			<h5 class="caption">BLACK COVEN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>rotting curse, arms of hadar</em></td></tr>
+				<tr><td>3rd</td><td><em>blindness/deafness, darkness</em></td></tr>
+				<tr><td>5th</td><td><em>animate shadow, wither</em></td></tr>
+				<tr><td>7th</td><td><em>blight, evard's black tentacles</em></td></tr>
+				<tr><td>9th</td><td><em>killing curse, contagion</em></td></tr>
+			</table>
+			
+			<h5 class="caption">WHITE COVEN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>binding curse, healing word</em></td></tr>
+				<tr><td>3rd</td><td><em>calm emotions, hold person</em></td></tr>
+				<tr><td>5th</td><td><em>revivify, mass healing word</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, otilue's resilient sphere</em></td></tr>
+				<tr><td>9th</td><td><em>curse of impotence, hold monster</em></td></tr>
+			</table>
+			
+			<h5 class="caption">GREEN COVEN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>befuddling curse, entangle</em></td></tr>
+				<tr><td>3rd</td><td><em>alter self, enlarge/reduce</em></td></tr>
+				<tr><td>5th</td><td><em>gaseous form, major image</em></td></tr>
+				<tr><td>7th</td><td><em>greater invisibility, polymorph</em></td></tr>
+				<tr><td>9th</td><td><em>swapping curse, wrath of nature</em></td></tr>
+			</table>
+		</description>
+	</element>
+	<element name="Black Coven" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_BLACK">
+		<compendium display="false" />
+		<supports>KTTOC Witch Coven Pool</supports>
+		<description>
+			<p>Starting at 1st level, you select the Coven you belong to, selecting from Black Coven, White Coven, or Green Coven. Based on which Coven you select, you gain access to additional spells and manifest different special powers. Spells gained from this feature added to your spells known and are Occultist spells for you, but do not count against the number of spells you can know.</p>
+			<p class="indent">While the Covens are often associated with Evil, Good, and Neutral respectively, you do not have to of a particular alignment to join a particular coven - it is merely your area of expertise and what traditions you know.</p>
+			
+			<h5 class="caption">BLACK COVEN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>rotting curse, arms of hadar</em></td></tr>
+				<tr><td>3rd</td><td><em>blindness/deafness, darkness</em></td></tr>
+				<tr><td>5th</td><td><em>animate shadow, wither</em></td></tr>
+				<tr><td>7th</td><td><em>blight, evard's black tentacles</em></td></tr>
+				<tr><td>9th</td><td><em>killing curse, contagion</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_ROTTING_CURSE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARMS_OF_HADAR" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_ANIMATE_SHADOW" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_WITHER" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_KILLING_CURSE" level="9" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="White Coven" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_WHITE">
+		<compendium display="false" />
+		<supports>KTTOC Witch Coven Pool</supports>
+		<description>
+			<p>Starting at 1st level, you select the Coven you belong to, selecting from Black Coven, White Coven, or Green Coven. Based on which Coven you select, you gain access to additional spells and manifest different special powers. Spells gained from this feature added to your spells known and are Occultist spells for you, but do not count against the number of spells you can know.</p>
+			<p class="indent">While the Covens are often associated with Evil, Good, and Neutral respectively, you do not have to of a particular alignment to join a particular coven - it is merely your area of expertise and what traditions you know.</p>
+			
+			<h5 class="caption">WHITE COVEN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>binding curse, healing word</em></td></tr>
+				<tr><td>3rd</td><td><em>calm emotions, hold person</em></td></tr>
+				<tr><td>5th</td><td><em>revivify, mass healing word</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, otilue's resilient sphere</em></td></tr>
+				<tr><td>9th</td><td><em>curse of impotence, hold monster</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_BINDING_CURSE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_CURSE_OF_IMPOTENCE" level="9" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Green Coven" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_COVEN_GREEN">
+		<compendium display="false" />
+		<supports>KTTOC Witch Coven Pool</supports>
+		<description>
+			<p>Starting at 1st level, you select the Coven you belong to, selecting from Black Coven, White Coven, or Green Coven. Based on which Coven you select, you gain access to additional spells and manifest different special powers. Spells gained from this feature added to your spells known and are Occultist spells for you, but do not count against the number of spells you can know.</p>
+			<p class="indent">While the Covens are often associated with Evil, Good, and Neutral respectively, you do not have to of a particular alignment to join a particular coven - it is merely your area of expertise and what traditions you know.</p>
+			
+			<h5 class="caption">GREEN COVEN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>befuddling curse, entangle</em></td></tr>
+				<tr><td>3rd</td><td><em>alter self, enlarge/reduce</em></td></tr>
+				<tr><td>5th</td><td><em>gaseous form, major image</em></td></tr>
+				<tr><td>7th</td><td><em>greater invisibility, polymorph</em></td></tr>
+				<tr><td>9th</td><td><em>swapping curse, wrath of nature</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_BEFUDDLING_CURSE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_SWAPPING_CURSE" level="9" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WRATH_OF_NATURE" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	
+	<element name="Familiar Bond" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_INTERNAL">
+		<description>
+			<p>At 3rd level, when you cast <i>find familiar</i>, your familiar gains an Intelligence and Wisdom of 10, and the ability to speak any languages you speak.</p>
+			
+			<h5 class="caption">BLACK COVEN</h5>
+			<p>As a reaction to a creature within 30 feet of hitting an attack, your familiar can subtract 1d4 + half your Occultist level (rounded down) from their attack roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. It can do this a number of times equal to your Wisdom modifier, regaining all uses after you complete a long rest.</p>
+			
+			<h5 class="caption">WHITE COVEN</h5>
+			<p>When you complete a long rest, your familiar gains temporary hit points equal to your twice Occultist level + you Wisdom modifier. As a reaction to a creature within 30 feet of it being attacked, it can teleport to that creature and give it temporary hit points up to the number of temporary hit points it currently has (minimum one). If the familiar has no temporary hit points remaining, it cannot use this reaction.</p>
+			
+			<h5 class="caption">GREEN COVEN</h5>
+			<p>When you complete a long rest, your familiar gains illusory duplicates equal to your Wisdom modifier. These persist until destroyed by taking damage or you complete a long rest. The illusory duplicates cannot take any actions, but move and act like your familiar, staying within 30 feet of you or it. As an action or as a reaction to taking damage, your familiar can swap places with any of these duplicates. If it swaps places as a reaction, it takes no damage, but the illusory copy is destroyed. The illusory duplicates cannot be harmed while they are within 5 feet of you.</p>
+			
+			<div class="reference">
+				<div element="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_KEEPINGTRACKOFDUPLICATES" />
+			</div>
+		</description>
+	</element>
+	<element name="Familiar Bond" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_BLACK">
+		<compendium display="false" />
+		<description>
+			<p>At 3rd level, when you cast <i>find familiar</i>, your familiar gains an Intelligence and Wisdom of 10, and the ability to speak any languages you speak.</p>
+			
+			<h5 class="caption">BLACK COVEN</h5>
+			<p>As a reaction to a creature within 30 feet of hitting an attack, your familiar can subtract 1d4 + half your Occultist level (rounded down) from their attack roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. It can do this a number of times equal to your Wisdom modifier, regaining all uses after you complete a long rest.</p>
+		</description>
+		<sheet action="Familiar Reaction" usage="{{wisdom:modifier}}/Long Rest">
+			<description>When a creature within 30 feet makes an attack roll or ability check, your familiar can subtract 1d4+{{level:occultist:half}} from their die roll. &#13;
+			Your familiar has 10 Intelligence and Wisdom, and speaks any languages you speak.</description>
+		</sheet>
+	</element>
+	<element name="Familiar Bond" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_WHITE">
+		<compendium display="false" />
+		<description>
+			<p>At 3rd level, when you cast <i>find familiar</i>, your familiar gains an Intelligence and Wisdom of 10, and the ability to speak any languages you speak.</p>
+			
+			<h5 class="caption">WHITE COVEN</h5>
+			<p>When you complete a long rest, your familiar gains temporary hit points equal to your twice Occultist level + you Wisdom modifier. As a reaction to a creature within 30 feet of it being attacked, it can teleport to that creature and give it temporary hit points up to the number of temporary hit points it currently has (minimum one). If the familiar has no temporary hit points remaining, it cannot use this reaction.</p>
+		</description>
+		<sheet action="Familiar Reaction">
+			<description>Your familiar has 10 Intelligence and Wisdom, and speaks any languages you speak. After a long rest, your familiar gains {{occultist-witch-familiar-bond-white-hp}} temporary hit points. &#13;
+			As an reaction when a creature within 30 feet of it is attacked, your familiar can teleport to that creature and give it temporary hit points up to the number of temporary hit points it currently has.</description>
+		</sheet>
+		<rules>
+			<stat name="occultist-witch-familiar-bond-white-hp" value="wisdom:modifier" bonus="base"/>
+			<stat name="occultist-witch-familiar-bond-white-hp" value="level:occultist" />
+			<stat name="occultist-witch-familiar-bond-white-hp" value="level:occultist" />
+		</rules>
+	</element>
+	<element name="Familiar Bond" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_FAMILIARBOND_GREEN">
+		<compendium display="false" />
+		<description>
+			<p>At 3rd level, when you cast <i>find familiar</i>, your familiar gains an Intelligence and Wisdom of 10, and the ability to speak any languages you speak.</p>
+			
+			<h5 class="caption">GREEN COVEN</h5>
+			<p>When you complete a long rest, your familiar gains illusory duplicates equal to your Wisdom modifier. These persist until destroyed by taking damage or you complete a long rest. The illusory duplicates cannot take any actions, but move and act like your familiar, staying within 30 feet of you or it. As an action or as a reaction to taking damage, your familiar can swap places with any of these duplicates. If it swaps places as a reaction, it takes no damage, but the illusory copy is destroyed. The illusory duplicates cannot be harmed while they are within 5 feet of you.</p>
+			
+			<p><i>(You can assume any illusory duplicate that does not have their location specified is at the player's location)</i></p>
+		</description>
+		<sheet action="Familiar Action/Reaction">
+			<description>Your familiar has 10 Intelligence and Wisdom, and speaks any languages you speak. After a long rest, your familiar gains up to {{wisdom:modifier}} illusory duplicates, which persist until taking damage and cannot take any actions, but move and act like your familiar, staying within 30 feet of you or it. The duplicates cannot be harmed while they are within 5 feet of you. &#13;
+			As an action or as a reaction to taking damage, your familiar can swap places with any duplicate. When swapping as a reaction, it takes no damage, but the duplicate is destroyed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Witch's Touch" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_WITCHSTOUCH">
+		<description>
+			<p>Starting at 6th level, whenever you cast a spell of 1st level or higher with a range of touch (including through your familiar), you can add <b>one</b> of the following modifiers to the spell:</p>
+			<ul>
+				<li>It grants one affected target temporary hit points equal to your Wisdom modifier. Only one creature can have these temporary hit points at a time.</li>
+				<li>It deals additional damage equal to your Wisdom modifier to one effected creature.</li>
+				<li>It adds or subtracts 1d4 from their next attack roll or saving throw before the start if your next turn.</li>
+			</ul>
+			<p class="indent">You can also confer these effects to another spell with a range longer than touch by making it's range touch, or confer these effects as an action without casting a spell by touching a target (making a melee spell attack to do if the target is an unwilling creature).</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell of 1st level or higher, you can add ONE of the noted effects to the spell. The spells range is reduced to touch, if it is longer. Alternatively, you can use an action to confer this effect by touching the target (melee spell attack if the target is unwilling). &#13;
+			• One affected target gains {{wisdom:modifier}} temporary hit points. Can only be active on one creature at a time. &#13;
+			• Deal additional {{wisdom:modifier}} damage to one affected creature. &#13;
+			• Target adds or subtracts 1d4 from their next attack roll or saving throw before the start if your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Master of Curses" type="Archetype Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_ARCHETYPE_FEATURE_WITCH_MASTEROFCURSES">
+		<description>
+			<p>Starting at 14th level, when you cast a curse spell that requires a material component that would be consumed by the spell, you no longer need that material component and can use your occult fetish as the material component of the spell.</p>
+			<p class="indent">Additionally, any time you cast a curse with a duration that is not Instantaneous or <i>Hex</i> you have advantage on concentration saving throws to maintain their effects.</p>
+		</description>
+		<sheet>
+			<description>When you cast a Curse spell, you can use your occult fetish as material component and ignore consumed material components of the spell. You also gain advantage on concentration saving throws to maintain Curse spells or Hex.</description>
+		</sheet>
+	</element>
+	<!-- Witch Specific Rites -->
+	<element name="Animate Broom" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_ANIMATEBROOM">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>12th level Witch</prerequisite>
+		<requirements>[level:12],ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Prerequisite: 12th level (Witch Specific Rite)</em></p>
+			<p>You infuse an object - traditionally a broom, but can be any vaguely broom-shaped object (like a spear, staff, or similar) - with flying magic, turning it into a Broom of Flying (basic rules, pg. 156).</p>
+			<p class="indent">If your broom is lost or destroyed, you can create a new one during 8 hours of work. If a previous broom still exists when you make a new one, it loses its magic upon the completion of the new one.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_BROOM_OF_FLYING" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can spend 8 hours of work to infuse a broom (or simmilar object) with magic to turn it into a Broom of Flying.</description>
+		</sheet>
+	</element>
+	<element name="Animate Hair" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_ANIMATEHAIR">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>As a bonus action, you can expend a 1st level spell slot to cause your hair to lengthen, strengthen, and spring to life for 1 minute. While it is animated, you can use your action to make a melee spell attack with it, dealing 1d8 bludgeoning damage on hit. This increases by 1d8 when you reach 5th Level (2d8), 11th level (3d8), and 17th level (4d8). If you hit a Large or smaller creature with this attack, as a bonus action you can attempt to grapple the creature with your hair. The creature must make a Strength saving throw, or become grappled by it.</p>
+			<p class="indent">A grappled creature can contest the grapple against your spell save DC, or deal 5 slashing, fire, or acid damage to the hair to free themselves. The hair has an AC of 12, and you take no damage when it is attacked.</p>
+		</description>
+		<sheet action="Bonus Action/Action">
+			<description>You can expend a 1st level spell slot to cause your hair to spring to life for 1 minute. While it is animated, you can use your action to make a melee spell attack with it, dealing {{occultist-animate-hair:die}}d8 bludgeoning damage on hit. If you hit a Large or smaller creature, as a bonus action you can force it to make a DC {{occultist:spellcasting:dc}} Strength saving throw, or become grappled by your hair (which it can contest or attack to free itself).</description>
+		</sheet>
+		<rules>
+			<stat name="occultist-animate-hair:die" value="1" bonus="base"/>
+			<stat name="occultist-animate-hair:die" value="1" level="5" />
+			<stat name="occultist-animate-hair:die" value="1" level="11" />
+			<stat name="occultist-animate-hair:die" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Companion Coven" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_COMPANIONCOVEN">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>As a ritual that takes 1 hour, you can form a coven bound with one willing creature that has spell slots. While both of your are conscious and within 120 feet of each other, you gain the ability to share spell slots up to a spell slot level of your Witch level divided by four (rounded down), minimum of 1st level slots. While this bond is active, you can use your Spellcasting feature to cast using their spell slots (consuming them as normal), and they can use their Spellcasting feature (if they have one) to cast using your qualifying spell slots (consuming them as normal).</p>
+			<p class="indent">Additionally, you know their location at all times while they are part of your coven and within 120 feet of you. You can only be bonded to one creature with this bond at a time. You can end this coven at any time.</p>
+		</description>
+		<sheet usage="Spell Slot Level {{occultist-companion-coven:slots}}">
+			<description>You can form a coven bond with one willing creature that has spell slots, by performing a 1 hour ritual. You can only be bound to one creature. While within 120 ft., you know their location, and you can share spell slots up to level {{occultist-companion-coven:slots}} while conscious.</description>
+		</sheet>
+		<rules>
+			<stat name="occultist-companion-coven:slots" value="1" bonus="base"/>
+			<stat name="occultist-companion-coven:slots" value="1" level="8" />
+			<stat name="occultist-companion-coven:slots" value="1" level="12" />
+			<stat name="occultist-companion-coven:slots" value="1" level="16" />
+			<stat name="occultist-companion-coven:slots" value="1" level="20" />
+		</rules>
+	</element>
+	<element name="Evil Eye" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_EVILEYE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>You gain the ability to lay the most unsettling of gaze upon a creature. As a reaction to a creature hitting you with a melee attack, you can unleash a terrifying glare at them. The target creature must make a Wisdom saving throw or become frightened of you until the end of your next turn. Once a creature has passed a save against this ability, they are immune to it for 24 hours.</p>
+			<p class="indent">Additionally, you gain proficiency in the Intimidation skill.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>As a reaction to being hit by a melee attack, you can force the attacking creature to make a Wisdom saving throw or become frightened of you until the end of your next turn. A creature that saves against this ability, is immune to it for 24 hours.</description>
+		</sheet>
+		<rules>
+			<stat name="intimidation:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Familiar Swap" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_FAMILIARSWAP">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>If your familiar is within 60 feet of you, as an action, you can swap places with your familiar. If you cannot fit into the space where your familiar is, you take 1d6 force damage instead.</p>
+			<p class="indent">Once you do this, you cannot do so again until you complete a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest" >
+			<description>While within 60 feet of you, you can swap places with your familiar. If you cannot fit into the space where your familiar is, you take 1d6 force damage instead.</description>
+		</sheet>
+	</element>
+	<element name="Form of the Familiar" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_FORMOFTHEFAMILIAR">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>You learn the <i>form of the familiar</i> spell, and gain the ability to cast it once without expending a spell slot as an action.</p>
+			<p class="indent">You regain the ability to cast it in this way again after completing a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>You can cast Form of the Familiar once without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_REDDITUA_KTTOC_SPELL_FORM_OF_FAMILIAR" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Rites of the Moon" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_RITESOFTHEMOON">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>You learn the ancient rites of the moon and the powers that holds, opening new pathways of magic to you. You learn the following spells at the following levels. This are Occultist spells for you.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td>Occultist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>faerie fire</em></td></tr>
+				<tr><td>3rd</td><td><em>moonbeam</em></td></tr>
+				<tr><td>5th</td><td><em>tidal wave</em></td></tr>
+				<tr><td>7th</td><td><em>control water</em></td></tr>
+				<tr><td>9th</td><td><em>wall of light</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Occultist" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_LIGHT" level="9" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Riding Familiar" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_RIDINGFAMILIAR">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>If you have a familiar without a flying speed, as an action you can make them become a creature one size larger than you (up to Large sized) for 8 hours. As an action, you can revert your familiar to it's normal size. At 12th level, you can use this ability on familiar with flying speed.</p>
+			<p class="indent">Once you do this, you cannot do so again until you complete a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>If you have a familiar without a flying speed, you can make them become a creature one size larger than you (up to Large) for 8 hours.</description>
+			<description level="12">If you have a familiar (even with flying speed), you can make them become a creature one size larger than you (up to Large) for 8 hours.</description>
+		</sheet>
+	</element>
+	<element name="Skulking Familiar" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_SKULKINGFAMILIAR">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>Any familiar summoned by you gains proficiency in the Stealth skill, and doesn't provoke opportunity attacks when it moves out of an enemy's reach.</p>
+		</description>
+		<sheet>
+			<description>Any familiar summoned by you gains proficiency in the Stealth skill, and doesn't provoke opportunity attacks when it moves out of an enemy's reach.</description>
+		</sheet>
+	</element>
+	<element name="Witch's Brew" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_WITCHSBREW">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>During a short or long rest, you can infuse a spell into a concoction, taking effect and expending the spell slot after the rest completes.</p>
+			<p class="indent">This spell can subsequently be cast by anyone carrying the potion by drinking the potion, with the drinker as the target, acting as the caster of the spell, but using the Witch's spell casting ability modifier.</p>
+			<p class="indent">The potion remains potent until you complete a long rest and recharge the spell slot expended to create the potion.</p>
+			<div class="reference">
+				<div element="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_ALCHEMISTRULES" />
+			</div>
+		</description>
+		<sheet>
+			<description>During a short or long rest, you can infuse a spell into a potion, expending the spell slot after the rest completes. That spell targets the potion's drinker, using your spell casting modifier. The potion becomes inert when you complete your next long rest.</description>
+		</sheet>
+	</element>
+	<element name="Witch's Claws" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_WITCHSCLAWS">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>You learn the cantrip <i>primal savagery</i>. When you deal damage to a creature with <i>primal savagery</i>, you can apply the effect of Witch's Touch to it.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage to a creature with Primal Savagery, you can apply the effect of Witch's Touch to it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Witch's Hat" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_WITCH_WITCHSHAT">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Witch</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_ARCHETYPE_TRADITION_WITCH</requirements>
+		<description>
+			<p><em>Witch Specific Rite</em></p>
+			<p>You invest some of your magic, turning a hat (traditionally a floppy wide brimmed black witch's hat) into a Hat of Disguise.</p>
+			<p class="indent">If your hat is lost or destroyed, you can create a new one during 2 hours of work. If a previous hat still exists when you make a new one, it loses its magic upon the completion of the new one.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_HAT_OF_DISGUISE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can spend 2 hours of work to infuse a hat with magic to turn it into a Hat of Disguise.</description>
+		</sheet>
+	</element>
+	
+	<!-- General Rites -->
+	<element name="Alchemical Rites" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_ALCHEMICALRITES">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You gain proficiency with <i>alchemy tools</i>. During a long rest, you can use them to concoct an improvised <i>potion of healing</i> spending 1 hour of the long rest to tend to it's simmering. Due to it's improvised nature, it expires in 24 hours, and has no value in gold pieces.</p>
+			<p class="indent">During this process, you can expend a 5th level spell slot to make it a <i>greater healing potion</i> if you have one available. The expended spell slot is regained when the long rest is completed as normal.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_HEALING" />
+			</div>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_GREATER_HEALING" />
+			</div>
+		</description>
+		<sheet>
+			<description>During a long rest, you can spend 1 hour to create a temporary Potion of Healing (lasts for 24 hours). You can use a 5th level spell slot to create a Potion of Greater Healing instead.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES"/>
+		</rules>
+	</element>
+	<element name="Blood Rituals" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_BLOODRITUALS">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>5th level Occultist</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level (Occult Rite)</em></p>
+			<p>Whenever you cast a ritual spell that requires a material component, you can instead use blood.</p>
+			<p class="indent">Willing living creatures within 10 feet can expend hit dice, rolling them and taking necrotic damage equal to the value rolled to fuel the ritual instead of a material component, with each 10 hit point sacrificed in this manner able to replace up to 100 gp of material components (for example, to replace a diamond worth 500 gold, 50 hit points would have to be expended in this manner).</p>
+			<p class="indent">Creatures that lose hit points in this way cannot regain those hit points until they complete a long rest.</p>
+		</description>
+		<sheet>
+			<description>When casting a ritual spell that requires material components, you can use the blood of willing living creatures within 10 feet instead. They can expend hit dice, taking the results as necrotic damage (these hit points cannot be regained until completing a long rest), and fuel the ritual for 100gp per 10 hitpoints lost.</description>
+		</sheet>
+	</element>
+	<element name="Blood Magic" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_BLOODMAGIC">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>Blood Rituals</prerequisite>
+		<requirements>ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_BLOODRITUALS</requirements>
+		<description>
+			<p><em>Prerequisite: Blood Rituals (Occult Rite)</em></p>
+			<p>You can sacrifice the blood of willing living creatures to power spells. When you cast a spell, you can sacrifice blood to power the spell, sacrificing one hit die per level of spell you cast, rolling them and taking damage equal to the number rolled. Willing creatures within 10 feet can use their reaction contribute blood to the spell, sacrificing hit dice by rolling them and taking necrotic damage equal to the number rolled. All sacrificed hit dice are added together to the level of the spell you can cast.</p>
+			<p class="indent">You can cast a total number of spells in this manner equal to your Occultist level. You regain all levels of usage of this rite when you complete a long rest. Some spells (marked as blood magic) can only be cast via blood magic using this rite.</p>
+		</description>
+		<sheet usage="{{occultist:level}} Spells/Long Rest">
+			<description>When you cast a spell, you can sacrifice one hit die per level of spell you cast, taking necrotic damage equal to the rolled result. Willing creatures within 10 feet can use their reaction, to do so as well. The number of sacrificed hit dice determines the level of the spell cast.</description>
+		</sheet>
+	</element>
+	<element name="Corrupt Item" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_CORRUPTITEM">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You use a dark and secret rite to corrupt a non-magical item causing it to become a cursed magic item. While any creature other than you is in possession of this item, they are under the effect of <i>bane</i>.</p>
+			<p class="indent">Select one of the following for the items magical property (the item must be of a type of item that could be the magical item selected): <i>bag of tricks, brooch of shielding, goggles of night, lantern of revealing,</i> or <i>staff of the python</i> (you can ignore attunement restrictions of this item).</p>
+			<p class="indent">When you change rites, you can reselect this rite to destroy the item and create a new item.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_BANE" />
+			</div>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_BAG_OF_TRICKS_GRAY" />
+			</div>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_BROOCH_OF_SHIELDING" />
+			</div>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_GOGGLES_OF_NIGHT" />
+			</div>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_LANTERN_OF_REVEALING" />
+			</div>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_STAFF_OF_THE_PYTHON" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can corrupt one non-magical item, causing it to become a magic item. Any creature other than you possessing this item is under the effect of the Bane spell.</description>
+		</sheet>
+	</element>
+	<element name="Commune Beyond Death" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_COMMUNEBEYONDDEATH">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You learn the <i>speak with dead</i> spell, and it's a occultist spell for you. You can cast it without expending a spell slot.</p>
+			<p class="indent">Once you cast it this way, you must finish a short or long rest before you can cast it this way again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can cast Speak with Dead without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Emblazed Fetish" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_EMBLAZEDFETISH">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You emblazon a mystical mark on yourself, via a tattoo, scar, or similar permanent mark. You can use this as your spell casting focus for casting spells. While using this mark to cast spells, you do not need a free hand to cast spells that have a Material component that uses your Occult Fetish.</p>
+		</description>
+		<sheet>
+			<description>You do not need a free hand to cast spells that have a material component that uses your Occult Fetish.</description>
+		</sheet>
+	</element>
+	<element name="Lost Ritual" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_LOSTRITUAL">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You learn of a ritual lost to time. Select one occultist spell you know of 5th level or lower. This spell becomes a ritual spell for you.</p>
+			<p class="indent">You can cast this spell as a ritual once, and must complete a short or long rest before casting it as a ritual again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You choose one occultist spell you know of 5th level or lower. You can cast this spell as a ritual once per short rest.</description>
+		</sheet>
+	</element>
+	<element name="Occult Haste" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_OCCULTHASTE">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>5th level Occultist</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level (Occult Rite)</em></p>
+			<p>You learn the spell <i>haste</i>. It is an Occultist spell for you.</p>
+		</description>
+		<sheet>
+			<description>You learn the Haste spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Markings of Protections" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_MARKINGSOFPROTECTIONS">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You mark yourself with magical symbols and patterns, protecting you from harm. You are under the effect of the <i>mage armor</i> spell.</p>
+		</description>
+		<sheet>
+			<description>You are under the effect of the Mage Armor spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
+			
+			<stat name="ac:markings of protections" value="13" />
+			<stat name="ac:markings of protections" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:markings of protections" bonus="calculation" equipped="[armor:none]" />
+		</rules>
+	</element>
+	<element name="Rite of Immortality" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_RITEOFIMMORTALITY">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>15th level Occultist</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level (Occult Rite)</em></p>
+			<p>You continue to age, but you will no longer die of old age.</p>
+		</description>
+		<sheet>
+			<description>You will no longer die of old age.</description>
+		</sheet>
+	</element>
+	<element name="Rite of Youth" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_RITEOFYOUTH">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>15th level Occultist</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level (Occult Rite)</em></p>
+			<p>You cease to visually age, and can even choose to become more youthful in appearance, though the natural life span of your race remains your natural lifespan.</p>
+		</description>
+		<sheet>
+			<description>You seem to show no signs of aging.</description>
+		</sheet>
+	</element>
+	<element name="Root of Magic" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_ROOTOFMAGIC">
+		<supports>KTTOC Occult Rite</supports>
+		<prerequisite>15th level Occultist</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level (Occult Rite)</em></p>
+			<p>You learn 10 cantrips from any class list of your choice. They are occultist spells for you.</p>
+		</description>
+		<sheet>
+			<description>You learn 10 cantrips from any class list of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Root of Magic)" supports="0" number="10" spellcasting="Occultist" />
+		</rules>
+	</element>
+	<element name="Specialized Poisons" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_SPECIALIZEDPOISONS">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>When you deal poison damage with an occultist spell or create poison, you can (but don't have to) specify a creature type it is created to effect. The poison damage from that spell or poison bypasses any resistance or immunity to poison damage a creature of that type has. All other creature types beside the specified type have resistance to damage by that spell effect or poison.</p>
+		</description>
+		<sheet>
+			<description>When you deal poison damage with an occultist spell or create poison, you can choose to specify a creature type for which the poison will ignore resistance and immunity, while other creature types have resistance to it.</description>
+		</sheet>
+	</element>
+	<element name="Soulburn" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_SOULBURN">
+		<supports>KTTOC Occult Rite</supports>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You can make your powers sear the very soul of the creature they strike. When you deal fire or lightning damage with a spell, you can choose to make it deal necrotic damage instead.</p>
+		</description>
+		<sheet>
+			<description>When you deal fire or lightning damage with a spell, you can choose to make it deal necrotic damage instead.</description>
+		</sheet>
+	</element>
+	<element name="Vestaments of War" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_VESTAMENTSOFWAR_LIGHT">
+		<supports>KTTOC Occult Rite</supports>
+		<requirements>(!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR)||ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_VESTAMENTSOFWAR_LIGHT</requirements>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p><b>You gain proficiency in light armor.</b> If you already have proficiency in light armor, you gain proficiency in medium armor and shields.</p>
+			<p class="indent">You can take this rite twice.</p>
+		</description>
+		<sheet alt="Vestaments of War (Light)">
+			<description>You gain proficiency in light armor.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+		</rules>
+	</element>
+	<element name="Vestaments of War" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_CLASS_FEATURE_OCCULTRITE_GENERAL_VESTAMENTSOFWAR_MEDiUM">
+		<supports>KTTOC Occult Rite</supports>
+		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+		<description>
+			<p><em>Occult Rite</em></p>
+			<p>You gain proficiency in light armor. If you already have proficiency in light armor, <b>you gain proficiency in medium armor and shields.</b></p>
+			<p class="indent">You can take this rite twice.</p>
+		</description>
+		<sheet alt="Vestaments of War (Medium)">
+			<description>You gain proficiency in medium armor and shields.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+	
+	
+	
+	
+	<!-- Notes -->
+	<element name="Occult Fetish" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_OCCULT_FETISH">
+		<compendium display="false" />
+		<description>
+			<p>Similar to a Holy Symbol or an Arcane Focus, an Occult Fetish is a magical focus, but one that functions for the Occultist.</p>
+			<p class="indent">It can be almost anything, though usually has a somewhat macabre bent, such as a skull decorated with feathers or pendant decorated with teeth and runes.</p>
+			<p class="indent">You can buy or make one for 10 gp, and it typically weighs about 1 lb.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Class and Subclass Rites" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_CLASSSUBCLASSRITES">
+		<compendium display="false" />
+		<description>
+			<p>Each subclass has specific rites that only they can select, and for each subclass, these are added to the pool of rites with the class rites you can selects. You can select from either list when you are selecting a new rite.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Winding Paths of Fate" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_WINDINGPATHSOFFATE">
+		<compendium display="false" />
+		<description>
+			<p>It should be noted that this does not negate the normal drawback of casting augury multiple times. As you delve fate further for more information, it becomes harder to read as the flow becomes more turbulent for your changes to it.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Witches and Gender" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_WITCHESGENDER">
+		<compendium display="false" />
+		<description>
+			<p>While the term Witch is generally thought of to refer to a female spell caster, the typical male counterpart would be Warlock, a class that is certainly open to any gender, and the same would generally be true for Witch.</p>
+			<p class="indent">Various lore and mythos in and out of a setting may make assumptions, but by their vary nature PCs tend to be the exception to rules, and this subclass is not limited to any particular gender.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Keeping Track of Duplicates" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_KEEPINGTRACKOFDUPLICATES">
+		<compendium display="false" />
+		<description>
+			<p>You can assume any illusory duplicate that does not have their location specified is at the player's location.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Alchemist Rules" type="Class Feature" source="r/UA: The Occultist Class" id="ID_REDDITUA_KTTOC_NOTE_OCCULTIST_ALCHEMISTRULES">
+		<compendium display="false" />
+		<description>
+			<p>If your group uses the <i>KibbleTasty Artificer</i>, you can use the rules for <b>Alchemical Infusions</b> (Artificer, pg 17) for this feature, but can only make 1 potion during a short or long rest with it, and using the your Spells Known as the valid selection options.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	
+</elements>
