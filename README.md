@@ -10,13 +10,7 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 ## Third Party
 
   - **[grease-monkey.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/GREASEMONKEY/grease-monkey.index)** contains the following content from [The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/) (DMs Guild)
-    - Class archetypes
-    - ATUM Pilot prestige class
-    - Spells
-    - Feats
-    - Backgrounds
-	- Weapons
-	- Hardpoints
+    - Class archetypes, ATUM Pilot prestige class, Spells, Feats, Backgrounds, Weapons, Hardpoints
 	- _Experimental: ATUM Character Sheet (separate source: disable if not building an ATUM vehicle)_
   - **[dms-guild-michael-richter.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/THIRD_PARTY/dmsg-michael-richter/dmsg-michael-richter.index)** contains some of [Michael Richter](https://www.dmsguild.com/browse.php?author=Michael%20Richter)'s content from the DMs Guild
     - [Race: Catfolk](https://www.dmsguild.com/product/182902/Race-Catfolk-5e)
@@ -32,7 +26,7 @@ See [Extending Content](https://aurorabuilder.com/content) or the [Aurora reposi
 	
   - **[feats-ritual-caster-reworked.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/HOMEBREW/RITUALCASTER/feats-ritual-caster-reworked.index)** contains a rework of the _Ritual Caster_ feat to allow for better ritual spell browsing in Aurora.
 
-##### [r/UnearthedArcana](https://www.reddit.com/r/UnearthedArcana/)
+#### [r/UnearthedArcana](https://www.reddit.com/r/UnearthedArcana/)
   - **[rUA-kibbles-tasty.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/rUA-kibbles-tasty.index)** contains some of [u/KibblesTasty](https://www.reddit.com/user/KibblesTasty/)'s content from r/UnearthedArcana
     - [Class: The Occultist](https://www.reddit.com/r/UnearthedArcana/comments/ikh0d5/occultist_10_by_kibblestasty_oracles_shamans/): Oracles, Shamans, Witches and Rites!
   - **[rUA-vince-m.index](https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/VINCE_M/rUA-vince-m.index)** contains some of [u/Vince-M](https://www.reddit.com/user/Vince-M/)'s content from r/UnearthedArcana
