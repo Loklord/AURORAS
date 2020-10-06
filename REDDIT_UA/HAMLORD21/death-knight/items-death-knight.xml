@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Death Knight</name>
+		<update version="0.0.1">
+			<file name="death-knight/items-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/items-death-knight.xml" />
+		</update>
+	</info>
+	
+	<element name="Runeforged Weapon, +1" type="Magic Item" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_MAGIC_ITEM_WEAPON_RUNEFORGED">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this runeforged magic weapon.</p>
+			<p><i>(Requires Runeforging. A Death Knight may have 2 weapons enchanted this way at one time, but the enchantments wear off after 1 round if they are not in their possession.)</i></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Runeforged {{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+	<element name="Runeforged Weapon, +1 (Razorice)" type="Magic Item" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_MAGIC_ITEM_WEAPON_RUNEFORGED_RAZORICE">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this runeforged magic weapon. Additionally, if you deal cold damage with the weapon, once per turn you may deal 1d4 more cold damage.</p>
+			<p><i>(Requires Improved Runeforging. A Death Knight may have 2 weapons enchanted this way at one time, but the enchantments wear off after 1 round if they are not in their possession.)</i></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Runeforged {{parent}} +{{enhancement}} (Razorice)</set>
+		</setters>
+	</element>
+	<element name="Runeforged Weapon, +1 (Fallen Crusader)" type="Magic Item" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_MAGIC_ITEM_WEAPON_RUNEFORGED_FALLENCRUSADER">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this runeforged magic weapon. Additionally, if you critically strike with this weapon, it heals you for 1d8 hit points.</p>
+			<p><i>(Requires Improved Runeforging. A Death Knight may have 2 weapons enchanted this way at one time, but the enchantments wear off after 1 round if they are not in their possession.)</i></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Runeforged {{parent}} +{{enhancement}} (Fallen Crusader)</set>
+		</setters>
+	</element>
+	<element name="Runeforged Weapon, +1 (Stoneskin Gargoyle)" type="Magic Item" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_MAGIC_ITEM_WEAPON_RUNEFORGED_STONESKINGARGOYLE">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this runeforged magic weapon. Additionally, it grants you +1 to AC while wielded.</p>
+			<p><i>(Requires Improved Runeforging. A Death Knight may have 2 weapons enchanted this way at one time, but the enchantments wear off after 1 round if they are not in their possession.)</i></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Runeforged {{parent}} +{{enhancement}} (Stoneskin Gargoyle)</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" alt="Stoneskin Gargoyle" />	
+		</rules>
+	</element>
+	
+</elements>

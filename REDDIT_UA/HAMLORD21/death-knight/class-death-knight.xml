@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Death Knight</name>
+		<update version="0.0.1">
+			<file name="death-knight/class-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/class-death-knight.xml" />
+		</update>
+	</info>
+	
+	<!-- The Death Knight v.2.0 by u/Hamlord21 -->
+	
+	<element name="Death Knight" type="Class" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_DEATHKNIGHT">
+		<description>
+			<p>A pale dwarf, with skin cold as ice, raises his axe to meet the orc chieftan's own. The dwarf had single handedly carved a path through the orc's tribe, with a single goal on his mind. The orc hoped that the dwarf's energy would fade, and that the fight would be easy by the time he took the field, but the dwarf swung again and again, machinelike in his fury. Suddenly a blue rune lit above the dwarf's axe, and it swung with more force than ever, and the orc was unable to meet it.</p>
+			<p class="indent">A man clad in black plate armor strides through the disease ridden town. Flanked by undead bodygaurds, he fears no rebuttal from the meager townsfolk. Finding a corpse ridden with boils, he reaches down to inspect it. Satisfied with the speed at which his new plague rendered the town desecrated, he ordered his thralls to hunt down survivors. There will always be new diseases to test, and new victims to test them on.</p>
+			<p class="indent">Seeing her ally in danger, the elven warrior flung herself between them and the horde of goblins baring down on them. A whirling mass of bones moves to defend the pair, and tears the attacking horde asunder. Inspecting her ally's wounds, a red rune appears above her hand, and the wounds began to mend themselves. Satisfied with her work, she willed her weapon back to her. Suddenly her sword leapt from the ground, landed in her hand, and she sheathed it. It would be a long night, and there would be many more goblins ahead of them, and she'd be ready.</p>
+			
+			<h4>SOWERS OF DEATH</h4>
+			<p>To say that a Death Knight is tied to death is to say a person is tied to food. They feel an unnatural drive to cause as much death and destruction as possible. Some fall to this desire, and become little more than monsters given mortal shell, but others focus this desire to further their goals. Be it razing the countryside, or leading a rebellion agaisnt a tyrant, death follows Death Knights wherever they go.</p>
+			
+			<h4>USERS OF DARK MAGIC</h4>
+			<p>An edgy name and tendency to kill, are far from a Death Knights only characteristics. They channel their dark magic through runes, small symbols that appear on the Death Knights weapons, armor, or even on their skin. By expending the latent power in the runes, the Death Knights can cause a number of magical affects.</p>
+			
+			<h4>CREATING A DEATH KNIGHT</h4>
+			<p>When creating a Death Knight, consider how you obtained your dark powers. Death Knights use ancient runic magic, little of which is known or understood. Some learn their magic from dark tomes found in a lich's lair, ancient scrolls found in some dragon's den, or some return to life with knowledge from beyond the grave. Sometimes even near death experiences can trigger memories to surface from deep within the psyche of mortal men. Regardless of their source, the dark runic magic leads to many powers that some might consider... unnatural.</p>
+			
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>You can make a Death Knight quickly by following these suggestions. First make Strength your highest ability score followed by Constitution. Second choose the Soldier or Criminal background.</p>
+			
+			<h3>CLASS FEATURES</h3>
+			<p>As a Death Knight, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per Death Knight level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Death Knight level after 1st </li>
+			</ul>
+			
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light, Medium, and Heavy Armor and Shields</li>
+				<li><strong>Weapons:</strong> Simple and Martial Weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength and Constitution</li>
+				<li><strong>Skills:</strong> Choose 2 from Athletics, Arcana, Religion, Insight, Perception, and Intimidation</li>
+			</ul>
+			
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> Two Martial Weapons or <i>(b)</i> any martial melee weapon and a shield </li>
+				<li><i>(a)</i> Five Javelins or <i>(b)</i> any simple melee weapon </li>
+				<li><i>(a)</i> Chainmail or <i>(b)</i> Scalemail </li>
+				<li>An explorer’s pack and a dagger.</li>
+			</ul>
+			
+			<h5 class="caption">THE DEATH KNIGHT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-40 left">Features</td><td class="col-10">Runes</td><td class="col-20">Rune Empowered Abilities</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Rune Magic, Undead Warrior</td><td>2</td><td>2</td></tr>
+				<tr><td> 2nd</td><td class="left">Fighting Style, Runic Power</td><td>2</td><td>3</td></tr>
+				<tr><td> 3rd</td><td class="left">Specialization</td><td>3</td><td>4</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack</td><td>4</td><td>6</td></tr>
+				<tr><td> 6th</td><td class="left">Blood Tap</td><td>4</td><td>7</td></tr>
+				<tr><td> 7th</td><td class="left">Specialization Feature</td><td>5</td><td>8</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>5</td><td>8</td></tr>
+				<tr><td> 9th</td><td class="left">Tireless Undead</td><td>6</td><td>9</td></tr>
+				<tr><td>10th</td><td class="left">Specialization Feature</td><td>6</td><td>9</td></tr>
+				<tr><td>11th</td><td class="left">Murderous Efficiency</td><td>6</td><td>10</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6</td><td>10</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>6</td><td>11</td></tr>
+				<tr><td>14th</td><td class="left">Lichborne</td><td>6</td><td>11</td></tr>
+				<tr><td>15th</td><td class="left">Raise Ally</td><td>6</td><td>12</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>6</td><td>12</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>6</td><td>13</td></tr>
+				<tr><td>18th</td><td class="left">Specialization Feature</td><td>6</td><td>13</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>6</td><td>14</td></tr>
+				<tr><td>20th</td><td class="left">Empower Rune Weapon</td><td>6</td><td>14</td></tr>
+			</table>
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RUNEMAGIC_DEATHKNIGHT" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_UNDEADWARRIOR" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_FIGHTINGSTYLE" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RUNICPOWER" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_SPECIALIZATION" />
+			<!-- <div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_ABILITYSCOREIMPROVEMENT_DEATHKNIGHT" /> -->
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_EXTRAATTACK" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_BLOODTAP" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_TIRELESSUNDEAD" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_MURDEROUSEFFICIENCY" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_LICHBORNE" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RAISEALLY" />
+			<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_EMPOWERRUNEWEAPON" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A priestly champion who wields divine magic in service of a higher power.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			
+			<select type="Proficiency" name="Skill Proficiency (Death Knight)" supports="(ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION)" number="2" />
+
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RUNEMAGIC_DEATHKNIGHT" level="1" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_UNDEADWARRIOR" level="1" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_FIGHTINGSTYLE" level="2" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RUNICPOWER" level="2" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_SPECIALIZATION" level="3" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_ABILITYSCOREIMPROVEMENT_DEATHKNIGHT" level="4" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_EXTRAATTACK" level="5" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_BLOODTAP" level="6" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_TIRELESSUNDEAD" level="10" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_MURDEROUSEFFICIENCY" level="11" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_LICHBORNE" level="14" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RAISEALLY" level="15" />
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_EMPOWERRUNEWEAPON" level="20" />
+		</rules>
+		<!--<multiclass id="ID_REDDITUA_HL21TDKC_MULTICLASS_DEATHKNIGHT">
+			<prerequisite>Wisdom 13</prerequisite>
+			<requirements>[wis:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Medicine, Herbalism Kit</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			</rules>
+		</multiclass>-->
+	</element>
+	<element name="Rune Magic" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RUNEMAGIC_DEATHKNIGHT">
+		<description>
+			<p>Beginning at 1st level, you learn to use Runes to fuel your powers. These Runes allow you to use dark magic, and can have a variety of effects.</p>
+			
+			<h5 class="caption">RUNES</h5>
+			<p>You start with 2 Runes, and gain more as reach higher levels, as shown in the Runes column of the Death Knight table. You can never have more Runes than shown on the table for your level. You regain all spent runes on a Long Rest. You expend them on some class features and your <i>Rune Empowered Abilities</i>.</p>
+			
+			<h5 class="caption">RUNE EMPOWERED ABILITIES</h5>
+			<p>At 1st level you learn 2 Rune Empowered Abilities of your choice from the list at the end of the class description. When you gain certain Death Knight levels, you gain additional Rune Empowered Abilities of your choice as shown in the column of the Death Knight Table. Additionally, when you gain a level in this class, you can choose one of the Rune Empowered Abilities you know and replace it with another Rune Empowered Ability that you could learn at that level.</p>
+			<p class="indent"><b><i>Casting Spells. </i></b>Some Rune Empowered abilities allow you to cast spells, and other ask you to maintain concentration. To cast one of those spells, you use its casting time and other rules, but you don't need to provide material or somatic components for it. If an ability requires you to maintain Concentration, you must Concentrate on it as though it were a spell.</p>
+			<p class="indent"><b><i>Saving Throws. </i></b>Some of your Rune Empowered Abilities require your target to make a saving throw to resist the attack's efects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Rune Empowered Ability Save DC </strong> = 8 + your Proficiency Bonus + your Constitution Modifier</p>
+			</center>
+		</description>
+		<sheet usage="{{death-knight-rune-magic:runes}} Runes/Long Rest">
+			<description>DC {{death-knight-rune-magic:dc}}.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 1)" supports="HL21TDKC Rune Empowered Abilities Pool" level="1" number="2" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 2)" supports="HL21TDKC Rune Empowered Abilities Pool" level="2" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 3)" supports="HL21TDKC Rune Empowered Abilities Pool" level="3" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 4)" supports="HL21TDKC Rune Empowered Abilities Pool" level="4" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 5)" supports="HL21TDKC Rune Empowered Abilities Pool" level="5" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 6)" supports="HL21TDKC Rune Empowered Abilities Pool" level="6" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 7)" supports="HL21TDKC Rune Empowered Abilities Pool" level="7" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 9)" supports="HL21TDKC Rune Empowered Abilities Pool" level="9" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 11)" supports="HL21TDKC Rune Empowered Abilities Pool" level="11" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 13)" supports="HL21TDKC Rune Empowered Abilities Pool" level="13" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 15)" supports="HL21TDKC Rune Empowered Abilities Pool" level="15" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 17)" supports="HL21TDKC Rune Empowered Abilities Pool" level="17" />
+			<select type="Class Feature" name="Rune Empowered Ability (Death Knight 19)" supports="HL21TDKC Rune Empowered Abilities Pool" level="19" />
+			
+			<stat name="death-knight-rune-magic:runes" value="2" />
+			<stat name="death-knight-rune-magic:runes" value="1" level="3" />
+			<stat name="death-knight-rune-magic:runes" value="1" level="5" />
+			<stat name="death-knight-rune-magic:runes" value="1" level="7" />
+			<stat name="death-knight-rune-magic:runes" value="1" level="9" />
+		
+			<stat name="death-knight-rune-magic:dc" value="8" />
+			<stat name="death-knight-rune-magic:dc" value="proficiency" />
+			<stat name="death-knight-rune-magic:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Undead Warrior" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_UNDEADWARRIOR">
+		<description>
+			<p>Also at 1st level, your connection to death gives you a few benefits:</p>
+			<ul>
+				<li>You may add your proficiency bonus to Death saving throws (Natural 1s still count as 2 failures).</li>
+				<li>Proficiency in Intimidation. If you are already proficient, you may add double your proficiency bonus.</li>
+				<li>You have advantage on Arcana and Religion skill checks to gather knowledge about undead.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Add your proficiency bonus to Death saving throws (natural 1s still count as 2 failures). You have advantage on Arcana and Religion checks to gather knowledge about undead.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_FIGHTINGSTYLE">
+		<description>
+			<p>Beginning at 2nd level, you adopt a particular style of fighting as your specialty, Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Death Knight" />
+		</rules>
+	</element>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE"><supports>Death Knight</supports></append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING"><supports>Death Knight</supports></append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING"><supports>Death Knight</supports></append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING"><supports>Death Knight</supports></append>
+	
+	<element name="Runic Power" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RUNICPOWER">
+		<description>
+			<p>Also at 2nd level, you learn to use the leftover remnants of your Runes as fuel for new attacks, called Runic Power.</p>
+			<p class="indent">You can store up to 10 Runic Power charges. Whenever you finish a Long Rest, your number of Runic Power charges resets to 0. You gain a charge of Runic Power whenever you spend a Rune on a Rune Empowered Ability or Death Knight Feature.</p>
+			<p class="indent">You start with two ways to use this feature. All Death Knights know <i>Death Strike</i>, as well as an effect determined by your Specialization. You also get another way to use it from your Specialization at 18th level.</p>
+			<p class="indent">Some Runic Power options require saving throws. When you use such an effect, the DC equals your Rune Empowered Ability DC.</p>
+			<div class="reference">
+				<div element="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHSTRIKE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can store up to 10 Runic Power charges. You gain a charge whenever you spend a Rune. When you finish a Long Rest, your Runic Power charges reset to 0.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHSTRIKE" />
+		</rules>
+	</element>
+	<element name="Specialization" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_SPECIALIZATION">
+		<description>
+			<p>At 3rd level your powers begin to settle into a certain discipline. You learn to have a favor for one of your types of Runes, and begin to focus more into that type of magic.</p>
+			<p class="indent">You choose either the Frost Specialization, Blood Specialization, or the Unholy Specialization. Depending on what archetype you choose you get different abilities at 3rd, 7th, 10th, and 15th levels, as well as allowing access to certain Rune Empowered Abilities.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Specialization" supports="HL21TDKC Specialization Pool" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_ABILITYSCOREIMPROVEMENT_DEATHKNIGHT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Death Knight 4)" supports="Improvement Option,Death Knight,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Death Knight 8)" supports="Improvement Option,Death Knight,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Death Knight 12)" supports="Improvement Option,Death Knight,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Death Knight 16)" supports="Improvement Option,Death Knight,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Death Knight 19)" supports="Improvement Option,Death Knight,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_EXTRAATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Blood Tap" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_BLOODTAP">
+		<description>
+			<p>Starting at level 6, you learn to quickly convert your unharnessed power into Runes. Whenever you take a Short Rest, you regain up to 2 spent Runes.</p>
+		</description>
+		<sheet>
+			<description>Whenever you take a Short Rest, you regain up to 2 spent Runes.</description>
+		</sheet>
+	</element>
+	<element name="Tireless Undead" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_TIRELESSUNDEAD">
+		<description>
+			<p>One thing you have learned from the undead, is their unending fortitude. Starting at level 10, whenever you finish a Short Rest, your Exhaustion level, if any, is reduced by one.</p>
+		</description>
+		<sheet>
+			<description>Whenever you take a Short Rest, your Exhaustion level is reduced by one.</description>
+		</sheet>
+	</element>
+	<element name="Murderous Efficiency" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_MURDEROUSEFFICIENCY">
+		<description>
+			<p>At 11th level, you learn to feed on death. When you reduce a hostile creature to 0 Hit Points, you regain a spent Rune.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a hostile creature to 0 Hit Points, you regain a spent Rune.</description>
+		</sheet>
+	</element>
+	<element name="Lichborne" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_LICHBORNE">
+		<description>
+			<p>At 14th level, you have surpassed many of the frailties of life. You no longer need to sleep, and magic can't put you to sleep. In addition, you don't need to eat, drink, or breathe, and are immune to disease.</p>
+		</description>
+		<sheet>
+			<description>You no longer need to sleep, and magic can't put you to sleep. You don't need to eat, drink, or breathe, and are immune to disease.</description>
+		</sheet>
+	</element>
+	<element name="Raise Ally" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_RAISEALLY">
+		<description>
+			<p>At 15th level you become more skilled at manipulating the dead and nearly dead. You can use this ability on a creature that is Unconscious or has died in the last minute. As an action, choose a creature within 30 ft of you, who’s level (or CR if the creature has one) is equal to or less than your level.</p>
+			<p class="indent">The target loses the unconscious/dead condition for a number of rounds equal to your Constitution Modifier. If they were making Death saving throws they continue to do so, but they do not take automatic fails from being hit. The creature acts as if it had 1 HP for the duration. When the effect ends, the target returns to be unconscious/dead.</p>
+			<p class="indent">Once used, this ability can’t be used again until after a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Choose a creature within 30 ft of you, that is unconscious or has died in the last minute, who’s level (or CR) is equal to or less than {{death knight:level}}. The creature acts as if it had 1 HP for {{constitution:modifier}} rounds. If they were making Death saving throws they continue to do so (without automatic fails from being hit). When the effect ends, the target returns to be unconscious/dead.</description>
+		</sheet>
+	</element>
+	<element name="Empower Rune Weapon" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_DEATHKNIGHT_EMPOWERRUNEWEAPON">
+		<description>
+			<p>At level 20 you learn to empower your weapon to its maximum. As a bonus action you regain 3 spent Runes. At the beginning of your next 3 turns, you regain 1 spent Rune. After you use this ability, you cannot do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>As a bonus action you regain 3 spent Runes. At the beginning of your next 3 turns, you regain 1 spent Rune.</description>
+		</sheet>
+	</element>
+	
+	
+	<!-- Frost Specialization -->
+	<element name="Frost Specialization" type="Archetype" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_FROST">
+		<supports>HL21TDKC Specialization Pool</supports>
+		<description>
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTSTRIKE" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_PILLAROFFROST" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTPRESENCE" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTSCYTHE" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_BREATHOFSINDRAGOSA" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTSTRIKE" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_PILLAROFFROST" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTPRESENCE" level="7"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTSCYTHE" level="10"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_BREATHOFSINDRAGOSA" level="18"/>
+		</rules>
+	</element>
+	<element name="Frost Strike" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTSTRIKE">
+		<description>
+			<p>At 3rd level you learn Frost Strike. When you declare the Attack action, you may expend a charge of Runic Power, to make an extra attack with one of your weapons as a part of that Attack. You must make this decision before actually making any attacks. This extra attack covers the weapon in a brittle layer of ice, and deals Cold damage rather than any other type of damage the attack would normally do.</p>
+		</description>
+		<sheet usage="Runic Power">
+			<description>When you declare the Attack action, you can use a charge of Runic Power to make an extra attack, which deals Cold damage instead of the weapons damage type.</description>
+		</sheet>
+	</element>
+	<element name="Pillar of Frost" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_PILLAROFFROST">
+		<description>
+			<p>Also at 3rd level you learn to channel the chill of the grave to strengthen your body. As a Bonus Action, you become covered in a light frost and you gain the following benefits for one minute.</p>
+			<p class="indent">You have Advantage on Strength Checks and saving throws, as well as dealing 1d6 extra cold damage on all melee weapon attacks.</p>
+			<p class="indent">After you use this ability, you cannot do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>For one minute, you have Advantage on Strength Checks and saving throws, and deal 1d6 extra cold damage on all melee weapon attacks.</description>
+		</sheet>
+	</element>
+	<element name="Frost Presence" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTPRESENCE">
+		<description>
+			<p>At 7th level you get Advantage on saving throws against Fear and Charm effects.</p>
+		</description>
+		<sheet>
+			<description>You get Advantage on saving throws against Fear and Charm effects.</description>
+		</sheet>
+	</element>
+	<element name="Frostscythe" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_FROSTSCYTHE">
+		<description>
+			<p>At 10th level you learn to use your icy attacks against hordes of enemies. Whenever you land a melee weapon attack, if it did any Cold Damage, you may cause the attack to burst, causing another creature within 5ft of the target to take the same amount of Cold Damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you deal Cold damage with a melee weapon attack, you can deal the same amount of Cold damage to another creature within 5ft of the target.</description>
+		</sheet>
+	</element>
+	<element name="Breath of Sindragosa" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_FROST_BREATHOFSINDRAGOSA">
+		<description>
+			<p>At 18th level you learn to channel the icy breath of Sindragosa. As an action you can spend a charge of your Runic Power to cause a torrent of icy wind to come forth from your lungs. You cause all creatures in a 15 ft cone in front of you to make a Dexterity saving throw. A target takes 4d8 Cold Damage on a failed save, or half as much on a successful one.</p>
+			<p class="indent">At the beginning of your next turn, you may choose to spend another charge of Runic Power to continue using this ability, but your next breath does not require an action, you merely choose to use it during some part of your turn. This continues until you run out of Runic Power, you choose not to spend it, or 1 minute passes.</p>
+			<p class="indent">Once the ability ends, you cannot activate it again until the end of a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="Runic Power — 1/Long Rest">
+			<description>As an action you can spend a charge of Runic Power to cause all creatures in a 15 ft cone to make a Dexterity saving throw. A target takes 4d8 Cold damage on a failed save, or half as much on a successful one. &#13;
+			At the beginning of your next turn, you can spend another Runic Power to continue this ability (free action). This continues until you run out of Runic Power, you choose not to spend it, or 1 minute passes.</description>
+		</sheet>
+	</element>
+	
+	<!-- Blood Specialization -->
+	<element name="Blood Specialization" type="Archetype" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_BLOOD">
+		<supports>HL21TDKC Specialization Pool</supports>
+		<description>
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_VAMPIRICBLOOD" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_DANCINGRUNEWEAPON" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_BLOODPRESENCE" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_GOREFIENDSGRASP" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_BONESTORM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_VAMPIRICBLOOD" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_DANCINGRUNEWEAPON" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_BLOODPRESENCE" level="7"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_GOREFIENDSGRASP" level="10"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_BONESTORM" level="18"/>
+		</rules>
+	</element>
+	<element name="Vampiric Blood" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_VAMPIRICBLOOD">
+		<description>
+			<p>At 3rd level you learn Vampiric Blood. As a Bonus Action, you can expend a charge of Runic Power to heal an ally, within 30 ft, with a surge of bloody magic. The target heals for an amount of Hit Points 1d4 + your Constitution Modifier and gets temporary Hit Points equal to that same amount.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The amount of hit points increases to 2d4 at 7th level, and 3d4 at 13th level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Runic Power">
+			<description>You can use a charge of Runic Power to heal an ally within 30 ft. The target heals {{death-knight-vampiric-blood:dice}}d4+{{constitution:modifier}} hit points and gets temporary hit points for same amount.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-vampiric-blood:dice" value="1" />
+			<stat name="death-knight-vampiric-blood:dice" value="1" level="7" />
+			<stat name="death-knight-vampiric-blood:dice" value="1" level="13" />
+		</rules>
+	</element>
+	<element name="Dancing Rune Weapon" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_DANCINGRUNEWEAPON">
+		<description>
+			<p>Also at 3rd level you learn a ritual to animate your weapon temporarily. The ritual can be cast on any melee weapon, and takes 1 hour to complete which can be done as part of a Short Rest. The magic remains within the weapon until you use the ritual on a different one.</p>
+			<p class="indent">As a Bonus Action you can animate the weapon for one minute. You do not need to be touching the weapon, but you must be within 60 ft of it. Once activated the weapon takes the stats of the Dancing Rune Weapon in the stat blocks at the end of this document, and you add your proficiency Bonus to the Dancing Rune Weapon’s attack and damage rolls.</p>
+			<p class="indent">You can command the weapon to move and attack as a Bonus Action. If you don’t give it any commands, it takes the Dodge action. Any ally (including yourself) within 5 ft of the weapon gets a +2 bonus to AC.</p>
+			<p class="indent">After 1 minute the weapon returns to normal and can’t be reactivated until after a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can infuse any melee weapon with magic in a 1 hour long ritual, which can be done as part of a short rest. &#13;
+			As a Bonus Action you can animate the weapon for one minute. You must be within 60 ft of it. Once activated the weapon takes the stats of the Dancing Rune Weapon, and you add your proficiency bonus to its attack and damage rolls. You can command the weapon to move and attack as a Bonus Action (otherwise it takes the Dodge action). Any ally (including yourself) within 5 ft of the weapon gets a +2 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="STATS" supports="" default="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_DANCINGRUNEWEAPON_STATS" default-behaviour="force" />
+		</rules>
+	</element>
+	<element name="Dancing Rune Weapon (Stats)" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_DANCINGRUNEWEAPON_STATS">
+		<description>
+			<p><i>Small Construct, unaligned</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>12 + Your Proficiency Bonus (Natural Armor)</p>
+			<p class="indent"><b><i>Hit Points. </i></b>the weapon's Constitution modifier + five times your death knight level</p>
+			<p class="indent"><b><i>Speed. </i></b>fly 50ft. (Hover)</p>
+			
+			<table class="class-features">
+				<thead>
+					<tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
+				</thead>
+				<tr><td>12 (+1)</td><td>13 (+1)</td><td>12 (+1)</td><td>1 (-5)</td><td>5 (-3)</td><td>1 (-5)</td></tr>
+			</table>
+			
+			<p class="indent"><b><i>Saving Throws. </i></b>Dex +4</p>
+			<p class="indent"><b><i>Damage Immunities. </i></b>poison, psychic</p>
+			<p class="indent"><b><i>Condition Immunities. </i></b>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</p>
+			<p class="indent"><b><i>Senses. </i></b>blindsight 60 ft. (blind beyond this radius), passive Perception 7</p>
+			
+			<p class="indent"><b><i>Antimagic Susceptibility. </i></b>The weapon is incapacitated while in the area of an antimagic field. If targeted by <i>dispel magic</i>, the weapon must succeed on a Constitution saving throw against the caster's save DC or turn back into a normal weapon.</p>
+			<p class="indent"><b><i>False Appearance. </i></b>While the weapon remains motionless and isn't flying, it is indistinguishable from a normal weapon.</p>
+			<p class="indent"><b><i>A Trusted Tool. </i></b>All allies within 5 ft. of the weapon get +2 to their AC bonus.</p>
+			<p class="indent"><b><i>Blood Magic. </i></b>The Death Knigth that made the weapon adds their Proficiency Bonus to the weapons Attack and Damage rolls.</p>
+			
+			<h5 class="caption">ACTIONS</h5>
+			<p class="indent"><b><i>Slash. </i></b><i>Melee Weapon Attack: </i>+3 to hit, reach 5 ft., one target. Hit: 1d6 + 1 bludgeoning, slashing, or piercing damage (Whichever is appropriate for the weapon you are using).</p>
+		</description>
+		<sheet alt="Stats">
+			<description>AC {{death-knight-dancing-rune-weapon-stats:ac}}, {{death-knight-dancing-rune-weapon-stats:hp}} hit points, +{{death-knight-dancing-rune-weapon-stats:atk}} to hit, 1d6+{{death-knight-dancing-rune-weapon-stats:dmg}} damage.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-dancing-rune-weapon-stats:ac" value="12" />
+			<stat name="death-knight-dancing-rune-weapon-stats:ac" value="proficiency" />
+			
+			<stat name="death-knight-dancing-rune-weapon-stats:hp" value="1" />
+			<stat name="death-knight-dancing-rune-weapon-stats:hp" value="level:death knight" />
+			<stat name="death-knight-dancing-rune-weapon-stats:hp" value="level:death knight" />
+			<stat name="death-knight-dancing-rune-weapon-stats:hp" value="level:death knight" />
+			<stat name="death-knight-dancing-rune-weapon-stats:hp" value="level:death knight" />
+			<stat name="death-knight-dancing-rune-weapon-stats:hp" value="level:death knight" />
+			
+			<stat name="death-knight-dancing-rune-weapon-stats:atk" value="3" />
+			<stat name="death-knight-dancing-rune-weapon-stats:atk" value="proficiency" />
+			
+			<stat name="death-knight-dancing-rune-weapon-stats:dmg" value="1" />
+			<stat name="death-knight-dancing-rune-weapon-stats:dmg" value="proficiency" />
+		</rules>
+	</element>
+	
+	<element name="Blood Presence" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_BLOODPRESENCE">
+		<description>
+			<p>Starting at 7th level, you have Advantage on Constitution checks to maintain concentration.</p>
+		</description>
+		<sheet>
+			<description>You get Advantage on Constitution checks to maintain concentration.</description>
+		</sheet>
+	</element>
+	<element name="Gorefiend’s Grasp" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_GOREFIENDSGRASP">
+		<description>
+			<p>Starting at 10th level you learn to manipulate large groups of enemies. As an action, choose a point within 40 ft, all creatures (Large or smaller) of your choice within 10 feet of that point, must make a Strength saving throw.</p>
+			<p class="indent">Any creatures who fail their saving throws, are pulled to a space within 5 ft of you. This movement does not provoke Attack of Opportunity and cannot pull them through areas that would cause them direct harm (lava, spikes, etc).</p>
+			<p class="indent">AOnce used you cannot use this ability again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Choose a point within 40 ft. All creatures (Large or smaller) of your choice within 10 feet of that point, must succeed on a Strength saving throw, or be pulled to you. This movement does not provoke Attacks of Opportunity and cannot pull them through directly harmful areas.</description>
+		</sheet>
+	</element>
+	<element name="Bonestorm" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_BONESTORM">
+		<description>
+			<p>At 18th level you learn to spend Runic Power to create a whirlwind of bone to protect you. As an action, you spend a charge of Runic Power to start the storm. It is centered on you, moves with you, and has a radius of 10 ft, lasting until the beginning of your next turn.</p>
+			<p class="indent">All creatures within this radius must make a Dexterity saving throw or take 5d8 Necrotic damage, and you heal for the same amount (you may only heal from this ability once per Round). Any creature that enters or ends their turn there must also make a Dexterity saving throw or be affected.</p>
+			<p class="indent">At the beginning of your next turn you may choose to spend another charge of Runic Power to continue using this ability. It does not require an action to continue, you merely choose to at the beginning of your turn. This continues until you run out of Runic Power, you choose not to spend Runic Power, or until 1 minute has passed.</p>
+			<p class="indent">Once the storm ends, you cannot activate this again until the end of a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="Runic Power — 1/Long Rest">
+			<description>As an action, you use a charge of Runic Power to start the storm. It moves with you and has a radius of 10 ft, lasting until the beginning of your next turn. &#13;
+			All creatures within this radius (when it is first started, when they end their turn, or when they first enter on their turn) must make a Dexterity saving throw or take 5d8 Necrotic damage. You can choose to be healed for the same amount, once per round. &#13;
+			At the beginning of your next turn, you can spend another Runic Power to continue this ability (free action). This continues until you run out of Runic Power, you choose not to spend it, or 1 minute passes.</description>
+		</sheet>
+	</element>
+	
+	<!-- Unholy Specialization -->
+	<element name="Unholy Specialization" type="Archetype" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_UNHOLY">
+		<supports>HL21TDKC Specialization Pool</supports>
+		<description>
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DEATHCOIL" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_RAISEGHOUL" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_UNHOLYPRESENCE" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DARKTRANSFORMATION" />
+			<div element="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DEFILE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DEATHCOIL" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_RAISEGHOUL" level="3"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_UNHOLYPRESENCE" level="7"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DARKTRANSFORMATION" level="10"/>
+			<grant type="Archetype Feature" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DEFILE" level="18"/>
+		</rules>
+	</element>
+	<element name="Death Coil" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DEATHCOIL">
+		<description>
+			<p>At 3rd level you learn Death Coil. As a Bonus Action you can spend a charge of Runic Power to unleash a necrotic orb at a creature within 30 ft. If the creature is not an undead, they must make a Dexterity saving throw or take 2d6 + your Constitution modifier Necrotic damage. If the target is undead, they regain a number of Hit Points equal to 2d6 + your Constitution Modifier.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The damage/healing of this ability increases to 3d6 at 7th level, and to 4d6 at 13th level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Runic Power">
+			<description>You can use a charge of Runic Power to target a creature within 30 ft. If the target is not undead, they must succeed on a Dexterity saving throw or take {{death-knight-death-coil:dice}}d6+{{constitution:modifier}} Necrotic damage. If the target is undead, they regain {{death-knight-death-coil:dice}}d6+{{constitution:modifier}} hit points instead.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-death-coil:dice" value="2" />
+			<stat name="death-knight-death-coil:dice" value="1" level="7" />
+			<stat name="death-knight-death-coil:dice" value="1" level="13" />
+		</rules>
+	</element>
+	<element name="Raise Ghoul" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_RAISEGHOUL">
+		<description>
+			<p>Also at 3rd you learn to summon a ghoulish pet to fight alongside you. It’s stats are at the back of the document. Add your proficiency bonus to the ghoul's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. It takes its turn on your initiative, but it will take the Dodge action if not commanded.</p>
+			<p class="indent">On your turn, you can mentally command the ghoul where to move (no action required by you). You can use a Bonus Action to command it to take the Attack, Dash, Disengage, or Help action.</p>
+			<p class="indent">You can summon or dismiss the Ghoul as an action, but if you dismiss it, or it dies, you cannot summon it again until you finish a Long Rest. Unlike a traditional “Animate Dead” spell, you do not need a dead body to summon it, it is a construct of your unholy magic.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can summon or dismiss an Unholy Ghoul as an action. You can command the ghoul to move as a free action, and you can use a Bonus Action to command it to take the Attack, Dash, Disengage, or Help action. It takes the Dodge action if not commanded. If you dismiss it or it dies, you cannot summon it again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="STATS" supports="" default="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_UNHOLYGHOUL_STATS" default-behaviour="force" />
+		</rules>
+	</element>
+	<element name="Unholy Ghoul (Stats)" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_BLOOD_UNHOLYGHOUL_STATS">
+		<description>
+			<p><i>Medium Undead, chaotic evil</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>12 + Your Proficiency Bonus (Natural Armor)</p>
+			<p class="indent"><b><i>Hit Points. </i></b>the ghoul's Consituion modifier + your Constitution Modifier + 5 times your Death Knight level</p>
+			<p class="indent"><b><i>Speed. </i></b>30ft.</p>
+			
+			<table class="class-features">
+				<thead>
+					<tr><td> STR </td><td> DEX </td><td> CON </td><td> INT </td><td> WIS </td><td> CHA </td></tr>
+				</thead>
+				<tr><td>13 (+1)</td><td>13 (+1)</td><td>10 (+0)</td><td>7 (-2)</td><td>10 (+0)</td><td>6 (-2)</td></tr>
+			</table>
+			
+			<p class="indent"><b><i>Saving Throws. </i></b>Str +3, Wis +2</p>
+			<p class="indent"><b><i>Damage Immunities. </i></b>necrotic</p>
+			<p class="indent"><b><i>Condition Immunities. </i></b>charmed</p>
+			<p class="indent"><b><i>Senses. </i></b>Darkvision 60 ft., passive Perception 10</p>
+			<p class="indent"><b><i>Languages. </i></b>Understands all languages its creator speaks, but cannot speak</p>
+			
+			<p class="indent"><b><i>Loyal Minion. </i></b>Add your proficiency bonus to the ghoul's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in.</p>
+			<p class="indent"><b><i>Vile Claws. </i></b>If the Ghoul attacks a target that is infested by Bursting Boils from a Death Knight’s <i>Festering Strike</i>, its attack can pop one boil for 1d4 bonus necrotic damage.</p>
+			
+			<h5 class="caption">ACTIONS</h5>
+			<p class="indent"><b><i>Claw. </i></b><i>Melee Weapon Attack: </i>+3 to hit, reach 5 ft., one target. Hit: 1d6 + 1 slashing damage.</p>
+		</description>
+		<sheet alt="Stats">
+			<description>AC {{death-knight-unholy-ghoul-stats:ac}}, {{death-knight-unholy-ghoul-stats:hp}} hit points, +{{death-knight-unholy-ghoul-stats:atk}} to hit, 1d6+{{death-knight-unholy-ghoul-stats:dmg}} damage.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-unholy-ghoul-stats:ac" value="12" />
+			<stat name="death-knight-unholy-ghoul-stats:ac" value="proficiency" />
+			
+			<stat name="death-knight-unholy-ghoul-stats:hp" value="0" />
+			<stat name="death-knight-unholy-ghoul-stats:hp" value="level:death knight" />
+			<stat name="death-knight-unholy-ghoul-stats:hp" value="level:death knight" />
+			<stat name="death-knight-unholy-ghoul-stats:hp" value="level:death knight" />
+			<stat name="death-knight-unholy-ghoul-stats:hp" value="level:death knight" />
+			<stat name="death-knight-unholy-ghoul-stats:hp" value="level:death knight" />
+			
+			<stat name="death-knight-unholy-ghoul-stats:atk" value="3" />
+			<stat name="death-knight-unholy-ghoul-stats:atk" value="proficiency" />
+			
+			<stat name="death-knight-unholy-ghoul-stats:dmg" value="1" />
+			<stat name="death-knight-unholy-ghoul-stats:dmg" value="proficiency" />
+		</rules>
+	</element>
+	
+	<element name="Unholy Presence" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_UNHOLYPRESENCE">
+		<description>
+			<p>Starting at 7th level, you have advantage on saving throws against becoming poisoned or diseased, and gain resistance to poison damage.</p>
+		</description>
+		<sheet>
+			<description>You get advantage on saving throws against becoming poisoned or diseased, and gain resistance to poison damage.</description>
+		</sheet>
+	</element>
+	<element name="Dark Transformation" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DARKTRANSFORMATION">
+		<description>
+			<p>Starting at level 10 you can use an action to temporarily pump up your ghouls power. It grows to Large, deals an extra 1d6 on all weapon attacks, and has resistance to all damage. The transformation lasts for one minute.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until the end of a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>For 1 minute, your ghoul grows to Large, deals an extra 1d6 on all weapon attacks, and has resistance to all damage.</description>
+		</sheet>
+	</element>
+	<element name="Defile" type="Archetype Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_ARCHETYPE_FEATURE_UNHOLY_DEFILE">
+		<description>
+			<p>Starting at level 18 you learn to corrupt the land you walk upon. As an action you may use a charge of Runic Power to create a 10 ft radius pool on the ground within 30 feet of you that lasts until the beginning of your next turn.</p>
+			<p class="indent">All creatures (other than yourself) that begin their turn in this area, must make a Constitution Save. On a failed save, the creature becomes Poisoned (see condition), has their speed halved until the start of your next turn, and take 4d8 necrotic damage. On a successful save, the creature takes half damage, but no other effects.</p>
+			<p class="indent">At the beginning of your next turn, you may choose to spend another charge of Runic Power to keep the puddle active. It does not require an action to continue, you merely choose to at the beginning of your turn. If you do so, it’s radius increases by 10 ft. This continues every turn until you run out of Runic Power, choose not to spend Runic Power, or 1 minute passes.</p>
+			<p class="indent">Once you use this ability, you cannot do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="Runic Power — 1/Long Rest">
+			<description>As an action, you use a charge of Runic Power to create a 10 ft radius pool on the ground within 30 feet, lasting until the beginning of your next turn. &#13;
+			All other creatures starting their turn in this area, must make a Constitution Save. On a failed save, they take 4d8 necrotic damage, as well as becoming poisoned and having their speed halved until the start of your next turn. On a successful save, the creature takes half damage, but no other effects. &#13;
+			At the beginning of your next turn, you can spend another Runic Power to continue this ability (free action). This continues until you run out of Runic Power, you choose not to spend it, or 1 minute passes.</description>
+		</sheet>
+	</element>
+	
+	
+	<!-- Rune Empowered Abilities -->
+	<element name="Death Strike" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHSTRIKE">
+		<description>
+			<p>When you land a weapon attack, you can expend a charge of Runic Power to deal 1d6 bonus necrotic damage, and heal yourself for the same amount.</p>
+		</description>
+		<sheet usage="1 Runic Power">
+			<description>When you land a weapon attack, you can use a charge of Runic Power to deal 1d6 bonus necrotic damage, and heal for the same amount.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Blood Boil (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_BLOODBOIL">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>As an action, you expend a Rune to manipulate the blood of nearby enemies.</p>
+			<p class="indent">All creatures of your choice within 10 ft of you must make a Constitution saving throw (creatures without blood, such as undead or constructs, automatically succeed this saving throw). If they fail, they take 1d12 necrotic damage, and have disadvantage on their next attack roll made before the end of their next turn.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The damage of this attack increases to 2d12 at 5th level, 3d12 at 11th level, and 4d12 at 17th level.</p>
+		</description>
+		<sheet alt="Blood Boil" action="Action" usage="1 Rune">
+			<description>Creatures (that have blood) of your choice within 10 ft must succeed on a Constitution saving throw, or take {{death-knight-rea-blood-boil}}d12 necrotic damage and have disadvantage on their next attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-blood-boil" value="1" />
+			<stat name="death-knight-rea-blood-boil" value="1" level="5" />
+			<stat name="death-knight-rea-blood-boil" value="1" level="11" />
+			<stat name="death-knight-rea-blood-boil" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Howling Blast (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_HOWLINGBLAST">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>As an action you may expend a Rune to unleash a blast of cold air upon an area.</p>
+			<p class="indent">Choose a creature within 30 ft. That creature and all creatures within 5 ft of it, must make a Dexterity saving throw. The primary creature you targeted must succeed its Dexterity saving throw, or take the 2d6 Cold damage and have their speed lowered by 10 until the end of its next turn. If it succeeds, it takes half damage and is not slowed.</p>
+			<p class="indent">All other creatures within 5 feet of the initial target, take half of that damage and their speed is lowered by 10, if they fail their save, and suffer no effects on a successful save.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The damage of this ability increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level.</p>
+		</description>
+		<sheet alt="Howling Blast" action="Action" usage="1 Rune">
+			<description>Choose a creature within 30ft. This primary target and all other creatures within 5 feet of it must make a Dexterity saving throw. On a fail, their speed is reduced by 10ft. until the end of their next turn. Also on a fail, the primary target takes {{death-knight-rea-howling-blast}}d6 Cold damage, while the other targets take half of the damage. On a save, the primary target takes only half of the damage, while the other targets suffer no effects.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-howling-blast" value="2" />
+			<stat name="death-knight-rea-howling-blast" value="2" level="5" />
+			<stat name="death-knight-rea-howling-blast" value="2" level="11" />
+			<stat name="death-knight-rea-howling-blast" value="2" level="17" />
+		</rules>
+	</element>
+	<element name="Outbreak (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_OUTBREAK">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>As an action you may expend a Rune to create a momentary cloud of poisonous gas. You create a 10ft radius burst of poison centered on a point within 60 ft. Any creature in the area must make a Constitution Saving Throw. If they fail, they are affected by <i>Shadow Plague</i>.</p>
+			<p class="indent">A creature afflicted with <i>Shadow Plague</i> takes 1d6 Poison damage at the beginning of each of its turns, and they only deal half damage with any Strength based attacks. They may make a new save against your Rune Save DC at the end of each of their turns to end these effects. The <i>Shadow Plague</i> lasts until they succeed on a save, or until 1 minute passes.</p>
+			<p class="indent">Once a creature has been afflicted by your <i>Shadow Plague</i>, it cannot be so again, until after you finish a Long Rest.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The damage the <i>Shadow Plague</i> deals increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.</p>
+		</description>
+		<sheet alt="Outbreak" action="Action" usage="1 Rune">
+			<description>Choose a point within 60 ft. Any creature within 10 ft. of that point must succeed on a Constitution saving throw or be afflicted with Shadow Plague. Afflicted creatures take {{death-knight-rea-outbreak}}d6 Poison damage at the beginning of their turns and deal only half damage with Strength based attacks. They can repeat the saving throw at the end of their turns. The Shadow Plague lasts until they succeed on a save, or until 1 minute passes. A creature cannot be inflicted again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-outbreak" value="1" />
+			<stat name="death-knight-rea-outbreak" value="1" level="5" />
+			<stat name="death-knight-rea-outbreak" value="1" level="11" />
+			<stat name="death-knight-rea-outbreak" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Death and Decay (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHANDDECAY">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>As an Bonus Action you expend a rune, to corrupt the ground in a 10 ft radius area at a point within 30 ft. This ability requires concentration, and can last up to 1 minute.</p>
+			<p class="indent">This area counts as difficult terrain for all creatures except yourself. Whenever you hit a weapon attack against a creature in the circle, all creatures of your choice in the circle take 1d4 Necrotic damage, as their fallen blood fuels the attack.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The damage of this ability increases to 2d4 at 5th level, 3d4 at 11th level, and 4d4 at 17th level.</p>
+		</description>
+		<sheet alt="Death and Decay" action="Bonus Action (C)" usage="1 Rune">
+			<description>Turn the area in a 10 ft radius area at a point within 30 ft. into difficult terrain (except for you) for up to 1 minute (requires concentration). Whenever you hit a weapon attack against a creature in the area, all creatures of your choice in the area take {{death-knight-rea-death-decay}}d4 Necrotic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-death-decay" value="1" />
+			<stat name="death-knight-rea-death-decay" value="1" level="5" />
+			<stat name="death-knight-rea-death-decay" value="1" level="11" />
+			<stat name="death-knight-rea-death-decay" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Chains of Ice (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_CHAINSOFICE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>As an action you may expend a rune to create icy chains to freeze the blood of a creature within 30 ft. The target must make a Strength Saving Throw or be restrained.</p>
+			<p class="indent">A creature restrained by the chains can use an action to make a Strength check against your Save DC. On a Success, the ability ends early. The chains require concentration and can last up to 1 minute.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>At later levels you can create multiple chains at the same time. 2 at 5th level, 3 at 11th level, and 4 at 17th level.</p>
+		</description>
+		<sheet alt="Chains of Ice" action="Action (C)" usage="1 Rune">
+			<description>Force a creature within 30 ft. to succeed on a Strength saving throw or be restrained for up to 1 minute (requires concentration). Affected creatures can use their action to repeat the saving throw, ending the effect early on a success.</description>
+			<description level="5">Force up to {{death-knight-rea-chains-ice}} creatures within 30 ft. to succeed on a Strength saving throw or be restrained for up to 1 minute (requires concentration). Affected creatures can use their action to repeat the saving throw, ending the effect early on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-chains-ice" value="1" />
+			<stat name="death-knight-rea-chains-ice" value="1" level="5" />
+			<stat name="death-knight-rea-chains-ice" value="1" level="11" />
+			<stat name="death-knight-rea-chains-ice" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Death’s Advance (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHSADVANCE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>Passively your speed is increased by 10 feet.</p>
+			<p class="indent">As a Bonus Action you may increase this bonus by 20 until the beginning of your next turn.</p>
+			<p class="indent">Once you do so, you may not do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Death’s Advance" action="Bonus Action" usage="1/Long Rest">
+			<description>Increase your speed by 20 until the beginning of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" />
+		</rules>
+	</element>
+	<element name="Rune Tap (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_RUNETAP">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>As a reaction to taking damage, you may expend a rune to gain resistance to all damage (except psychic) until the start of your next turn.</p>
+		</description>
+		<sheet alt="Rune Tap" action="Reaction" usage="1 Rune">
+			<description>As a reaction to taking damage, you may expend a rune to gain resistance to all damage (except psychic) until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Dark Command (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DARKCOMMAND">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<description>
+			<p><i>Rune Empowered Ability</i></p>
+			<p>You may expend a rune to cast the spell <i>Compelled Duel</i>.</p>
+		</description>
+		<sheet alt="Dark Command" usage="1 Rune">
+			<description>You may expend a rune to cast the spell Compelled Duel.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPELLED_DUEL" />
+		</rules>
+	</element>
+	<element name="Obliterate (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_OBLITERATE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>3rd level Frost Death Knight</prerequisite>
+		<requirements>[level:3],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_FROST</requirements>
+		<description>
+			<p><i>Prerequisite: 3rd level, Frost Death Knight (Rune Empowered Ability)</i></p>
+			<p>When you land a melee attack on your turn, you may expend a Rune to deal an additional 2d8 Cold damage.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The damage of this ability increases to 3d8 at 5th level, 4d8 at 11th level, and 5d8 at 17th level.</p>
+		</description>
+		<sheet alt="Obliterate" usage="1 Rune">
+			<description>When you land a melee attack on your turn, you may expend a Rune to deal an additional {{death-knight-rea-obliterate}}d8 Cold damage.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-obliterate" value="2" />
+			<stat name="death-knight-rea-obliterate" value="1" level="5" />
+			<stat name="death-knight-rea-obliterate" value="1" level="11" />
+			<stat name="death-knight-rea-obliterate" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Festering Strike (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_FESTERINGSTRIKE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>3rd level Unholy Death Knight</prerequisite>
+		<requirements>[level:3],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_UNHOLY</requirements>
+		<description>
+			<p><i>Prerequisite: 3rd level, Unholy Death Knight (Rune Empowered Ability)</i></p>
+			<p>When you hit an enemy with a weapon strike you can spend a rune to infect the enemy with <i>Bursting Boils</i>. The enemy becomes covered in a number of disease ridden wounds equal to 1d4 + your Constitution Modifier. They last for one hour or until they burst.</p>
+			<p class="indent">Your subsequent weapon attacks burst 1 boil each, and when they burst they deal 1d4 Necrotic damage. Creatures immune to disease are immune to these wounds.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The number of wounds created increases to 2d4 at 5th level, 3d4 at 11th level, and 4d4 at 17th level.</p>
+		</description>
+		<sheet alt="Festering Strike" usage="1 Rune">
+			<description>When you land a melee attack, you can spend a rune to infect the enemy with {{death-knight-rea-festering-strike}}d4+{{constitution:modifier}} Bursting Boils, which last for up 1 hour or until they burst. Your subsequent weapon attacks burst 1 boil each, dealing 1d4 Necrotic damage. Creatures immune to disease are immune to this ability.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-festering-strike" value="1" />
+			<stat name="death-knight-rea-festering-strike" value="1" level="5" />
+			<stat name="death-knight-rea-festering-strike" value="1" level="11" />
+			<stat name="death-knight-rea-festering-strike" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Bone Shield (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_BONESHIELD">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>3rd level Blood Death Knight</prerequisite>
+		<requirements>[level:3],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_BLOOD</requirements>
+		<description>
+			<p><i>Prerequisite: 3rd level, Blood Death Knight (Rune Empowered Ability)</i></p>
+			<p>As an action you can expend a rune to animate bones to protect yourself.</p>
+			<p class="indent">Your AC is increased by 2 (this bonus does not stack with a Shield), and you have resistance to Bludgeoning, Slashing, and Piercing damage from weapon attacks.</p>
+			<p class="indent">This ability can protect you from a number of attacks equal to your Proficiency Bonus (regardless of if the attacks hit or miss).</p>
+		</description>
+		<sheet alt="Bone Shield" action="Action" usage="1 Rune">
+			<description>Your AC is increased by 2 (does not stack with a Shield), and you have resistance to Bludgeoning, Slashing, and Piercing damage from weapon attacks. This ability protects you for {{proficiency}} attacks (hit or miss).</description>
+		</sheet>
+	</element>
+	<element name="Frost Fever (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_FROSTFEVER">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+		<description>
+			<p><i>Prerequisite: 3rd level (Rune Empowered Ability)</i></p>
+			<p>As an action you can expend a rune to unleash freezing disease upon a target within 30 ft.</p>
+			<p class="indent">They must make a Constitution saving throw against your Rune Save DC or become afflicted. The afflicted can make a new save at the end of each of their turns to end the effects early, otherwise the effects last 1 minute.</p>
+			<p class="indent">While they are afflicted their speed is lowered by 10, they take 1d10 Cold damage at the beginning of each of their turns.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>The damage of this ability increases to 2d10 at 5th level, 3d10 at 11th level, and 4d10 at 17th level.</p>
+		</description>
+		<sheet alt="Frost Fever" action="Action" usage="1 Rune">
+			<description>You force a target within 30ft. to succeed on a Constitution saving throw or become afflicted with Frost Fever. Afflicted creatures have their speed is reduced by 10 and take {{death-knight-rea-frost-fever}}d10 Cold damage at the beginning of their turns. They can repeat the saving throw at the end of their turns. The Frost Fever lasts until they succeed on a save, or until 1 minute passes.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-frost-fever" value="1" />
+			<stat name="death-knight-rea-frost-fever" value="1" level="5" />
+			<stat name="death-knight-rea-frost-fever" value="1" level="11" />
+			<stat name="death-knight-rea-frost-fever" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Horn of Winter (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_HORNOFWINTER">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+		<description>
+			<p><i>Prerequisite: 3rd level (Rune Empowered Ability)</i></p>
+			<p>As an action you may raise your allies. A loud horn sound is emitted, inspiring your allies, and granting you one charge of Runic Power.</p>
+			<p class="indent">Up to 5 creatures deal an extra 1d6 of Cold damage on weapon attacks. This effect requires concentration and can last up to 1 minute.</p>
+			<p class="indent">Once you use this ability you cannot do so again until you finish a short rest.</p>
+		</description>
+		<sheet alt="Horn of Winter" action="Action (C)" usage="1/Short Rest">
+			<description>Up to 5 creatures deal extra 1d6 of Cold damage on weapon attacks, for up to 1 minute (requires concentration). You gain one charge of Runic Power.</description>
+		</sheet>
+	</element>
+	<element name="Runeforging (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_RUNEFORGING">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><i>Prerequisite: 5th level (Rune Empowered Ability)</i></p>
+			<p>You learn to enchant your weapons with your runic magic.</p>
+			<p class="indent">Using a ritual that takes 1 hour to complete, you give a weapon a +1 bonus to attack and damage rolls.</p>
+			<p class="indent">You may have 2 weapons enchanted this way at one time, but the enchantments wear off after 1 round if they are not in your possession.</p>
+		</description>
+		<sheet alt="Runeforging">
+			<description>Using a 1 hour ritual, you can give a weapon a +1 bonus to attack and damage rolls. You can have 2 weapons enchanted this way, but the enchantments wear off after 1 round if not in your possession.</description>
+		</sheet>
+	</element>
+	<element name="Dark Succor (Passive)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DARKSUCCOR">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><i>Prerequisite: 5th level (Rune Empowered Ability)</i></p>
+			<p>Whenever you reduce a hostile creature to 0 hit points, your next <i>Death Strike</i> (within an hour) grants you temporary hit points equal to your Death Knight level.</p>
+		</description>
+		<sheet alt="Dark Succor">
+			<description>Whenever you reduce a hostile creature to 0 hit points, your next Death Strike (within an hour) grants you {{level:death knight}} temporary hit points.</description>
+		</sheet>
+	</element>
+	<element name="Death Grip (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHGRIP">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><i>Prerequisite: 5th level (Rune Empowered Ability)</i></p>
+			<p>As an Action you may expend a rune to create a large phantasmal hand that extends from you, targeting a creature within 30 feet of you that is Large or smaller. The target makes a Strength saving throw. On a failure, it is pulled to a space within 5 feet of you.</p>
+			<p class="indent">This movement does not provoke Attacks of Opportunity and cannot pull them into/through a directly harmful space (lava, pit, spike, etc.).</p>
+		</description>
+		<sheet alt="Death Grip" action="Action" usage="1 Rune">
+			<description>You force a creature of size Large or smaller withing 30ft. to succeed on a Strength saving throw, or be pulled to you. This movement does not provoke Attacks of Opportunity and cannot pull them through directly harmful areas.</description>
+		</sheet>
+	</element>
+	<element name="Anti-Magic Shell (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_ANTIMAGICSHELL">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><i>Prerequisite: 5th level (Rune Empowered Ability)</i></p>
+			<p>As a reaction to taking Cold, Lightning, Fire, Thunder, or Poison damage, you may expend a rune to create a magical shield with 50 temporary hit points. These temporary hit points can only absorb Cold, Lightning, Fire, Thunder, or Poison damage. In addition you have advantage on Intelligence, Wisdom, and Charisma Saving Throws against spells while the shield persists. The shield lasts until the start of your next turn.</p>
+			<p class="indent">When the shield expires, you gain 1 charge of Runic Power for every 10 damage the shield absorbed rounded down. (For example if you took 27 damage, you would get 2 charges of Runic Power).</p>
+		</description>
+		<sheet alt="Anti-Magic Shell" action="Reaction" usage="1 Rune">
+			<description>As a reaction to taking Cold, Lightning, Fire, Thunder, or Poison damage, you may expend a rune to create a magical shield with 50 temporary hit points, which can only absorb these damage types and lasts until the start of your next turn. While the shield persists, you have advantage on Intelligence, Wisdom, and Charisma saving throws against spells. When the shield expires, you gain 1 charge of Runic Power for every 10 damage the shield absorbed (rounded down).</description>
+		</sheet>
+	</element>
+	<element name="Asphyxiate (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_ASPHYXIATE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><i>Prerequisite: 5th level (Rune Empowered Ability)</i></p>
+			<p>As an action you can expend a rune to try to choke an enemy. This effect requires concentration, and can last up to one minute.</p>
+			<p class="indent">Choose a creature within 30 feet, to make a Constitution saving throw. On a failed saving throw, they are silenced and take 2d6 Bludgeoning damage. The target can choose to make a new save at the end of each of their turns. On a failed save the effect continues and they take 2d6 Bludgeoning damage.</p>
+		</description>
+		<sheet alt="Asphyxiate" action="Action (C)" usage="1 Rune">
+			<description>Force a creature within 30 feet, to succeed on a Constitution saving throw, or take 2d6 Bludgeoning damage and be silenced for up to 1 minute (requires concentration). The target can repeat the saving throw at the end of their turns, ending the effect early on a success. Otherwise the effect continues and they take 2d6 Bludgeoning damage. </description>
+		</sheet>
+	</element>
+	<element name="Path of Frost (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_PATHOFFROST">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><i>Prerequisite: 9th level (Rune Empowered Ability)</i></p>
+			<p>As an action you can expend a rune to walk on water. It works as the spell <i>Water Walking</i>, but only works on water, and creatures affected by Path of Frost freeze the water they are walking on. The ice thaws after 30 seconds.</p>
+		</description>
+		<sheet alt="Path of Frost" usage="1 Rune">
+			<description>You cast the spell Water Walking, but only works on water, and creatures affected by Path of Frost freeze the water they are walking on. The ice thaws after 30 seconds.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_WALK" />
+		</rules>
+	</element>
+	<element name="Icebound Fortitude (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_ICEBOUNDFORTITUDE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><i>Prerequisite: 9th level (Rune Empowered Ability)</i></p>
+			<p>As an action you can pump the icy touch of death through your veins to push through obstacles. You gain the effects of the <i>Freedom of Movement</i> spell and resistance to non-magical bludgeoning, piercing, and slashing damage. This effect lasts for a number of rounds equal to your Constitution Modifier + 1.</p>
+			<p class="indent">Once you use this ability you may not do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Icebound Fortitude" action="Action" usage="1/Long Rest">
+			<description>For {{death-knight-rea-icebound-fortitude}} rounds you gain the effects of the Freedom of Movement spell and resistance to non-magical bludgeoning, piercing, and slashing damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
+			<stat name="death-knight-rea-icebound-fortitude" value="1" />
+			<stat name="death-knight-rea-icebound-fortitude" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Mind Freeze (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_MINDFREEZE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><i>Prerequisite: 9th level (Rune Empowered Ability)</i></p>
+			<p>As a reaction to a creature casting a spell within 5 feet of you, you make an opportunity attack against that creature. </p>
+			<p class="indent">If you hit, you may either do damage as normal, or forgo that damage to try to stop their casting. If the spell is 3rd level or lower, the spell fails and has no effect. If it is 4th level or higher, make an ability check using the same stat you used to make your weapon attack. The DC is 10 + the spells level. On a success the spell fails and has no effect.</p>
+			<p class="indent">Regardless of the outcome, you cannot use this ability again until you finish a Short Rest.</p>
+		</description>
+		<sheet alt="Mind Freeze" action="Reaction" usage="1/Short Rest">
+			<description>As a reaction to a creature casting a spell within 5 feet of you, you make an opportunity attack against that creature. On a hit you may either do damage as normal, or try to stop their casting. A spell of 3rd level or lower fails without effect. For higher level spells you must succeed a DC 10 + the spells level ability check (using the same stat used to make the weapon attack) in order to interrupt the spell’s casting.</description>
+		</sheet>
+	</element>
+	<element name="Death Pact (Passive)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHPACT">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><i>Prerequisite: 9th level (Rune Empowered Ability)</i></p>
+			<p>When you take damage that would reduce you to 0 Hit Points, but not kill you outright, you can drop to 1 Hit Point instead. </p>
+			<p class="indent">If you do, you also gain Temporary Hit Points equal to your Constitution Modifier times your Death Knight level. These Temporary Hit Points last for one minute, and while it does you cannot receive magical healing.</p>
+			<p class="indent">Once you use this ability you cannot do so again until you finish a long rest.</p>
+		</description>
+		<sheet alt="Death Pact" usage="1/Long Rest">
+			<description>If you drop to 0 hp and don’t die outright, you can drop to 1 hp instead. You also gain {{death-knight-rea-death-pact}} temporary hit points which last for one minute, but stop you from receiving magical healing.</description>
+		</sheet>
+		<rules>
+			<stat name="death-knight-rea-death-pact" value="0" bonus="base" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="1" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="2" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="3" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="4" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="5" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="6" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="7" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="8" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="9" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="10" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="11" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="12" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="13" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="14" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="15" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="16" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="17" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="18" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="19" />
+			<stat name="death-knight-rea-death-pact" value="constitution:modifier" level="20" />
+		</rules>
+	</element>
+	<element name="Death’s Caress (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHSCARESS">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>9th level, Blood Death Knight</prerequisite>
+		<requirements>[level:9],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_BLOOD</requirements>
+		<description>
+			<p><i>Prerequisite: 9th level, Blood Death Knight (Rune Empowered Ability)</i></p>
+			<p>As an action you may expend a Rune to send out 3 bloody tendrils. They may target up to 3 creatures within 30 feet of you. The targets take 1d4 + 1 damage and must make a Wisdom saving throw. If they fail, they have disadvantage on all attack rolls against any target other than yourself until the end of your next turn. If you hit a creature with multiple tendrils, they have disadvantage on the save.</p>
+		</description>
+		<sheet alt="Death’s Caress" action="Action" usage="1 Rune">
+			<description>You send out 3 bloody tendrils which may target up to 3 creatures within 30 feet of you. The targets take 1d4+1 damage and must succeed on a Wisdom saving throw or have disadvantage on all attack rolls against any target other than yourself until the end of your next turn. If you hit a creature with multiple tendrils, they have disadvantage on the save.</description>
+		</sheet>
+	</element>
+	<element name="Raise Undead (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_RAISEUNDEAD">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>9th level, Unholy Death Knight</prerequisite>
+		<requirements>[level:9],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_UNHOLY</requirements>
+		<description>
+			<p><i>Prerequisite: 9th level, Unholy Death Knight (Rune Empowered Ability)</i></p>
+			<p>As an action you can expend a Rune to cast <i>Animate Dead</i> as a 3rd level spell.</p>
+		</description>
+		<sheet alt="Raise Undead" action="Action" usage="1 Rune">
+			<description>You cast Animate Dead as a 3rd level spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" />
+		</rules>
+	</element>
+	<element name="Relentless Winter (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_RELENTLESSWINTER">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>9th level, Frost Death Knight</prerequisite>
+		<requirements>[level:9],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_FROST</requirements>
+		<description>
+			<p><i>Prerequisite: 9th level, Frost Death Knight (Rune Empowered Ability)</i></p>
+			<p>As an action you can expend a rune and begin to produce an icy fog around you.</p>
+			<p class="indent">The fog works as <i>Fog Cloud</i>, but with a few changes. The cloud is centered on you, and follows you as you move. You can see through the fog as if it was only lightly obscuring, and all creatures (large or smaller) in the fog other than you have their speed halved.</p>
+			<p class="indent">This effect requires concentration, and can last up to 1 minute.</p>
+		</description>
+		<sheet alt="Relentless Winter" action="Action (C)" usage="1 Rune">
+			<description>You produce an icy fog around you, which behaves as Fog Cloud, but the cloud is centered on you, follows you as you move, you can see through the fog as if only lightly obscuring, and all creatures (large or smaller) in the fog other than you have their speed halved. This effect requires concentration, and can last up to 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" />
+		</rules>
+	</element>
+	<element name="Control Undead (1 Rune)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_CONTROLUNDEAD">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>13th level</prerequisite>
+		<requirements>[level:13]</requirements>
+		<description>
+			<p><i>Prerequisite: 13th level (Rune Empowered Ability)</i></p>
+			<p>As an action you may expend a Rune to try to gain control over an undead creature. This ability can last up to 1 minute, and requires concentration.</p>
+			<p class="indent">The creature makes a Charisma saving throw. Any undead that has Turn Resistance, has advantage on this saving throw. On a failed save, the creature recognizes you as its new master, and listens to any commands you give it. The commands can be verbal or mental, and require no action.</p>
+			<p class="indent">The effect ends immediately if attacked by you or an ally, or if you command it to do something directly harmful to it, such as attacking itself, or jumping into lava.</p>
+			<p class="indent">At the end of each of its turns, it can repeat its saving throw to end the effect early.</p>
+		</description>
+		<sheet alt="Control Undead" action="Action (C)" usage="1 Rune">
+			<description>An undead creature must succeed on a Charisma saving throw (undead with Turn Resistance have advantage), or recognize you as its new master. At the end of each of its turns, it can repeat its saving throw to end the effect early. The effect ends immediately if attacked by you or an ally, or if you command it to do something directly harmful to it. This ability can last up to 1 minute, and requires concentration.</description>
+		</sheet>
+	</element>
+	<element name="Death Gate (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_DEATHGATE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>13th level</prerequisite>
+		<requirements>[level:13]</requirements>
+		<description>
+			<p><i>Prerequisite: 13th level (Rune Empowered Ability)</i></p>
+			<p>You learn two rituals to open Death Gates, allowing you to quickly travel through the realm of the dead. The first ritual takes one hour to complete, and the second ritual takes one minute.</p>
+			<p class="indent">Finishing the first ritual, leaves a mark on the ground, a design of your choice, but nothing else. Once you complete the second ritual, a portal opens in front of you, leading to the location where you completed the first ritual. The portal lasts for 1 minute or until you use an action to dismiss it, and is large enough to fit a large creature through. You do not need to recast the first ritual, assuming you always want to return to the same place.</p>
+			<p class="indent">Once you complete a ritual, you may not use the same ritual again until you finish a long rest.</p>
+		</description>
+		<sheet alt="Death Gate" action="Ritual" usage="1/Long Rest">
+			<description>You learn 2 rituals to open Death Gates. You may not use the same ritual again until you finish a long rest.&#13;
+			You can spend 1 hour to perform the first ritual that creates a mark on the ground, setting the destination of your portals.&#13;
+			You can alternatively spend 1 minute to perform the second ritual that creates a portal to the location of your mark. This portal stays open for 1 minute or until you dismiss it with an action, and is large enough to fit a large creature through.</description>
+		</sheet>
+	</element>
+	<element name="Improved Runeforging (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_IMPROVEDRUNEFORGING">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>13th level, Runeforging</prerequisite>
+		<requirements>[level:13],ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_RUNEFORGING</requirements>
+		<description>
+			<p><i>Prerequisite: 13th level, Runeforging (Rune Empowered Ability)</i></p>
+			<p>Beginning at 13th level, when you Runeforge your weapon, you may also give each weapon a unique bonus while wielded. Choose one of the following for each weapon:</p>
+			<ul>
+				<li><b>Razorice:</b> If you deal cold damage with the enchanted weapon, once per turn you may deal 1d4 more cold damage.</li>
+				<li><b>Fallen Crusader:</b> If you critically strike with this weapon, it heals you for 1d8 hit points.</li>
+				<li><b>Stoneskin Gargoyle:</b> Grants you +1 to AC while wielded.</li>
+			</ul>
+		</description>
+		<sheet alt="Improved Runeforging" >
+			<description>When you Runeforge your weapon, you may also give it one unique bonus while wielded:&#13;
+			Razorice: When you deal cold damage with the enchanted weapon, you can deal 1d4 additional cold damage once per turn.&#13;
+			Fallen Crusader: Scoring a critical hit with this weapon heals you for 1d8 hp.&#13;
+			Stoneskin Gargoyle: Grants you +1 to AC while wielded.</description>
+		</sheet>
+	</element>
+	
+	<element name="Army of the Dead (2 Runes)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_ARMYOFTHEDEAD">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>17th level</prerequisite>
+		<requirements>[level:17]</requirements>
+		<description>
+			<p><i>Prerequisite: 17th level (Rune Empowered Ability)</i></p>
+			<p>As an action you can expend 2 Runes to summon an undead horde. They last for 1 minute or until they are killed. You do not need dead bodies to animate to use this feature as they are a construct of your runic magic. The swarm takes its turn directly after yours, and obeys commands as best as it’s able to.</p>
+			<p class="indent">Once you use this ability, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet alt="Army of the Dead" action="Action" usage="2 Runes — 1/Long Rest">
+			<description>You summon an undead horde who take their turn immediately after yours and last for 1 minute or until they are killed.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_ARMYOFTHEDEAD_STATS" />
+		</rules>
+	</element>
+	<element name="Army of the Dead (Stats)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_ARMYOFTHEDEAD_STATS">
+		<description>
+			<p><i>Huge Swarm of Medium Zombies, Chaotic Evil</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>8 (Natural Armor)</p>
+			<p class="indent"><b><i>Hit Points. </i></b>150 (13d12 + 65)</p>
+			<p class="indent"><b><i>Speed. </i></b>20ft.</p>
+			
+			<table class="class-features">
+				<thead>
+					<tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
+				</thead>
+				<tr><td>25 (+6)</td><td>6 (-2)</td><td>20 (+5)</td><td>3 (-4)</td><td>6 (-2)</td><td>5 (-3)</td></tr>
+			</table>
+			
+			<p class="indent"><b><i>Saving Throws. </i></b>Wis +0</p>
+			<p class="indent"><b><i>Damage Resistances. </i></b>bludgeoning, piercing, slashing</p>
+			<p class="indent"><b><i>Damage Immunities. </i></b>poison</p>
+			<p class="indent"><b><i>Condition Immunities. </i></b>poisoned, charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</p>
+			<p class="indent"><b><i>Senses. </i></b>Darkvision 60ft., Passive Perception 8</p>
+			<p class="indent"><b><i>Languages. </i></b>Understands all languages of its creator, but cannot speak.</p>
+			
+			<p class="indent"><b><i>Swarm. </i></b>The swarm can occupy another creatures’ space and can move through any opening that a medium creature could. Can’t regain hp or gain temporary hp.</p>
+			<p class="indent"><b><i>Undead Fortitude. </i></b>If damage reduces the swarm to 0, it makes a Constitution saving throw with the DC as the damage unless the damage was from a Critical Hit or Radiant. On a success drop to 1 hp instead.</p>
+			
+			<h5 class="caption">ACTIONS</h5>
+			<p class="indent"><b><i>Mob. </i></b><i>Melee Weapon Attack: </i>+10 to hit, reach 0 ft., one target in the swarms space. <i>Hit:</i> 2d6+6 bludgeoning damage. Creatures that are large or smaller are grappled. They can use their action to make a contested Athletics or Acrobatics to escape, DC 17.</p>
+		</description>
+		<sheet alt="AotD Stats">
+			<description>AC 8, 150 hit points, +10 to hit, 2d6+6 damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Glacial Advance (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_GLACIALADVANCE">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>17th level, Frost Death Knight</prerequisite>
+		<requirements>[level:17],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_FROST</requirements>
+		<description>
+			<p><i>Prerequisite: 17th level, Frost Death Knight (Rune Empowered Ability)</i></p>
+			<p>As an Action, send out a cone of unnatural icy wind in front of you, that saps the energy from those it afflicts.</p>
+			<p class="indent">Each creature in a 60-foot cone must make a Constitution saving throw. On a failed save, a creature takes 3d8 Cold damage and 3d8 Necrotic damage and is Incapacitated until the end of its next turn. On a successful save, they take half damage, but no other effects.</p>
+		</description>
+		<sheet alt="Glacial Advance" action="Action" >
+			<description>Each creature in a 60-foot cone must make a Constitution saving throw. On a failed save, a creature takes 3d8 Cold damage and 3d8 Necrotic damage and is Incapacitated until the end of its next turn. On a successful save, they take half damage, but no other effects.</description>
+		</sheet>
+	</element>
+	<element name="Soul Reaper (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_SOULREAPER">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>17th level, Unholy Death Knight</prerequisite>
+		<requirements>[level:17],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_UNHOLY</requirements>
+		<description>
+			<p><i>Prerequisite: 17th level, Unholy Death Knight (Rune Empowered Ability)</i></p>
+			<p>As an Action, you attempt to steal the soul from someone’s body, and make it fight for you. This attack requires concentration, and can last up to one minute.</p>
+			<p class="indent">One creature of your choice, within 30 feet of you, must make a Wisdom saving throw. On a failed save, you rip out part (or all) of their soul, and it manifests as a Shadow (your DM has the statistics) under your control, for up to one minute. While its soul is manifested like this, the creature is Poisoned.</p>
+			<p class="indent">At the end of each of its turns, the target can make another Wisdom saving throw. On a successful save, after the Shadow dies, or after one minute, the soul returns to the creature’s body, ending the Poison effect.</p>
+		</description>
+		<sheet alt="Soul Reaper" action="Action (C)" >
+			<description>One creature of your choice within 30 feet of you, must succeed on a Wisdom saving throw, or become poisoned and have part of their soul manifest as a Shadow which is under your control, for up to 1 minute (requires concentration). At the end of each of its turns, the target can make another Wisdom saving throw. On a successful save, after the Shadow dies, or after one minute, the soul returns to the creature’s body, ending the Poison effect</description>
+		</sheet>
+	</element>
+	<element name="Will of the Necropolis (None)" type="Class Feature" source="r/UA: The Death Knight Class" id="ID_REDDITUA_HL21TDKC_CLASS_FEATURE_REA_WILLOFTHENECROPOLIS">
+		<supports>HL21TDKC Rune Empowered Abilities Pool</supports>
+		<prerequisite>17th level, Blood Death Knight</prerequisite>
+		<requirements>[level:17],ID_REDDITUA_HL21TDKC_ARCHETYPE_SPECIALIZATION_BLOOD</requirements>
+		<description>
+			<p><i>Prerequisite: 17th level, Blood Death Knight (Rune Empowered Ability)</i></p>
+			<p>As an action, you push your allies beyond what they would be able to normally do. This ability can last up to 1 minute, and requires concentration.</p>
+			<p class="indent">You may choose up to 4 creatures within 30 feet of you, and they gain the effects of the <i>Haste</i> spell, for as long as you maintain concentration on this ability.</p>
+		</description>
+		<sheet alt="Will of the Necropolis" action="Action (C)" >
+			<description>Using your concentration, for up to 1 minute, you grant up to 4 creatures within 30 feet of you the effects of the Haste spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" />
+		</rules>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</elements>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Death Knight</name>
+		<update version="0.0.1">
+			<file name="death-knight/source-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/source-death-knight.xml" />
+		</update>
+	</info>
+	
+	<!-- The Death Knight v.2.0 by u/Hamlord21 -->
+	
+	<element name="r/UA: The Death Knight Class" type="Source" source="Core" id="ID_REDDITUA_HL21TDKC_SOURCE_CLASS_DEATHKNIGHT">
+		<description>
+			<p>A Dark Martial with Rune Magic, Inspired by the Death Knights from World of Warcraft.</p>
+			<p>The Death Knight is a martial character that uses Rune Magic. The three Specilizations are either Frost Death Knight (uses ice powers to deal lots of damage in melee), Blood Death Knight (a front line tank that uses their blood magic to stay alive and weaken enemies), or Unholy Death Knight (a necromancer with a pet ghoul, that uses diseases).</p>
+		</description>
+		<setters>
+			<set name="abbreviation">REDDITUA_HL21TDKC</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/ilugyx/the_death_knight_v20_a_dark_martial_with_rune/</set>
+			<set name="image">https://i.redd.it/5erpb2v70yk51.jpg</set>
+			<set name="author" url="https://www.reddit.com/user/Hamlord21/">u/Hamlord21</set>
+			<set name="homebrew">true</set>
+			<!-- <set name="information">This source uses spells found in <i>Sword Coast Adventurer’s Guide</i> and <i>Xanathar’s Guide to Everything</i>.</set> -->
+		</setters>
+	</element>
+</elements>
