@@ -3,7 +3,7 @@
 	<info>
 		<name>Occultist</name>
 		<update version="0.0.1">
-			<file name="class-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/class-occultist.xml" />
+			<file name="Occultist/class-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/class-occultist.xml" />
 		</update>
 	</info>
 	
@@ -1570,7 +1570,7 @@
 			<p>You can sacrifice the blood of willing living creatures to power spells. When you cast a spell, you can sacrifice blood to power the spell, sacrificing one hit die per level of spell you cast, rolling them and taking damage equal to the number rolled. Willing creatures within 10 feet can use their reaction contribute blood to the spell, sacrificing hit dice by rolling them and taking necrotic damage equal to the number rolled. All sacrificed hit dice are added together to the level of the spell you can cast.</p>
 			<p class="indent">You can cast a total number of spells in this manner equal to your Occultist level. You regain all levels of usage of this rite when you complete a long rest. Some spells (marked as blood magic) can only be cast via blood magic using this rite.</p>
 		</description>
-		<sheet usage="{{occultist:level}} Spells/Long Rest">
+		<sheet usage="{{level:occultist}} Spells/Long Rest">
 			<description>When you cast a spell, you can sacrifice one hit die per level of spell you cast, taking necrotic damage equal to the rolled result. Willing creatures within 10 feet can use their reaction, to do so as well. The number of sacrificed hit dice determines the level of the spell cast.</description>
 		</sheet>
 	</element>

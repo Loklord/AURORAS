@@ -3,7 +3,7 @@
 	<info>
 		<name>Occultist Spells</name>
 		<update version="0.0.1">
-			<file name="spells-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/spells-occultist.xml" />
+			<file name="Occultist/spells-occultist.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/KIBBLES_TASTY/occultist/spells-occultist.xml" />
 		</update>
 	</info>
 	
