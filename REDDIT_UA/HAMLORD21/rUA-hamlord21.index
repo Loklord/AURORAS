@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="rUA-hamlord21.index" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/rUA-hamlord21.index" />
 		</update>
 	</info>
 
 	<files>
-		<file name="death-knight/class-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/class-death-knight.xml" />
-		<file name="death-knight/spells-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/spells-death-knight.xml" />
+		<file name="death-knight/class-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/class-death-knight.xml " />
+		<file name="death-knight/items-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/items-death-knight.xml" />
+		<file name="death-knight/source-death-knight.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/REDDIT_UA/HAMLORD21/death-knight/source-death-knight.xml" />
 	</files>
 </index>
